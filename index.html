@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chạm Mây Travel — Một phiên bản tuổi thơ, Huế 3 ngày 2 đêm</title>
+<meta name="description" content="Chạm Mây Travel: tour trải nghiệm văn hóa và tuổi thơ tại Huế, 3 ngày 2 đêm. 5 combo có sẵn hoặc tự thiết kế lịch trình theo cách của bạn.">
+<meta property="og:title" content="Chạm Mây Travel — Một phiên bản tuổi thơ">
+<meta property="og:description" content="Chạm vào miền ký ức, tìm về những điều nguyên bản.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Be+Vietnam+Pro:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F2EBDF;--tx:#593202;--sub:#8C6A3F;--ac:#8C3D0F;--ac2:#73280D;--card:#FAF5EA;--line:#D8C9B0;--on:#F2EBDF;--sky:#E6D5B8;--hill1:#C9AA7C;--hill2:#8C6A3F;--hill3:#593202;--sh:0 18px 40px -18px rgba(89,50,2,.45);--e:cubic-bezier(.22,.8,.24,1)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2B1A0B;--tx:#F2EBDF;--sub:#CDAE82;--ac:#B4561F;--ac2:#D07A3E;--card:#37230F;--line:#5B4326;--on:#F2EBDF;--sky:#3D2813;--hill1:#5A3D1E;--hill2:#73280D;--hill3:#1F1207;--sh:0 18px 40px -18px rgba(0,0,0,.7)}}
+:root[data-theme="dark"]{--bg:#2B1A0B;--tx:#F2EBDF;--sub:#CDAE82;--ac:#B4561F;--ac2:#D07A3E;--card:#37230F;--line:#5B4326;--on:#F2EBDF;--sky:#3D2813;--hill1:#5A3D1E;--hill2:#73280D;--hill3:#1F1207;--sh:0 18px 40px -18px rgba(0,0,0,.7)}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:calc(90px + env(safe-area-inset-top,0px));scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 17px/1.7 "Be Vietnam Pro",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:700;line-height:1.18;margin:0 0 .5em}
+h1{font-size:clamp(2.1rem,5.6vw,4.2rem)}h2{font-size:clamp(1.7rem,3.4vw,2.6rem)}h3{font-size:1.3rem}
+p{margin:0 0 1em;max-width:64ch}a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px)}
+section{padding:clamp(64px,9vw,112px) 0}
+:focus-visible{outline:3px solid var(--ac2);outline-offset:3px}
+.note{font-size:14px;color:var(--sub)}
+.shead{text-align:center;max-width:680px;margin:0 auto clamp(32px,5vw,56px)}.shead p{margin-inline:auto}
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;border:1.5px solid var(--ac);background:var(--ac);color:var(--on);padding:12px 26px;font:600 16px "Be Vietnam Pro",sans-serif;text-decoration:none;cursor:pointer;border-radius:999px;transition:transform .45s var(--e),box-shadow .45s var(--e),background .3s,color .3s}
+.btn:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.28) 50%,transparent 70%);transform:translateX(-120%);transition:transform .8s var(--e)}
+.btn:hover{background:var(--ac2);transform:translateY(-3px);box-shadow:0 12px 24px -10px rgba(89,50,2,.6)}.btn:hover:after{transform:translateX(120%)}.btn:active{transform:translateY(0) scale(.97)}
+.btn.ghost{background:transparent;color:inherit;border-color:currentColor}.btn.ghost:hover{background:rgba(242,235,223,.16)}
+.btn.dk{color:var(--tx)}.btn.dk:hover{background:rgba(89,50,2,.08)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px}.chip{border:1px solid var(--sub);padding:2px 12px;border-radius:99px;font-size:14px;color:var(--sub);text-decoration:none;transition:background .3s,color .3s}a.chip:hover{background:var(--tx);color:var(--bg)}
+.pill{display:inline-block;background:var(--ac);color:var(--on);padding:4px 14px;border-radius:99px;font-size:14px;font-weight:600}
+
+/* Header: logo trái · menu giữa · CTA phải */
+header{position:fixed;inset:0 0 auto 0;z-index:30;padding-top:env(safe-area-inset-top,0px);color:var(--on);transition:background .45s var(--e),color .45s,box-shadow .45s}
+header.solid{background:var(--bg);background:color-mix(in srgb,var(--bg) 90%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);color:var(--tx);box-shadow:0 1px 0 var(--line),0 10px 28px -14px rgba(89,50,2,.35)}
+.bar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;height:82px;padding:0 clamp(16px,3vw,40px);transition:height .45s var(--e)}header.solid .bar{height:66px}
+ .logo{justify-self:start;font:700 1.2rem "Playfair Display",serif;text-decoration:none;letter-spacing:.04em;white-space:nowrap}
+nav{justify-self:center;display:flex;align-items:center;gap:2px}
+nav a.nl{position:relative;text-decoration:none;font-size:15px;font-weight:500;padding:8px 14px;white-space:nowrap}
+nav a.nl:after{content:"";position:absolute;left:14px;right:14px;bottom:2px;height:2px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .45s var(--e)}
+nav a.nl:hover:after,nav a.nl[aria-current=page]:after{transform:scaleX(1)}
+.sbtn{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:none;border:0;color:inherit;cursor:pointer;transition:background .3s,transform .45s var(--e)}
+.sbtn:hover{background:rgba(140,106,63,.22);transform:scale(1.1) rotate(-8deg)}.sbtn svg{width:21px;height:21px}
+.rt{justify-self:end;display:flex;align-items:center;gap:10px}.rt .btn{padding:9px 22px;font-size:15px;white-space:nowrap}
+.mob{display:none}.rt .btn[aria-current=page],.mob[aria-current=page]{background:var(--ac2);border-color:var(--ac2)}
+#burger{display:none;width:44px;height:44px;background:none;border:1.5px solid currentColor;color:inherit;border-radius:50%;cursor:pointer;position:relative}
+#burger i{position:absolute;left:12px;right:12px;height:2px;background:currentColor;border-radius:2px;transition:transform .45s var(--e),opacity .3s}
+#burger i:nth-child(1){top:15px}#burger i:nth-child(2){top:21px}#burger i:nth-child(3){top:27px}
+#burger[aria-expanded=true] i:nth-child(1){transform:translateY(6px) rotate(45deg)}#burger[aria-expanded=true] i:nth-child(2){opacity:0}#burger[aria-expanded=true] i:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+@media(max-width:1180px){.bar{grid-template-columns:1fr auto}#burger{display:block}
+nav{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;gap:4px;background:var(--bg);color:var(--tx);padding:18px 24px 26px;box-shadow:0 20px 30px -20px rgba(89,50,2,.5);clip-path:inset(0 0 100% 0);opacity:0;pointer-events:none;transition:clip-path .55s var(--e),opacity .35s}
+nav.open{clip-path:inset(0 0 -40px 0);opacity:1;pointer-events:auto}nav a.nl{padding:10px 0}nav a.nl:after{left:0;right:0;bottom:6px}.sbtn{margin-left:-8px}}
+@media(max-width:560px){.rt .btn{display:none}.mob{display:inline-flex;margin-top:8px}}
+
+/* Views + chuyển trang */
+.view{display:none}.view.on{display:block;animation:viewIn .75s var(--e)}
+@keyframes viewIn{from{opacity:0;transform:translateY(22px) scale(.992)}to{opacity:1;transform:none}}
+.reveal-text{background:linear-gradient(90deg,var(--tx) 50%,color-mix(in srgb,var(--tx) 25%,transparent) 50%);background-size:200% 100%;background-position:100% 0;-webkit-background-clip:text;background-clip:text;color:transparent;transition:background-position 1.1s var(--e)}.rv.in .reveal-text,.reveal-text.in{background-position:0 0}.dark .reveal-text{background-image:linear-gradient(90deg,var(--on) 50%,color-mix(in srgb,var(--on) 25%,transparent) 50%)}.rv{opacity:0;transform:translateY(34px) scale(.97);transition:opacity .9s var(--e),transform .9s var(--e);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}
+.pagehead{background-image:linear-gradient(90deg,rgba(31,18,7,.82),rgba(31,18,7,.48)),var(--page-banner,none);background-size:cover;background-position:center;position:relative;overflow:hidden;background-color:var(--hill3);color:var(--on);padding:clamp(130px,16vw,170px) 0 clamp(50px,7vw,80px)}
+.pagehead:before,.pagehead:after{content:"";position:absolute;border-radius:50%;background:var(--ac2);opacity:.35;filter:blur(2px)}
+.pagehead:before{width:420px;height:420px;right:-120px;top:-160px;animation:drift 14s ease-in-out infinite}
+.pagehead:after{width:260px;height:260px;right:18%;bottom:-170px;background:var(--hill2);opacity:.3;animation:drift 18s ease-in-out infinite reverse}
+@keyframes drift{50%{transform:translate(-30px,20px)}}
+.pagehead .wrap{position:relative;z-index:1}.pagehead p{max-width:58ch;opacity:.92}
+
+/* Tilt 3D */
+.tilt{transform:perspective(950px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transform-style:preserve-3d;transition:transform .7s var(--e),box-shadow .5s;position:relative;will-change:transform}
+.tilt.hot{transition:transform .12s linear,box-shadow .5s}
+.tilt:before{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;border-radius:inherit;background:radial-gradient(circle at var(--gx,50%) var(--gy,50%),rgba(255,255,255,.28),transparent 55%);opacity:0;transition:opacity .4s}.tilt.hot:before{opacity:1}
+.pop{transform:translateZ(36px)}
+
+/* Hero */
+.hero{background-image:linear-gradient(180deg,rgba(31,18,7,.26),rgba(31,18,7,.2)),url("./banner-trang-chu.jpg");background-size:cover;background-position:center;min-height:100svh;position:relative;display:flex;align-items:flex-end;color:var(--on);background-color:var(--hill3);overflow:hidden;padding:0}
+.hero .countryside-image{position:absolute;inset:0;width:100%;height:100%;z-index:0;overflow:hidden;background:var(--hill3)}.hero .countryside-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}.hero>svg{display:none!important}.hero .ly{transition:transform .35s ease-out}
+.kite{animation:sway 7s ease-in-out infinite;transform-origin:300px 520px}
+@keyframes sway{0%,100%{transform:rotate(-3deg) translateY(0)}50%{transform:rotate(3.5deg) translateY(-14px)}}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(31,18,7,.6) 0,rgba(31,18,7,0) 24%,rgba(31,18,7,0) 42%,rgba(31,18,7,.72) 100%);pointer-events:none}
+.hero>svg{display:none}.hero .wrap{position:relative;z-index:2;width:100%;padding-bottom:clamp(90px,14vh,150px);padding-top:150px}
+.hero h1{max-width:15ch;text-shadow:0 2px 24px rgba(31,18,7,.4)}.hero p{font-size:1.15rem}
+.hero .go>*{opacity:0;transform:translateY(26px);animation:up 1s var(--e) forwards}.hero .go>*:nth-child(2){animation-delay:.2s}.hero .go>*:nth-child(3){animation-delay:.38s}.hero .go>*:nth-child(4){animation-delay:.56s}
+@keyframes up{to{opacity:1;transform:none}}
+.scrollhint{position:absolute;right:clamp(20px,4vw,40px);bottom:34px;z-index:2;display:flex;flex-direction:column;align-items:center;gap:10px;font-size:13px;letter-spacing:.08em;writing-mode:vertical-rl;color:var(--on)}
+.scrollhint:after{content:"";width:1px;height:56px;background:currentColor;transform-origin:top;animation:line 2.4s var(--e) infinite}
+@keyframes line{0%{transform:scaleY(0)}60%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+@media(max-width:800px){.scrollhint{display:none}}
+.finder{position:relative;z-index:5;margin:-62px auto 0;max-width:1040px;display:flex;gap:16px;flex-wrap:wrap;align-items:flex-end;background:var(--card);border:1px solid var(--line);padding:22px 26px;border-radius:14px;box-shadow:var(--sh)}
+
+/* Lưới & thẻ */
+.two{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(32px,6vw,80px);align-items:center}
+@media(max-width:860px){.two{grid-template-columns:1fr}}
+.art{aspect-ratio:4/5;background:var(--sky);border:1px solid var(--line);position:relative;overflow:hidden;border-radius:10px}.art svg{width:100%;height:100%}
+.flip{perspective:1100px;width:100%;max-width:440px;justify-self:center;display:block}
+.fi{position:relative;display:block;aspect-ratio:4/5;transition:transform 1.1s var(--e);transform-style:preserve-3d}
+.flip.on .fi{transform:rotateY(180deg) rotateZ(-1deg)}
+.flip:focus-within .fi{transform:rotateY(180deg) rotateZ(-1deg)}
+@media (hover:hover){.flip:hover .fi{transform:rotateY(180deg) rotateZ(-1deg)}}
+.ff{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:10px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--sh);display:block}
+.ff.front{cursor:pointer}.ff.front svg,.ff.front img{width:100%;height:100%;display:block;object-fit:cover}
+.ff.back{transform:rotateY(180deg);background:var(--card);padding:26px 26px 22px;display:flex;flex-direction:column;gap:10px}
+.ff.back b{font:700 1.5rem "Cormorant Garamond",serif;color:var(--ac2)}
+.pc-in,.ff.back textarea{width:100%;box-sizing:border-box;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--tx);font:italic 600 1.2rem/1.5 "Cormorant Garamond",serif;padding:2px 0;outline:0;border-radius:0}
+.pc-in:focus,.ff.back textarea:focus{border-bottom-color:var(--ac)}
+.pc-in::placeholder,.ff.back textarea::placeholder{color:var(--sub);opacity:.7}
+.ff.back textarea{flex:1;min-height:0;resize:none;border:0;line-height:34px;font-size:1.25rem;background:repeating-linear-gradient(transparent 0 33px,var(--line) 33px 34px) 0 0/100% 34px local}
+.ff.back textarea,.ff.back textarea:focus{border:0!important;box-shadow:none!important;outline:0!important;padding:0;background-color:transparent}.ff.back .pc-in{border:0;border-bottom:1px solid var(--line);background:transparent;box-shadow:none;padding:2px 0;margin:0;border-radius:0}.ff.back .pc-in:focus{border-bottom-color:var(--ac);box-shadow:none}.ff.back .pc-from{text-align:right;width:60%;align-self:flex-end}
+.ff.back .st{align-self:flex-end;border:2px dashed var(--ac);color:var(--ac);padding:4px 10px;font-size:12px;border-radius:3px;transform:rotate(4deg)}
+.ff.back .pc-title{width:100%;box-sizing:border-box;border:0!important;border-bottom:1px dashed var(--line)!important;background:transparent;box-shadow:none;outline:0;padding:0 0 2px;margin:0;border-radius:0;font:700 1.5rem "Cormorant Garamond",serif;color:var(--ac2)}.ff.back .pc-title:focus{border-bottom-color:var(--ac)!important}
+.pc-wrap{display:flex;flex-direction:column;align-items:center;width:100%}
+.pc-tools{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:22px}
+.pc-tools .btn{padding:10px 18px;font-size:15px;cursor:pointer}.pc-up input{display:none}
+.pc-reset{background:none;border:0;color:var(--ac);text-decoration:underline;cursor:pointer;font:inherit;font-size:14px;margin-top:6px}
+.hint{font-size:14px;color:var(--sub);margin-top:14px;text-align:center}
+.dark{background:var(--ac2);color:var(--on)}.dark .note{color:var(--on)}
+.cgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:24px}.cgrid>*{grid-column:span 2}.cgrid>*:nth-child(n+4){grid-column:span 3}
+@media(max-width:980px){.cgrid{grid-template-columns:repeat(2,1fr)}.cgrid>*,.cgrid>*:nth-child(n+4){grid-column:span 1}.cgrid>*:last-child{grid-column:span 2}}
+@media(max-width:600px){.cgrid{grid-template-columns:1fr}.cgrid>*,.cgrid>*:last-child{grid-column:span 1}}
+.cm{display:flex;flex-direction:column;height:100%;background:var(--card);color:var(--tx);border-radius:14px;overflow:hidden;box-shadow:var(--sh);text-decoration:none}
+.cm .im{aspect-ratio:4/3;overflow:hidden}.cm .im svg,.pc .im svg,.cm .im img{display:block;width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--e)}.cm:hover .im svg,.pc:hover .im svg,.cm:hover .im img{transform:scale(1.08)}
+.cm .bd{padding:20px 22px 24px;display:flex;flex-direction:column;gap:2px;flex:1}.cm h3{margin:10px 0 4px}.cm .hl{font-size:15px;color:var(--sub);flex:1}.cm .pr{font-weight:600;color:var(--ac2)}
+.hue,.pc h3,.pd h1{font-family:"Cormorant Garamond","Playfair Display",Georgia,serif;font-weight:700}
+h2.hue{font-size:clamp(2.2rem,4.6vw,3.4rem)}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:26px}
+.pc{display:flex;flex-direction:column;height:100%;background:var(--card);border-radius:14px;overflow:hidden;box-shadow:var(--sh);text-decoration:none;border:1px solid var(--line)}
+.pc .im{aspect-ratio:4/3;overflow:hidden;background:var(--sky)}.pc .im img{width:100%;height:100%;object-fit:cover;display:block}.pc>a.im{display:block;flex:none}
+.pc .bd{padding:18px 20px 22px;display:flex;flex-direction:column;flex:1}.pc h3{font-size:1.65rem;margin:0 0 6px}.pc p{font-size:15px;color:var(--sub);flex:1}.pc .more{font-weight:600;color:var(--ac2);display:inline-flex;gap:8px;align-items:center}.pc .more:after{content:"";width:22px;height:2px;background:currentColor;transition:width .5s var(--e)}.pc:hover .more:after{width:42px}
+.why{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,6vw,80px);align-items:start}.why>div:first-child{position:sticky;top:110px}
+@media(max-width:860px){.why{grid-template-columns:1fr}.why>div:first-child{position:static}}
+.values{list-style:none;padding:0;margin:0;display:grid;gap:14px}.values li{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:20px;padding:22px 26px;background:var(--card);border:1px solid var(--line);border-radius:12px;transition:box-shadow .5s,border-color .4s}.values li:hover{box-shadow:var(--sh);border-color:var(--ac)}
+@media(max-width:600px){.values li{grid-template-columns:1fr;gap:4px}}
+.values b{font:700 1.15rem "Playfair Display",serif}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative}
+.steps:before{content:"";position:absolute;left:8%;right:8%;top:30px;height:2px;background:repeating-linear-gradient(90deg,var(--sub) 0 8px,transparent 8px 16px);opacity:.6}
+.st3{position:relative;text-align:center;padding:0 12px}.st3 .nb{width:60px;height:60px;border-radius:50%;margin:0 auto 16px;display:grid;place-items:center;background:var(--ac);color:var(--on);font:700 1.3rem "Playfair Display",serif;box-shadow:0 0 0 8px var(--bg);position:relative}.st3 p{margin-inline:auto;font-size:15px}
+@media(max-width:760px){.steps{grid-template-columns:1fr}.steps:before{display:none}}
+
+/* Combo đầy đủ (trang Tour) */
+.cbx{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(24px,5vw,60px);align-items:center;padding:clamp(28px,4vw,48px) 0;border-top:1px solid var(--line)}.cbx.rev .cmedia{order:2}
+@media(max-width:860px){.cbx{grid-template-columns:1fr}.cbx.rev .cmedia{order:0}}
+.cmedia{border-radius:14px;overflow:hidden;aspect-ratio:4/3;box-shadow:var(--sh);background:var(--sky)}.cmedia svg,.cmedia img{display:block;width:100%;height:100%;object-fit:cover}
+.cbx h3{font-size:1.8rem;margin:6px 0}.cbx .hlx{font-weight:600;margin-bottom:10px}.cbx .big{font:700 1.5rem "Playfair Display",serif;color:var(--ac2);margin:8px 0 14px}
+.dd{border:1px solid var(--line);border-radius:10px;margin:8px 0;background:var(--card);overflow:hidden}.dd summary{cursor:pointer;font-weight:600;padding:12px 16px;list-style:none;display:flex;justify-content:space-between;gap:12px;color:var(--ac2)}.dd summary::-webkit-details-marker{display:none}.dd summary:after{content:"+";font-size:22px;line-height:1;transition:transform .45s var(--e)}.dd[open] summary:after{transform:rotate(135deg)}
+.dd .db{padding:0 16px 14px;animation:dopen .55s var(--e)}.dd .db p{margin:0 0 8px;font-size:15px}
+@keyframes dopen{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.filters button{background:transparent;border:1.5px solid var(--sub);color:var(--tx);padding:7px 18px;border-radius:99px;font:inherit;font-size:15px;cursor:pointer;transition:background .35s,color .35s,transform .45s var(--e)}.filters button:hover{transform:translateY(-2px)}.filters button[aria-pressed=true]{background:var(--tx);color:var(--bg);border-color:var(--tx)}
+.ctab{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}.cr{display:grid;grid-template-columns:1.1fr 2fr 1fr;gap:18px;padding:14px 22px;border-top:1px solid var(--line);align-items:center}.cr:first-child{border-top:0}
+.cr.hd{background:var(--tx);color:var(--bg);font-weight:600}.cr.tt{background:var(--ac2);color:var(--on);font-weight:700;font-size:1.05rem}.cr b{font-weight:600}.cr span:last-child{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}.cr small{color:var(--sub)}
+@media(max-width:700px){.cr{grid-template-columns:1fr auto;gap:4px 14px}.cr span:nth-child(2){grid-column:1/-1;order:3;font-size:14px;color:var(--sub)}.cr.hd span:nth-child(2){display:none}.cr.tt span:nth-child(2){display:none}}
+
+/* Planner */
+fieldset{border:1px solid var(--line);margin:0 0 22px;padding:20px 22px;background:var(--card);border-radius:12px}legend{font:700 1.1rem "Playfair Display",serif;padding:0 8px}
+.opts{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:11px 14px;border:1px solid var(--line);background:var(--bg);cursor:pointer;line-height:1.4;border-radius:10px;transition:border-color .3s,background .3s,transform .45s var(--e)}.opt:hover{transform:translateY(-2px)}
+.opt:has(input:checked){border-color:var(--ac);background:var(--sky);box-shadow:inset 3px 0 0 var(--ac)}
+.opt input{margin-top:4px;accent-color:var(--ac)}.opt small{display:block;color:var(--sub)}.opt .pp{color:var(--ac2);font-weight:600}
+.row{display:flex;gap:16px;flex-wrap:wrap}label.f{display:flex;flex-direction:column;gap:4px;font-size:15px;flex:1;min-width:170px}
+input[type=text],input[type=email],input[type=tel],input[type=date],input[type=number],select,textarea{font:inherit;padding:11px 14px;border:1.5px solid var(--sub);background:var(--bg);color:var(--tx);border-radius:8px;width:100%;transition:border-color .3s,box-shadow .3s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--ac);box-shadow:0 0 0 4px rgba(140,61,15,.16)}
+.err{color:var(--ac2);font-size:14px;min-height:1.2em}.msg{padding:12px 18px;border-left:4px solid var(--ac);background:var(--card);margin:14px 0;border-radius:0 8px 8px 0;animation:dopen .5s var(--e)}
+.day{border-top:2px solid var(--tx);padding:18px 0 8px}.day ol{list-style:none;padding:0;margin:0}
+.item{display:grid;grid-template-columns:96px 1fr auto auto;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);align-items:center;animation:dopen .5s var(--e) backwards}
+.item.lunch{color:var(--sub);font-style:italic}.item .tm{font-variant-numeric:tabular-nums;color:var(--sub)}.item .pr{font-size:14px;color:var(--ac2);font-weight:600;text-align:right}
+.item button{background:none;border:1px solid var(--line);color:var(--tx);width:34px;height:34px;cursor:pointer;border-radius:50%;font-size:15px;transition:border-color .3s,transform .4s var(--e)}.item button:hover{border-color:var(--ac);transform:scale(1.12)}
+@media(max-width:640px){.item{grid-template-columns:76px 1fr auto}.item .pr{grid-column:2;text-align:left}}
+.est{margin:26px 0;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 26px;box-shadow:var(--sh)}.est h3{margin-bottom:12px}
+.est .er{display:flex;justify-content:space-between;gap:16px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:15px}.est .er span:last-child{font-variant-numeric:tabular-nums;text-align:right}
+.est .er.t{border:0;border-top:2px solid var(--tx);margin-top:8px;padding-top:12px;font-weight:700;font-size:1.1rem;color:var(--ac2)}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.dur{margin:0;font:600 1.1rem/1.5 "Be Vietnam Pro",system-ui,sans-serif;color:var(--tx)}
+
+/* Chi tiết địa điểm / chính sách */
+.pd{padding:clamp(110px,13vw,140px) 0 clamp(50px,7vw,80px)}
+.crumb{font-size:14px;color:var(--sub);margin-bottom:18px}.crumb a{text-decoration:none;border-bottom:1px solid var(--line)}.crumb a:hover{color:var(--ac)}
+.pimg{border-radius:16px;overflow:hidden;aspect-ratio:21/9;background:var(--sky);box-shadow:var(--sh);margin-bottom:clamp(24px,4vw,40px)}.pimg svg,.pimg img{display:block;width:100%;height:100%;object-fit:cover}
+@media(max-width:700px){.pimg{aspect-ratio:4/3}}
+.pd h1{font-size:clamp(2.4rem,5.4vw,4rem);margin-bottom:.3em}
+.pbody{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(260px,.8fr);gap:clamp(28px,5vw,64px);align-items:start;margin-top:26px}
+@media(max-width:900px){.pbody{grid-template-columns:1fr}}
+.art2 p{font-size:1.08rem;max-width:66ch}.art2 p:first-of-type:first-letter{font:700 3.6rem/.9 "Playfair Display",serif;float:left;margin:6px 10px 0 0;color:var(--ac)}
+.aside{position:sticky;top:96px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;box-shadow:var(--sh)}.aside h3{font-size:1.15rem;margin-bottom:.4em}.aside dl{margin:0 0 14px}.aside dt{font-size:13px;color:var(--sub)}.aside dd{margin:0 0 10px;font-weight:600}
+@media(max-width:900px){.aside{position:static}}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:50px;border-top:1px solid var(--line);padding-top:26px}.pn a{text-decoration:none;display:block;padding:14px 18px;border:1px solid var(--line);border-radius:12px;transition:transform .5s var(--e),border-color .3s,box-shadow .5s}.pn a:hover{transform:translateY(-4px);border-color:var(--ac);box-shadow:var(--sh)}.pn small{display:block;color:var(--sub)}.pn a:last-child{text-align:right}
+.pol{display:grid;grid-template-columns:minmax(220px,.5fr) minmax(0,1.5fr);gap:clamp(28px,5vw,64px);align-items:start}.pol nav{position:sticky;top:100px;flex-direction:column;align-items:stretch;gap:4px;display:flex}
+.pol nav a{padding:10px 14px;border-radius:8px;text-decoration:none;font-size:15px;transition:background .3s,transform .45s var(--e)}.pol nav a:hover{background:var(--card);transform:translateX(4px)}.pol nav a[aria-current=page]{background:var(--tx);color:var(--bg)}
+.pol h2{font-size:1.5rem;margin-top:1.6em}.pol h2:first-child{margin-top:0}
+@media(max-width:860px){.pol{grid-template-columns:1fr}.pol nav{position:static;flex-direction:row;flex-wrap:wrap}}
+
+/* Cẩm nang: bài viết chi tiết */
+.guide-meta{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;color:var(--sub);font-size:14px;margin:14px 0 22px}
+.guide-article-layout{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:clamp(28px,5vw,64px);align-items:start}
+.guide-content{min-width:0;max-width:820px}
+.guide-content h2{font-size:clamp(1.45rem,2.7vw,2rem);margin:1.6em 0 .55em}
+.guide-content h2:first-child{margin-top:0}
+.guide-content h3{font-size:1.15rem;margin:1.2em 0 .4em}
+.guide-content p{max-width:72ch;margin-bottom:1em}
+.guide-content ul,.guide-content ol{padding-left:1.35em;margin:0 0 1.2em}
+.guide-content li{padding-left:.2em;margin:.45em 0}
+.guide-content .guide-callout{padding:18px 20px;border-left:4px solid var(--ac);border-radius:0 10px 10px 0;background:var(--card);margin:22px 0}
+.guide-content .guide-check{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:20px 22px;margin:24px 0}
+.guide-content .guide-check h3{margin-top:0}
+.guide-content .guide-check ul{margin-bottom:0}
+.guide-aside{position:sticky;top:100px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--sh)}
+.guide-aside h3{font-size:1.12rem}
+.guide-aside a{display:block;text-decoration:none;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}
+.guide-aside a:last-child{border-bottom:0}
+.guide-aside a:hover{color:var(--ac)}
+.guide-next{border-top:1px solid var(--line);padding-top:26px;margin-top:38px}
+.guide-source{font-size:13px;color:var(--sub);margin-top:24px}
+.guide-actions{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0}
+@media(max-width:900px){.guide-article-layout{grid-template-columns:1fr}.guide-aside{position:static;order:-1}.guide-aside .guide-nav{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0 16px}}
+
+/* Footer */
+footer{background:var(--hill3);color:var(--on);padding:70px 0 30px;position:relative;overflow:hidden}footer a{opacity:.88;text-decoration:none;transition:opacity .3s,padding .4s var(--e)}footer a:hover{opacity:1;padding-left:5px}
+.cols{display:grid;grid-template-columns:1.45fr 1fr 1fr 1fr;gap:clamp(22px,3vw,40px)}@media(max-width:1000px){.cols{grid-template-columns:1fr 1fr 1fr}}@media(max-width:620px){.cols{grid-template-columns:1fr 1fr}}@media(max-width:440px){.cols{grid-template-columns:1fr}}
+footer ul{list-style:none;padding:0;margin:0}footer li{margin:8px 0;font-size:15px}footer h3{font-size:1.05rem}.footer-contact{overflow-wrap:anywhere}.footer-contact li{line-height:1.65}.footer-brand p{max-width:290px}.footer-contact a{text-decoration:underline;text-underline-offset:3px}.footer-contact li{display:flex;align-items:flex-start;gap:10px}.contact-icon{width:18px;height:18px;flex:0 0 18px;margin-top:3px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;opacity:.9}
+.fb{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:40px;padding-top:20px;border-top:1px solid rgba(242,235,223,.2);font-size:14px}.fb p{margin:0}
+dialog{border:1px solid var(--line);background:var(--bg);color:var(--tx);max-width:min(640px,92vw);width:100%;padding:24px;border-radius:16px;box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}dialog[open]{animation:pop .5s var(--e)}dialog::backdrop{background:rgba(40,22,5,.62);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+@keyframes pop{from{opacity:0;transform:translateY(24px) scale(.95)}to{opacity:1;transform:none}}
+.sri{display:block;padding:11px 8px;border-bottom:1px solid var(--line);text-decoration:none;border-radius:6px;transition:background .3s,padding .4s var(--e)}.sri:hover{background:var(--card);padding-left:16px}.sri small{display:block;color:var(--sub)}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px} .image-missing{position:relative;background:var(--sky)}.image-missing:after{content:attr(data-image-note);display:block;padding:14px;color:var(--sub);font-size:13px;text-align:center}.gt{background:var(--card);border:1px solid var(--line);padding:0;cursor:pointer;color:var(--tx);font:inherit;text-align:left;border-radius:12px;overflow:hidden;width:100%}.gt svg,.gt img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}.gt span{display:block;padding:9px 12px;font-size:14px}#lb-i svg,#lb-i img{display:block;width:100%;height:auto;max-height:60vh;object-fit:contain;border-radius:10px}
+/* Mạng xã hội (footer) */
+.soc-h{margin-top:22px}.soc-list{display:flex;flex-wrap:wrap;gap:8px}.soc-empty{margin:0;font-size:14px;opacity:.75}
+footer a.soc{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 14px;border:1px solid rgba(242,235,223,.32);border-radius:999px;font-size:14px;transition:background .3s,border-color .3s,transform .45s var(--e),opacity .3s}
+footer a.soc:hover{padding-left:14px;background:rgba(242,235,223,.12);border-color:rgba(242,235,223,.6);transform:translateY(-2px)}
+footer a.soc svg{width:18px;height:18px;flex:none}
+/* Lịch trình combo */
+.cdet{margin-top:14px}.cdet>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--ac2);padding:8px 0}
+.cdet>summary::-webkit-details-marker{display:none}.cdet>summary:after{content:"▾";transition:transform .45s var(--e)}.cdet[open]>summary:after{transform:rotate(180deg)}
+.dl{margin:0;padding-left:20px;font-size:15px}.dl li{margin:5px 0}.cnote{font-size:14px;color:var(--sub);margin:10px 0 0}.plab{display:block;font:500 .8rem "Be Vietnam Pro",sans-serif;color:var(--sub)}
+.est.live.show{animation:dopen .5s var(--e)}.est .ps{margin:0 0 6px;font-size:14px;color:var(--sub)}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}.hero .go>*{opacity:1;transform:none}.tilt{transform:none}}
+@media print{header,footer,.tools,.item button,#planner-form,.pagehead{display:none!important}body{background:#fff;color:#000}.rv{opacity:1;transform:none}}
+
+
+/* Responsive pass: mobile, tablet and compact laptop */
+html{width:100%;max-width:100%;overflow-x:hidden}
+body{width:100%;max-width:100%;min-width:0;overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+.hero{min-height:100vh;min-height:100svh}
+img,video,iframe,svg,canvas{max-width:100%}
+.wrap,section,.view,main,footer,header{min-width:0}
+.wrap{width:100%}
+.pgrid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.opts{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+fieldset{min-width:0}
+input,select,textarea,button{max-width:100%;touch-action:manipulation}
+.pagehead h1,.hero h1{overflow-wrap:anywhere}
+
+@media (max-width:1180px){
+  .bar{grid-template-columns:minmax(0,1fr) auto;gap:12px}
+  .logo{min-width:0;max-width:100%;overflow:hidden;text-overflow:ellipsis;font-size:clamp(1rem,3vw,1.2rem)}
+  #nav{box-sizing:border-box;max-width:100%;max-height:calc(100dvh - 82px - env(safe-area-inset-top,0px));overflow-y:auto;overscroll-behavior:contain;padding:14px clamp(18px,5vw,28px) 22px}
+  #nav a.nl{display:block;width:100%;white-space:normal;overflow-wrap:anywhere}
+  #nav .mob{align-self:flex-start}
+}
+@media (max-width:860px){
+  body{font-size:16px;line-height:1.68}
+  section{padding:clamp(48px,8vw,72px) 0}
+  .wrap{padding-left:clamp(16px,4.5vw,28px);padding-right:clamp(16px,4.5vw,28px)}
+  .two,.why,.pbody,.guide-article-layout,.pol{grid-template-columns:minmax(0,1fr);gap:28px}
+  .pagehead{padding:118px 0 54px}
+  .pagehead:before{width:280px;height:280px;right:-120px;top:-110px}
+  .pagehead:after{width:190px;height:190px;right:8%;bottom:-130px}
+  .pagehead h1{font-size:clamp(2rem,7.4vw,3.2rem)}
+  .hero{min-height:88vh;min-height:88svh;background-position:center}
+  .hero .wrap{padding-top:124px;padding-bottom:84px}
+  .hero h1{font-size:clamp(2.1rem,8.5vw,3.5rem);max-width:13ch}
+  .hero p{font-size:1rem}
+  .finder{margin:-34px 16px 0;padding:18px;gap:12px}
+  .finder label.f{min-width:0;flex:1 1 145px}
+  .cgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  .cgrid>* ,.cgrid>*:nth-child(n+4){grid-column:auto;min-width:0}
+  .cgrid>*:last-child{grid-column:1/-1}
+  .cbx{grid-template-columns:minmax(0,1fr);gap:22px}
+  .cbx.rev .cmedia{order:0}
+  .guide-aside{order:0}
+  .aside,.guide-aside{padding:18px}
+  .ctab{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .cr{min-width:0}
+  .btns,.tools,.guide-actions{gap:10px}
+  .btns .btn,.tools .btn,.guide-actions .btn{max-width:100%;white-space:normal;text-align:center}
+  .pn{gap:10px}
+}
+@media (max-width:600px){
+  .bar{height:68px;padding-inline:14px;gap:10px}
+  header.solid .bar{height:62px}
+  #nav{top:100%;max-height:calc(100dvh - 68px - env(safe-area-inset-top,0px));padding:12px 20px 20px}
+  .logo{font-size:1rem;letter-spacing:.015em}
+  #burger{width:42px;height:42px;flex:none}
+  .rt{gap:6px}
+  h2{font-size:clamp(1.55rem,6.5vw,2rem)}
+  .hero{min-height:82vh;min-height:82svh}
+  .hero .wrap{padding-top:112px;padding-bottom:74px}
+  .hero h1{font-size:clamp(2rem,9vw,2.8rem);max-width:12ch}
+  .hero:after{background:linear-gradient(180deg,rgba(31,18,7,.18) 0,rgba(31,18,7,.08) 25%,rgba(31,18,7,.72) 100%)}
+  .hero .btns{align-items:stretch;flex-direction:column;max-width:290px}
+  .hero .btns .btn{width:100%}
+  .finder{margin:-24px 12px 0;padding:14px;display:grid;grid-template-columns:minmax(0,1fr);border-radius:12px}
+  .finder label.f{min-width:0;width:100%}
+  .cgrid,.pgrid,.opts{grid-template-columns:minmax(0,1fr)}
+  .cgrid>* ,.cgrid>*:nth-child(n+4),.cgrid>*:last-child{grid-column:1;min-width:0}
+  .pgrid{gap:18px}
+  .pc .bd,.cm .bd{padding:16px}
+  .pc h3{font-size:1.45rem}
+  .values li{grid-template-columns:minmax(0,1fr);gap:5px;padding:18px}
+  .steps{grid-template-columns:minmax(0,1fr);gap:26px}
+  .cbx .big{font-size:1.25rem}
+  .cr{grid-template-columns:minmax(0,1fr) auto;padding:12px 14px;gap:5px 10px}
+  .cr span:nth-child(2){grid-column:1/-1;order:3;overflow-wrap:anywhere}
+  .item{grid-template-columns:66px minmax(0,1fr) 34px;gap:8px}
+  .item .pr{grid-column:2;text-align:left;overflow-wrap:anywhere}
+  .est{padding:17px}
+  .est .er{gap:12px;align-items:flex-start}
+  .est .er span:last-child{max-width:52%;overflow-wrap:anywhere}
+  .pn{grid-template-columns:minmax(0,1fr)}
+  .pn a:last-child{text-align:left}
+  .guide-content .guide-check,.guide-content .guide-callout{padding:15px}
+  .guide-actions{flex-direction:column;align-items:stretch}
+  .guide-actions .btn{width:100%}
+  .gal{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .gt span{padding:8px 10px;font-size:13px}
+  .cols{grid-template-columns:minmax(0,1fr);gap:26px}
+  footer{padding:46px 0 24px}
+  .fb{margin-top:28px;padding-top:18px;flex-direction:column;gap:6px}
+  .footer-brand p{max-width:none}
+  .footer-contact li{overflow-wrap:anywhere}
+  dialog{max-width:calc(100vw - 24px);width:calc(100vw - 24px);padding:18px;max-height:88vh;overflow:auto}
+}
+@media (max-width:360px){
+  .wrap{padding-left:14px;padding-right:14px}
+  .bar{padding-inline:10px}
+  .logo{font-size:.92rem}
+  .gal{grid-template-columns:minmax(0,1fr)}
+  .pc-tools{flex-direction:column;width:100%}
+  .pc-tools .btn,.pc-tools .pc-up{width:100%;text-align:center}
+  .pn{grid-template-columns:minmax(0,1fr)}
+  .item{grid-template-columns:58px minmax(0,1fr) 32px;font-size:14px}
+}
+@media (orientation:landscape) and (max-height:500px) and (max-width:900px){
+  .hero{min-height:600px;min-height:100svh}
+  #nav{max-height:calc(100dvh - 62px);overflow-y:auto}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
+
+
+/* Fix contrast: headings on dark accent sections must stay cream, not animate through a low-contrast brown gradient. */
+.dark .reveal-text,
+.dark .rv h1,
+.dark .rv h2,
+.dark .rv h3 {
+  color: var(--on) !important;
+  background: none !important;
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  -webkit-text-fill-color: var(--on) !important;
+}
+
+/* ===== Logo thương hiệu (header, footer, góc ảnh) ===== */
+.brand-logo{display:none;flex:none;border-radius:50%;object-fit:cover;background:var(--card)}
+.has-logo .brand-logo{display:block}
+.logo{display:inline-flex;align-items:center;gap:10px}
+.logo span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.logo .brand-logo{width:46px;height:46px;box-shadow:0 0 0 2px rgba(242,235,223,.78),0 6px 14px -6px rgba(0,0,0,.45);transition:width .45s var(--e),height .45s var(--e),box-shadow .45s}
+header.solid .logo .brand-logo{width:40px;height:40px;box-shadow:0 0 0 1.5px var(--line)}
+.footer-logo{width:76px;height:76px;margin:0 0 14px;box-shadow:0 0 0 2px rgba(242,235,223,.5)}
+.wm-logo{display:none;position:absolute;z-index:3;right:10px;bottom:10px;width:38px;height:38px;border-radius:50%;background:var(--logo-url,none) center/cover no-repeat;box-shadow:0 0 0 1.5px rgba(242,235,223,.85),0 4px 10px rgba(0,0,0,.35);opacity:.93;pointer-events:none}
+.has-logo .wm-logo{display:block}
+.cm .im,.pc .im,.cmedia,.pimg{position:relative}
+.hero .wm-logo{right:clamp(20px,4vw,40px);bottom:178px;width:64px;height:64px}
+.pagehead .wm-logo{right:clamp(16px,3vw,36px);bottom:18px;width:54px;height:54px}
+.pagehead:not([style*="--page-banner"]) .wm-logo{display:none!important}
+@media(max-width:800px){.hero .wm-logo{right:16px;bottom:18px;width:48px;height:48px}.pagehead .wm-logo{width:44px;height:44px;right:14px;bottom:14px}}
+@media(max-width:600px){.logo .brand-logo{width:38px;height:38px}header.solid .logo .brand-logo{width:34px;height:34px}.logo{gap:8px}.footer-logo{width:64px;height:64px}}
+/* Giãn dòng chữ trên banner (trước đây dòng quá sát nhau) */
+.hero h1,.pagehead h1{line-height:1.32;letter-spacing:.005em;margin-bottom:.55em}
+.hero p,.pagehead p{line-height:1.85}
+.pagehead .note{line-height:1.7}
+/* Dòng giới thiệu đề tài ở footer */
+.fb-note{flex:1 0 100%;order:5;margin:6px 0 0;padding-top:14px;border-top:1px dashed rgba(242,235,223,.22);font-size:12px;line-height:1.75;letter-spacing:.02em;text-align:center;opacity:.85;max-width:none}
+/* ===== Tin tức & thời tiết (trang chủ) ===== */
+.news{border-top:1px solid var(--line)}
+.news-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.4fr);gap:clamp(18px,3vw,32px);align-items:start}
+@media(max-width:900px){.news-grid{grid-template-columns:minmax(0,1fr)}}
+.wx{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:clamp(18px,3vw,28px);box-shadow:var(--sh);position:sticky;top:96px}
+@media(max-width:900px){.wx{position:static}}
+.wx-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:10px}.wx-top h3{margin:0}
+.wx-date{font-size:14px;color:var(--sub)}
+.wx-now{display:flex;align-items:center;gap:16px;margin:6px 0 12px}
+.wx-ic{width:64px;height:64px;flex:none;color:var(--ac)}
+.wx-t{font:700 clamp(2.6rem,6vw,3.4rem)/1.1 "Playfair Display",serif;color:var(--ac2)}
+.wx-c{font-weight:600}
+.wx-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 16px;margin:0 0 14px;font-size:14.5px}
+.wx-stats div{display:flex;justify-content:space-between;gap:8px;border-bottom:1px dashed var(--line);padding:5px 0}.wx-stats dt{color:var(--sub)}.wx-stats dd{margin:0;font-weight:600;text-align:right}
+.wx-days{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0 0 14px}
+.wx-day{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 8px;text-align:center;font-size:13.5px;line-height:1.5}.wx-day b{display:block;font-size:13px;color:var(--sub);font-weight:600}.wx-day span{display:block}
+.wx-tip{padding:10px 14px;border-left:4px solid var(--ac);background:var(--bg);border-radius:0 8px 8px 0;font-size:14.5px;margin:0 0 12px}
+.wx-src{margin:10px 0 0}.wx-src a,.news-note a{text-underline-offset:3px}
+.wx-load{margin:0;animation:none}
+@media(prefers-reduced-motion:no-preference){.wx-load{animation:wxp 1.4s ease-in-out infinite}@keyframes wxp{50%{opacity:.4}}}
+.news-list{display:grid;gap:14px}
+.ncard{display:grid;gap:4px;text-decoration:none;color:var(--tx);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 22px;transition:transform .5s var(--e),box-shadow .5s var(--e),border-color .3s}
+.ncard:hover,.ncard:focus-visible{transform:translateY(-4px);box-shadow:var(--sh);border-color:var(--ac)}
+.ncard .nt{justify-self:start;background:var(--ac);color:var(--on);padding:2px 12px;border-radius:99px;font-size:13px;font-weight:600}
+.ncard h3{font-size:1.2rem;margin:6px 0 2px;line-height:1.4}
+.ncard p{margin:0;font-size:15px;color:var(--sub);line-height:1.7;max-width:none}
+.ncard .ns{display:flex;align-items:center;gap:8px;margin-top:8px;font-size:13.5px;font-weight:600;color:var(--ac2)}
+.ncard .ns:after{content:"↗";transition:transform .45s var(--e)}.ncard:hover .ns:after{transform:translate(4px,-4px)}
+.news-note{text-align:center;margin:26px auto 0;max-width:70ch}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+</style>
+</head>
+<body>
+<header id="hd"><div class="bar">
+<a class="logo" href="#/" aria-label="Chạm Mây Travel, về trang chủ"><img class="brand-logo" width="46" height="46" alt="" decoding="async"><span>CHẠM MÂY TRAVEL</span></a>
+<nav id="nav" aria-label="Điều hướng chính">
+<a class="nl" href="#/" data-r="/">Trang chủ</a><a class="nl" href="#/tour" data-r="/tour">Tour 3N2Đ</a><a class="nl" href="#/ca-nhan" data-r="/ca-nhan">Du lịch cá nhân</a><a class="nl" href="#/ve-cham-may" data-r="/ve-cham-may">Về Chạm Mây</a><a class="nl" href="#/kham-pha-hue" data-r="/kham-pha-hue">Khám phá Huế</a><a class="nl" href="#/cam-nang" data-r="/cam-nang">Cẩm nang du lịch</a><button type="button" id="sb" class="sbtn" aria-label="Tìm kiếm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg></button>
+<a class="btn mob" href="#/lien-he" data-r="/lien-he">Liên hệ</a>
+</nav>
+<div class="rt"><a class="btn" href="#/lien-he" data-r="/lien-he">Liên hệ</a><button id="burger" aria-expanded="false" aria-controls="nav" aria-label="Mở menu"><i></i><i></i><i></i></button></div>
+</div></header>
+<main id="main" tabindex="-1">
+
+<!-- TRANG CHỦ -->
+<div class="view" data-v="/">
+<section class="hero" id="hero" aria-label="Giới thiệu">
+<div class="countryside-image" aria-hidden="true"><img src="./banner-trang-chu.jpg" alt="" onerror="this.parentElement.style.display='none'"></div>
+<svg viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<rect x="-200" y="-200" width="1600" height="1100" fill="var(--sky)"/>
+<g class="ly" data-k="40"><circle cx="880" cy="250" r="90" fill="#C98A4B" opacity=".85"/></g>
+<g class="ly" data-k="60"><path d="M-150 430C200 360 340 400 520 380S900 330 1350 400V900H-150Z" fill="var(--hill1)"/></g>
+<g class="ly" data-k="95"><path d="M-150 520C250 450 450 520 700 480S1050 440 1350 490V900H-150Z" fill="var(--hill2)"/><path d="M830 478l42-28 42 28z" fill="var(--hill3)"/><rect x="840" y="478" width="64" height="22" fill="var(--hill3)"/></g>
+<g class="ly" data-k="150"><g class="kite"><g transform="translate(300 170) rotate(-18)"><path d="M0 -56L36 0L0 68L-36 0Z" fill="#8C3D0F"/><path d="M0 -56V68M-36 0H36" stroke="#F2EBDF" stroke-width="2"/></g><path d="M292 232C250 330 330 380 285 520" stroke="#F2EBDF" stroke-width="2" fill="none" opacity=".75"/></g></g>
+<g class="ly" data-k="190"><path d="M-150 610C300 560 600 620 900 580S1100 570 1350 590V900H-150Z" fill="var(--hill3)"/></g>
+</svg>
+<div class="wrap go">
+<h1>Có những miền ký ức, chỉ cần một chuyến đi để trở về.</h1>
+<p>Cùng Chạm Mây khám phá Huế theo một cách khác — chậm hơn, sâu hơn và gần gũi hơn với những điều bình dị làm nên tuổi thơ.</p>
+<div class="btns"><a class="btn" href="#/tour">Khám phá hành trình</a><a class="btn ghost" href="#/ca-nhan">Tự thiết kế chuyến đi</a></div>
+</div><div class="scrollhint" aria-hidden="true">Cuộn xuống</div></section>
+
+<section style="padding-bottom:0"><div class="wrap"><form id="quick" class="finder rv" aria-label="Tìm hành trình">
+<label class="f">Điểm đến<select id="q-d"><option>Huế</option></select></label>
+<label class="f">Số khách<input type="number" id="q-n" min="1" max="30" value="2"></label>
+<label class="f">Loại trải nghiệm<select id="q-t"><option value="">Tất cả</option><option value="lang-que">Làng quê</option><option value="tro-choi">Trò chơi dân gian</option><option value="thu-cong">Thủ công</option><option value="am-thuc">Ẩm thực</option><option value="ket-noi">Kết nối thế hệ</option></select></label>
+<button class="btn" type="submit">Tìm hành trình</button></form>
+<div id="q-out" class="msg" hidden></div></div></section>
+
+<section><div class="wrap two"><div class="rv">
+<h2>Bạn đã bao lâu rồi chưa sống như một đứa trẻ?</h2>
+<p>Ra đồng chân đất, bắt cá dưới mương, chơi ô ăn quan trên nền sân, thả diều đến khi gió lặng, rồi ngồi quanh mâm cơm quê. Đó là tuổi thơ của ông bà, bố mẹ — và Chạm Mây mời bạn sống lại một phiên bản của nó.</p>
+<a class="btn" href="#/tour">Khám phá tour 3 ngày 2 đêm</a></div>
+<div class="rv pc-wrap"><div class="flip" id="flip"><div class="fi"><div class="ff front" id="flip-f" title="Chạm để lật bưu thiếp"></div><div class="ff back"><input class="pc-title" id="pc-title" maxlength="40" value="Bưu thiếp gửi một thế hệ" placeholder="Tiêu đề bưu thiếp" aria-label="Tiêu đề bưu thiếp"><input class="pc-in" id="pc-to" maxlength="40" placeholder="Gửi tới (ông bà, ba mẹ, người thân…)" aria-label="Gửi tới"><textarea id="pc-msg" maxlength="260" placeholder="Con muốn nghe ông bà kể về trò chơi mà ngày xưa ông bà thích nhất…" aria-label="Lời nhắn"></textarea><input class="pc-in pc-from" id="pc-from" maxlength="40" placeholder="Người viết" aria-label="Người viết"><span class="st">Huế · Chạm Mây</span></div></div></div>
+<div class="pc-tools"><button type="button" class="btn ghost" id="pc-flip">Lật bưu thiếp</button><label class="btn ghost pc-up">Tải ảnh lên<input type="file" id="pc-file" accept="image/*" hidden></label><button type="button" class="btn" id="pc-dl">Tải bưu thiếp về</button></div>
+<p class="hint" id="pc-hint">Viết lời nhắn ở mặt sau, thêm ảnh của bạn ở mặt trước rồi tải về để gửi người thân.</p><button type="button" class="pc-reset" id="pc-reset" hidden>Dùng lại ảnh mẫu</button></div></div></section>
+
+<section class="dark"><div class="wrap">
+<div class="shead rv"><h2>Năm cách chạm vào tuổi thơ</h2><p>Mỗi combo là một lịch trình riêng, cùng một hành trình 3 ngày 2 đêm tại Huế. Bạn không cần tham gia tất cả.</p></div>
+<div class="cgrid rvg" id="home-combos"></div>
+<div style="text-align:center;margin-top:40px" class="rv"><a class="btn" style="background:var(--on);color:var(--tx);border-color:var(--on)" href="#/tour">Xem chi tiết các combo</a></div></div></section>
+
+<section><div class="wrap"><div class="shead rv"><h2>Một hành trình, ba nhịp</h2><p>Dù chọn combo nào, ba ngày vẫn đi theo một nhịp quen thuộc.</p></div>
+<div class="steps rvg">
+<div class="st3"><div class="nb">1</div><h3>Chạm vào Cố đô</h3><p>Đại Nội, chợ Đông Ba, sông Hương và những món đặc sản đầu tiên.</p></div>
+<div class="st3"><div class="nb">2</div><h3>Trở về tuổi thơ</h3><p>Một ngày ở làng quê Thanh Toàn, trải nghiệm theo chủ đề của combo bạn chọn.</p></div>
+<div class="st3"><div class="nb">3</div><h3>Mang ký ức trở về</h3><p>Viết “Bưu thiếp gửi một thế hệ”, chia sẻ và tổng kết hành trình.</p></div></div></div></section>
+
+<section style="background:var(--card)"><div class="wrap"><div class="shead rv"><h2 class="hue">Khám phá Huế</h2><p>Những trải nghiệm tiêu biểu trong hành trình của Chạm Mây. Chạm vào từng thẻ để đọc bài giới thiệu.</p></div><div class="pgrid rvg" id="home-hue"></div><div style="text-align:center;margin-top:40px" class="rv"><a class="btn" href="#/kham-pha-hue">Xem tất cả địa điểm</a></div></div></section>
+
+<section id="tin-tuc" class="news" aria-labelledby="news-h"><div class="wrap">
+<div class="shead rv"><h2 id="news-h">Tin tức &amp; thông tin chuyến đi Huế</h2><p>Thời tiết Huế hôm nay và những bài viết đáng đọc từ các trang thông tin bên ngoài, giúp bạn chuẩn bị tốt hơn cho chuyến đi.</p></div>
+<div class="news-grid">
+<article class="wx rv" aria-labelledby="wx-h"><div class="wx-top"><h3 id="wx-h">Thời tiết Huế hôm nay</h3><span class="wx-date" id="wx-date"></span></div>
+<div id="wx-body" class="wx-body" aria-live="polite"><p class="note wx-load">Đang tải thời tiết…</p></div>
+<p class="note wx-src">Dữ liệu: <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo.com</a>. Chỉ mang tính tham khảo, hãy kiểm tra lại dự báo chính thức trước khi khởi hành.</p></article>
+<div class="news-list rvg" id="news-list"></div>
+</div>
+<p class="note rv news-note">Các bài viết thuộc quyền của trang nguồn, mở ở tab mới. Chạm Mây chỉ giới thiệu để bạn tham khảo, không sở hữu và không chịu trách nhiệm về nội dung bên ngoài.</p>
+</div></section>
+
+<section><div class="wrap why"><div class="rv"><h2>Vì sao chọn Chạm Mây?</h2><p>Chúng mình làm du lịch để bạn ngồi lại lâu hơn, nghe nhiều hơn và mang về những điều không mua được.</p><a class="btn ghost dk" href="#/ve-cham-may">Về Chạm Mây</a></div>
+<ul class="values rvg">
+<li class="tilt" data-t="4"><b>Văn hóa bản địa</b><span>Đi cùng người Huế, qua những điều họ quen làm mỗi ngày.</span></li>
+<li class="tilt" data-t="4"><b>Nhịp đi chậm</b><span>Ít điểm dừng hơn, nhiều thời gian ngồi lại hơn.</span></li>
+<li class="tilt" data-t="4"><b>Kết nối với con người</b><span>Chuyện đời thường nghe trực tiếp từ người dân.</span></li>
+<li class="tilt" data-t="4"><b>Tự tay trải nghiệm</b><span>Làm, chơi, nấu thay vì chỉ đứng xem.</span></li>
+<li class="tilt" data-t="4"><b>Ký ức mang dấu ấn riêng</b><span>Món đồ thủ công, tấm bưu thiếp viết tay mang về.</span></li></ul></div></section>
+
+<section style="background:var(--card);padding-block:clamp(48px,7vw,80px)"><div class="wrap"><div class="shead rv" style="margin-bottom:0"><h2>Câu chuyện khách hàng</h2><div class="msg" style="text-align:left">Chưa có đánh giá thật. Khu vực này sẽ hiển thị đánh giá của khách sau khi có chuyến đi đầu tiên — chúng mình không đăng đánh giá mẫu.</div></div></div></section>
+
+<section class="dark"><div class="wrap" style="text-align:center"><div class="rv"><h2 style="max-width:20ch;margin-inline:auto">Một phiên bản tuổi thơ đang chờ bạn trở lại.</h2>
+<p style="margin-inline:auto">Chọn một lịch trình có sẵn, hoặc tự viết lại hành trình theo cách của bạn.</p>
+<div class="btns" style="justify-content:center"><a class="btn" style="background:var(--on);color:var(--tx);border-color:var(--on)" href="#/tour">Chọn tour có sẵn</a><a class="btn ghost" href="#/ca-nhan">Tự thiết kế hành trình</a></div></div></div></section>
+</div>
+
+<!-- TOUR -->
+<div class="view" data-v="/tour">
+<div class="pagehead"><div class="wrap"><h1>Một chuyến đi. Năm cách trở về tuổi thơ.</h1><p>Khám phá Huế qua những trải nghiệm văn hóa, trò chơi dân gian và ký ức được truyền lại qua nhiều thế hệ.</p></div></div>
+<section><div class="wrap">
+<div class="filters rv" id="cf" role="group" aria-label="Lọc theo nhóm trải nghiệm"></div>
+<p class="note rv">Giá là giá dự kiến mỗi khách, tính theo hai khách một phòng. Giá và lịch vận hành được xác nhận khi tư vấn.</p>
+<div id="combos"></div><div id="cnone" class="msg" hidden>Không có combo phù hợp. <button class="btn ghost dk" id="cclear" style="padding:6px 16px">Xóa bộ lọc</button></div>
+</div></section>
+
+</div>
+
+<!-- DU LỊCH CÁ NHÂN -->
+<div class="view" data-v="/ca-nhan">
+<div class="pagehead"><div class="wrap"><h1>Tự viết hành trình của bạn</h1><p>Chọn những điều bạn muốn trải nghiệm, giá ước tính sẽ hiện ra sau khi bạn chọn hoạt động. Hành trình này vẫn có thể được viết lại.</p></div></div>
+<section><div class="wrap">
+<form id="planner-form">
+<fieldset class="rv"><legend>Thời lượng</legend><p class="dur">3 ngày 2 đêm tại Huế</p><input type="hidden" id="p-days" value="3"></fieldset>
+<fieldset class="rv"><legend>Chọn hoạt động</legend><div id="acts"></div></fieldset>
+<fieldset class="rv"><legend>Về chuyến đi</legend><div class="row">
+<label class="f">Ngày bắt đầu<input type="date" id="p-date"></label>
+<label class="f">Số khách<input type="number" id="p-n" min="1" max="30" value="2"></label>
+<label class="f">Nhịp độ<select id="pace"><option value="5">Thư thả (khoảng 5 giờ hoạt động/ngày)</option><option value="7" selected>Cân bằng (khoảng 7 giờ)</option><option value="9">Năng động (khoảng 9 giờ)</option></select></label></div></fieldset>
+<div id="live" class="est live" aria-live="polite" hidden></div>
+<button class="btn" type="submit">Tạo hành trình của tôi</button>
+</form>
+<div id="pmsg" role="status"></div><div id="plan" aria-live="polite"></div></div></section></div>
+
+<!-- VỀ CHẠM MÂY -->
+<div class="view" data-v="/ve-cham-may">
+<div class="pagehead"><div class="wrap"><h1>Chạm vào những điều bình dị, tìm lại những điều quý giá.</h1><p>Chạm Mây làm du lịch trải nghiệm văn hóa, đi chậm và gần với đời sống địa phương.</p></div></div>
+<section><div class="wrap two"><div class="rv"><h2>Câu chuyện ra đời</h2><div class="msg">Phần này cần bạn bổ sung: lý do thành lập, con người, thời điểm bắt đầu. Chúng mình không tự viết lịch sử hay số liệu.</div><h2 style="margin-top:1.2em">Đi chậm, cảm nhận sâu, kết nối thật</h2><p>Slow travel với Chạm Mây là ít điểm dừng hơn, nhiều thời gian ngồi lại hơn, và để người địa phương dẫn bạn vào nhịp sống của họ.</p></div><div class="art tilt rv" id="about-art" data-t="7"></div></div></section>
+<section style="background:var(--card)"><div class="wrap"><div class="shead rv"><h2>“Một phiên bản tuổi thơ” nghĩa là gì?</h2><p>Là sống lại những việc ông bà, bố mẹ từng làm khi còn nhỏ: ra đồng, bắt cá, chơi trò dân gian, thả diều, viết một tấm bưu thiếp gửi người thân. Mỗi hoạt động là một mảnh ký ức được đánh thức.</p></div><ul class="values rvg" style="max-width:860px;margin:auto"><li><b>Văn hóa bản địa</b><span>Trải nghiệm cùng người dân địa phương.</span></li><li><b>Tính chân thực</b><span>Hoạt động đời thường, không dàn dựng.</span></li><li><b>Trải nghiệm tương tác</b><span>Bạn làm, bạn chơi, bạn nấu.</span></li><li><b>Kết nối thế hệ</b><span>Người lớn kể, người trẻ nghe và cùng chơi.</span></li></ul></div></section>
+<section><div class="wrap"><div class="shead rv"><h2>Cách Chạm Mây xây một hành trình</h2><p>Chúng mình chọn hoạt động theo chủ đề, sắp xếp thành nhịp thư thả có giờ nghỉ, rồi điều chỉnh theo nhóm khách. Thời gian cụ thể được xác nhận trước khi chuyến đi diễn ra.</p></div><h2 class="rv" style="text-align:center">Hình ảnh</h2><div class="gal rvg" id="gal"></div><div class="btns rv" style="margin-top:40px;justify-content:center"><a class="btn" href="#/tour">Xem tour 3N2Đ</a><a class="btn ghost dk" href="#/ca-nhan">Tự thiết kế chuyến đi</a></div></div></section></div>
+
+<!-- KHÁM PHÁ HUẾ -->
+<div class="view" data-v="/kham-pha-hue">
+<div class="pagehead"><div class="wrap"><h1>Huế — nơi thời gian trôi chậm hơn một nhịp.</h1><p>Huế không chỉ để tham quan, mà còn là nơi lưu giữ ký ức. Chọn một địa điểm để đọc bài giới thiệu.</p></div></div>
+<section><div class="wrap"><div class="pgrid rvg" id="places" style="margin-top:20px"></div>
+<h2 class="rv" style="margin-top:70px;text-align:center">Huế theo cách của bạn</h2><div class="chips rv" style="justify-content:center"><a class="chip" href="#/ca-nhan">Văn hóa: Đại Nội</a><a class="chip" href="#/ca-nhan">Làng quê: làm nông, bắt cá</a><a class="chip" href="#/ca-nhan">Ẩm thực: bữa cơm quê</a><a class="chip" href="#/ca-nhan">Nghệ thuật: tranh dân gian</a><a class="chip" href="#/ca-nhan">Thư giãn: sông Hương</a></div></div></section></div>
+
+<!-- CẨM NANG DU LỊCH -->
+<div class="view" data-v="/cam-nang">
+<div class="pagehead" style="--page-banner:url('./banner-kham-pha-hue.jpg')"><div class="wrap"><h1>Cẩm nang du lịch Huế</h1><p>Kinh nghiệm chuẩn bị hành lý, chọn thời điểm, khám phá ẩm thực và trải nghiệm Huế theo nhịp chậm.</p></div></div>
+<section><div class="wrap"><div class="shead rv"><h2>Đi Huế có chuẩn bị</h2><p>Chạm Mây tổng hợp những hướng dẫn thực tế để bạn tự tin lên kế hoạch, chuẩn bị hành lý và tận hưởng Huế theo nhịp riêng.</p></div><div class="pgrid rvg" id="guides"></div><div class="msg rv" style="margin-top:34px"><b>Cần hỏi thêm trước chuyến đi?</b><p>Chạm Mây khuyên bạn kiểm tra thông tin gần ngày khởi hành và trao đổi với chúng mình nếu cần gợi ý lịch trình phù hợp.</p><a class="btn" href="https://www.facebook.com/chammaytravel" target="_blank" rel="noopener noreferrer">Nhắn Chạm Mây trên Facebook</a></div></div></section></div>
+
+<!-- BÀI VIẾT CẨM NANG -->
+<div class="view" data-v="/guide-detail"><div id="guide-article"></div></div>
+
+<!-- TRANG CON ĐỊA ĐIỂM -->
+<div class="view" data-v="/place"><div class="pd"><div class="wrap" id="place-box"></div></div></div>
+
+<!-- TRANG CHÍNH SÁCH -->
+<div class="view" data-v="/policy"><div class="pagehead"><div class="wrap"><h1 id="pol-h"></h1><p id="pol-p"></p></div></div><section><div class="wrap pol"><nav id="pol-nav" aria-label="Các chính sách"></nav><div id="pol-body"></div></div></section></div>
+
+<!-- ĐÁNH GIÁ -->
+<div class="view" data-v="/danh-gia">
+<div class="pagehead"><div class="wrap"><h1>Đánh giá từ khách đi cùng Chạm Mây</h1><p>Chỉ hiển thị đánh giá thật khi hệ thống có dữ liệu.</p></div></div>
+<section><div class="wrap two" style="align-items:start"><div><div class="row"><label class="f">Combo<select id="rf-c"></select></label><label class="f">Số sao<select id="rf-s"><option value="0">Tất cả</option><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></label></div><div id="rv-list"></div></div>
+<form id="rv-form" novalidate><h2>Viết đánh giá</h2><label class="f">Tên hiển thị<input type="text" id="r-name"><span class="err" id="re-name"></span></label><label class="f">Tour đã tham gia<select id="r-combo"></select></label><label class="f">Số sao<select id="r-star"><option value="">Chọn</option><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select><span class="err" id="re-star"></span></label><label class="f">Nội dung<textarea id="r-text" rows="5"></textarea><span class="err" id="re-text"></span></label><label class="opt"><input type="checkbox" id="r-ok">Mình đồng ý để Chạm Mây xem xét và hiển thị nội dung này.</label><span class="err" id="re-ok"></span><button class="btn" type="submit">Gửi đánh giá</button><div id="r-out" role="status"></div></form></div></section></div>
+
+<!-- LIÊN HỆ -->
+<div class="view" data-v="/lien-he">
+<div class="pagehead"><div class="wrap"><h1>Gửi Chạm Mây đôi lời</h1><p>Chúng mình sẽ tư vấn hành trình phù hợp với bạn.</p></div></div>
+<section><div class="wrap two" style="align-items:start"><form id="cf-form" novalidate class="rv">
+<label class="f">Họ và tên<input type="text" id="c-name" autocomplete="name"><span class="err" id="e-name"></span></label>
+<label class="f">Email<input type="email" id="c-mail" autocomplete="email"><span class="err" id="e-mail"></span></label>
+<label class="f">Số điện thoại<input type="tel" id="c-tel" autocomplete="tel"><span class="err" id="e-tel"></span></label>
+<label class="f">Loại yêu cầu<select id="c-type"><option value="ask">Xin tư vấn</option><option value="book">Yêu cầu đặt tour</option></select></label><div class="row"><label class="f">Ngày dự kiến<input type="date" id="c-date"></label><label class="f">Số khách<input type="number" id="c-n" min="1" max="30" value="2"></label></div><label class="f">Combo quan tâm<select id="c-combo"></select></label>
+<label class="f">Nội dung cần tư vấn<textarea id="c-msg" rows="6"></textarea><span class="err" id="e-msg"></span></label>
+<button class="btn" type="submit">Gửi yêu cầu tư vấn</button><div id="c-out" role="status"></div></form>
+<div class="rv"><h2>Thông tin liên hệ</h2><p class="note">Thông tin liên hệ chính thức sẽ được cập nhật tại cấu hình website.</p>
+<p>Email: <span id="ct-mail"></span><br>Điện thoại: <span id="ct-tel"></span><br>Địa chỉ: <span id="ct-addr"></span><br>Facebook: <span id="ct-fb"></span></p></div></div></section></div>
+</main>
+
+<dialog id="sd" aria-label="Tìm kiếm"><label class="f">Tìm tour, hoạt động, địa điểm, chính sách<input type="text" id="sq" autocomplete="off"></label><div id="sr" style="margin-top:10px"><p class="note">Thử: ô ăn quan, thả diều, Đại Nội, làng quê, hoàn tiền.</p></div><button class="btn ghost dk" style="margin-top:14px" type="button" id="sx">Đóng</button></dialog>
+<dialog id="lb" aria-label="Xem ảnh"><div id="lb-i"></div><p id="lb-c" class="note"></p><div class="btns"><button class="btn ghost dk" type="button" id="lb-p">Ảnh trước</button><button class="btn ghost dk" type="button" id="lb-n">Ảnh sau</button><button class="btn" type="button" id="lb-x">Đóng</button></div></dialog>
+
+<footer><div class="wrap"><div class="cols">
+<div class="footer-brand"><img class="brand-logo footer-logo" width="76" height="76" alt="Logo Chạm Mây Travel" loading="lazy" decoding="async"><h3>CHẠM MÂY TRAVEL</h3><p>Chạm vào miền ký ức, tìm về những điều nguyên bản.</p><h3>Liên hệ</h3><ul class="footer-contact"><li><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&query=79+Duong+Ho+Tung+Mau+Tu+Liem+Ha+Noi" target="_blank" rel="noopener noreferrer">79 Đ. Hồ Tùng Mậu, Từ Liêm, Hà Nội</a></li><li><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg><a href="mailto:chammaytravel@gmail.com">chammaytravel@gmail.com</a></li><li><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h3l2 5-2 1.5a15 15 0 0 0 4.5 4.5L16 12l5 2v3c0 1.1-.9 2-2 2C10 19 5 14 5 5c0-1.1.9-2 2-2Z"/></svg><a href="tel:0967760589">0967 760 589</a></li></ul><h3 class="soc-h">Mạng xã hội</h3><div id="f-social" class="soc-list"></div></div>
+<div><h3>Khám phá</h3><ul><li><a href="#/">Trang chủ</a></li><li><a href="#/ca-nhan">Du lịch cá nhân</a></li><li><a href="#/ve-cham-may">Về Chạm Mây</a></li><li><a href="#/kham-pha-hue">Khám phá Huế</a></li><li><a href="#/cam-nang">Cẩm nang du lịch</a></li><li><a href="#/danh-gia">Đánh giá</a></li><li><a href="#/lien-he">Liên hệ</a></li></ul></div>
+<div><h3>Chính sách</h3><ul id="f-pol"></ul></div>
+<div><h3>Nhận tin</h3><form id="news"><label class="f" style="color:var(--on)">Email<input type="email" id="n-mail" style="background:var(--bg)"></label><button class="btn" style="margin-top:8px" type="submit">Đăng ký</button><div id="n-out" role="status" style="margin-top:8px;font-size:14px"></div></form></div>
+</div><div class="fb"><p>© <span id="yr"></span> CHẠM MÂY TRAVEL. All rights reserved.</p></div><p class="fb-note">ĐỀ TÀI PHỤC VỤ CHO HỌC PHẦN MARKETING SỐ CỦA SINH VIÊN, KHÔNG CÓ XUNG ĐỘT VỀ NỘI DUNG CŨNG NHƯ TRANH CHẤP VỚI CÁC THƯƠNG HIỆU, MỤC TIÊU PHI LỢI NHUẬN.</p></div></footer>
+
+<!-- Supabase JS v2 -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  // Project URL: dùng URL gốc, không thêm /rest/v1/
+  const SUPABASE_URL = "https://jwnkzjhvffmzyemhxbrv.supabase.co";
+  const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_seam8UxeYM0NHxfSB58Cqg_njLOs5cD";
+  const supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_PUBLISHABLE_KEY
+  );
+</script>
+
+<script>
+const CONTACT={email:"chammaytravel@gmail.com",tel:"0967760589",addr:"79 Đ. Hồ Tùng Mậu, Từ Liêm, Hà Nội",fb:"https://www.facebook.com/chammaytravel"};
+/*  */
+/* ================= LOGO THƯƠNG HIỆU =================
+   Logo tròn đã tải lên cùng thư mục với index.html. Nếu biết chính xác tên file, điền vào LOGO_SRC (ví dụ "./logo-tron.png").
+   Để "" thì web tự thử một số tên/đuôi phổ biến (logo-tron, logo-tròn, logo; png, jpg, jpeg, webp) và chỉ hiện logo khi tìm thấy file. */
+const LOGO_SRC="";
+/* ================= TIN TỨC (trang chủ) =================
+   Mỗi bài là một đường dẫn tới trang bên ngoài (chỉ nhận https). Thêm, bớt hoặc đổi bài tại đây, không cần sửa giao diện. */
+const NEWS=[
+{tag:"Thời điểm đi",title:"Huế: thời điểm du lịch theo thời tiết và lịch lễ hội",desc:"Gợi ý nên đi Huế vào mùa nào, thời tiết từng mùa và các dịp lễ hội trong năm. Cập nhật 11/10/2026.",src:"vietnamtourism.com",url:"https://www.vietnamtourism.com/vi/hue-thoi-iem-du-lich-theo-thoi-tiet-va-lich-le-hoi"},
+{tag:"Địa điểm · Di sản",title:"Complex of Hué Monuments (Quần thể di tích Cố đô Huế)",desc:"Trang giới thiệu của UNESCO về quần thể di tích Cố đô Huế trong Danh sách Di sản Thế giới. Bài bằng tiếng Anh.",src:"whc.unesco.org",url:"https://whc.unesco.org/en/list/678/"},
+{tag:"Văn hóa",title:"Khám phá nghệ thuật Nhã nhạc cung đình Huế",desc:"Giới thiệu Nhã nhạc, loại hình âm nhạc cung đình gắn với Huế, và gợi ý nơi du khách có thể trải nghiệm. Bài bằng tiếng Anh.",src:"vietnam.travel",url:"https://vietnam.travel/vi/node/1598"},
+{tag:"Chi phí",title:"Vé tham quan di sản Huế: Đắt hay xứng đáng từng đồng?",desc:"Bài báo về mức giá vé tham quan di tích Huế, các ý kiến trái chiều và chính sách giảm giá. Đăng 15/08/2025.",src:"tuoitre.vn",url:"https://tuoitre.vn/ve-tham-quan-di-san-hue-dat-hay-xung-dang-tung-dong-20250814155742411.htm"},
+{tag:"Cẩm nang",title:"Cẩm nang du lịch Huế 2026 từ A-Z: di chuyển, ăn chơi, lưu trú...",desc:"Hướng dẫn tổng hợp về mùa đi, phương tiện, lưu trú, điểm tham quan và ẩm thực. Cập nhật 10/04/2026.",src:"vnexpress.net",url:"https://vnexpress.net/cam-nang-du-lich-hue-4126937.html"}
+];
+const IMG={
+  "dai-noi":"./tham-quan-dai-noi-hue.jpg",
+  "truong-tien-song-huong":"./dao-cau-truong-tien-va-song-huong.jpg",
+  "cho-dong-ba":"./kham-pha-cho-dong-ba.jpg",
+  "cau-ngoi-thanh-toan":"./cau-ngoi-thanh-toan.jpg",
+  "cho-que":"./kham-pha-cho-que.jpg",
+  "lam-nong":"./trai-nghiem-lam-nong-theo-mua.jpg",
+  "bat-ca":"./trai-nghiem-bat-ca-cung-nguoi-dan.jpg",
+  "com-que":"./di-cho-va-nau-com-que.jpg",
+  "tro-choi-dan-gian":"./choi-tro-choi-dan-gian.jpg",
+  "tha-dieu":"./tu-tay-trang-tri-va-tha-dieu.jpg",
+  "thu-cong":"./lam-hoa-giay-tranh-dan-gian-do-thu-cong.jpg",
+  "ke-chuyen-tuoi-tho":"./nghe-ke-chuyen-tuoi-tho.jpg",
+  "buu-thiep-gui-mot-the-he":"./viet-buu-thiep-gui-mot-the-he.jpg",
+  "am-thuc-hue":"./thuong-thuc-am-thuc-dac-san-hue.jpeg",
+  "thuyen-rong-ca-hue":"./di-thuyen-rong-va-nghe-ca-hue-tren-song-huong.jpg",
+  "home":"./banner-trang-chu.jpg",
+  "tour":"./banner-tour-3n2d.jpg",
+  "personal":"./banner-du-lich-ca-nhan.jpg",
+  "about":"./banner-ve-cham-may.jpg",
+  "explore":"./banner-kham-pha-hue.jpg"
+};
+const GROUPS={A:"Khám phá Huế",B:"Tuổi thơ làng quê",C:"Trò chơi dân gian",D:"Sáng tạo và kết nối"};
+const TAGS={"lang-que":"Làng quê","tro-choi":"Trò chơi dân gian","thu-cong":"Thủ công","am-thuc":"Ẩm thực","ket-noi":"Kết nối thế hệ"};
+/* ================= MẠNG XÃ HỘI: chỉnh URL tại đây =================
+   Dán đường dẫn https:// thật của từng kênh. Để "" nếu chưa có (sẽ không hiện liên kết).
+   Ví dụ: facebook:"https://www.facebook.com/ten-trang" */
+const SOCIAL_LINKS={
+  facebook:"https://www.facebook.com/chammaytravel",
+  tiktok:"",
+  instagram:"",
+  youtube:""
+};
+/* ================================================================== */
+const SOCIAL_META={
+facebook:{n:"Facebook",d:["facebook.com","fb.com","fb.me"],i:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8.5h3V4.5h-3a4 4 0 0 0-4 4v2.5H7v4h3V21h4v-6h3l1-4h-4V8.8c0-.2.1-.3.3-.3z"/></svg>'},
+tiktok:{n:"TikTok",d:["tiktok.com"],i:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3v11.5a4 4 0 1 1-4-4M15 3c.3 2.6 2 4.4 5 4.7"/></svg>'},
+instagram:{n:"Instagram",d:["instagram.com"],i:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg>'},
+youtube:{n:"YouTube",d:["youtube.com","youtu.be"],i:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.5 9.5v5l4.5-2.5z"/></svg>'}};
+/* Chỉ nhận https và đúng tên miền của nền tảng; sai thì bỏ qua */
+const socialUrl=k=>{const raw=String(SOCIAL_LINKS[k]||"").trim();if(!raw)return"";try{const u=new URL(raw),h=u.hostname.toLowerCase().replace(/^www\./,"");return u.protocol==="https:"&&SOCIAL_META[k].d.some(d=>h===d||h.endsWith("."+d))?u.href:""}catch(e){return""}};
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const num=n=>String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g,".");
+const rng=(lo,hi,f)=>lo===0&&hi===0?(f||"Miễn phí"):(lo===hi?num(lo*1000):num(lo*1000)+"–"+num(hi*1000))+" VNĐ";
+const fmt=t=>{const h=Math.floor(t),m=Math.round((t-h)*60);return String(h).padStart(2,"0")+":"+String(m).padStart(2,"0")};
+
+/* Hình minh họa SVG theo chủ đề */
+const MOT={
+gate:'<rect x="110" y="170" width="180" height="70" fill="var(--hill3)"/><path d="M92 172h216l-26-30H118z" fill="var(--ac)"/><path d="M130 142h140l-18-24H148z" fill="var(--ac2)"/><path d="M170 240v-38a30 30 0 0 1 60 0v38z" fill="var(--sky)"/><path d="M88 176h224" stroke="var(--on)" stroke-width="3"/>',
+bridge:'<path d="M20 190h360" stroke="var(--hill3)" stroke-width="8"/><g fill="none" stroke="var(--hill3)" stroke-width="5"><path d="M40 190q35-50 70 0M110 190q35-50 70 0M180 190q35-50 70 0M250 190q35-50 70 0"/></g><path d="M0 235q25-8 50 0t50 0t50 0t50 0t50 0t50 0t50 0t50 0t50 0" stroke="var(--on)" stroke-width="2" fill="none" opacity=".6"/>',
+ngoi:'<path d="M40 215h320" stroke="var(--hill3)" stroke-width="10"/><rect x="110" y="172" width="180" height="43" fill="var(--hill3)"/><path d="M92 174q108-72 216 0z" fill="var(--ac)"/><path d="M130 215v-24h140v24" fill="none" stroke="var(--on)" stroke-width="3"/>',
+market:'<path d="M60 200a45 30 0 0 1 90 0z" fill="var(--ac)"/><path d="M165 195a45 30 0 0 1 90 0z" fill="var(--hill3)"/><path d="M270 200a45 30 0 0 1 90 0z" fill="var(--ac2)"/><g stroke="var(--hill3)" stroke-width="3"><path d="M105 200v45M210 195v50M315 200v45"/></g><g fill="#C98A4B"><ellipse cx="85" cy="248" rx="20" ry="8"/><ellipse cx="190" cy="248" rx="20" ry="8"/><ellipse cx="335" cy="248" rx="20" ry="8"/></g>',
+farm:'<path d="M0 225l400-20M0 240l400-20M0 255l400-20" stroke="var(--on)" stroke-width="2" opacity=".5"/><path d="M165 180L220 126 275 180z" fill="#C98A4B"/><path d="M178 180h84" stroke="var(--ac2)" stroke-width="3"/>',
+fish:'<path d="M0 232q25-10 50 0t50 0t50 0t50 0t50 0t50 0t50 0t50 0" stroke="var(--on)" stroke-width="2.5" fill="none" opacity=".7"/><g transform="translate(200 190)"><ellipse rx="42" ry="20" fill="#C98A4B"/><path d="M38 0l30-22v44z" fill="#C98A4B"/><circle cx="-22" cy="-4" r="3.5" fill="var(--hill3)"/></g>',
+cook:'<path d="M140 190h120a60 55 0 0 1-120 0z" fill="var(--on)"/><path d="M130 190h140" stroke="var(--ac)" stroke-width="5"/><g fill="none" stroke="var(--on)" stroke-width="3" opacity=".8"><path d="M180 175q-12-16 0-30t0-26M220 175q-12-16 0-30t0-26"/></g><path d="M265 150l-60 40M275 156l-60 40" stroke="var(--hill3)" stroke-width="4"/>',
+games:'<rect x="90" y="150" width="220" height="90" fill="var(--hill3)"/><path d="M200 150v90M90 195h220" stroke="var(--on)" stroke-width="3"/><g fill="var(--on)"><circle cx="140" cy="172" r="7"/><circle cx="156" cy="176" r="7"/><circle cx="245" cy="218" r="7"/><circle cx="262" cy="214" r="7"/><circle cx="250" cy="172" r="7"/></g>',
+kite:'<g transform="translate(205 95) rotate(-14)"><path d="M0-62L40 0 0 78-40 0z" fill="var(--ac)"/><path d="M0-62V78M-40 0H40" stroke="var(--on)" stroke-width="2.5"/></g><path d="M196 172c-30 40 30 60-6 100" stroke="var(--on)" stroke-width="2.5" fill="none" opacity=".8"/>',
+craft:'<g transform="translate(200 160)"><g fill="var(--ac)"><circle cx="0" cy="-34" r="22"/><circle cx="32" cy="-10" r="22"/><circle cx="20" cy="28" r="22"/><circle cx="-20" cy="28" r="22"/><circle cx="-32" cy="-10" r="22"/></g><circle r="14" fill="#C98A4B"/></g><path d="M200 205v45" stroke="var(--hill3)" stroke-width="5"/>',
+story:'<g transform="translate(200 160) rotate(-8)"><rect x="-90" y="-60" width="180" height="120" fill="var(--on)"/><rect x="62" y="-48" width="20" height="26" fill="var(--ac)"/><path d="M-72-30h90M-72-10h90M-72 10h70M-72 30h50" stroke="var(--sub)" stroke-width="3"/></g>',
+tea:'<path d="M80 250V150M320 250V150" stroke="var(--hill3)" stroke-width="7"/><path d="M80 160q120 90 240 0" fill="none" stroke="var(--ac)" stroke-width="9"/><path d="M80 160q120 90 240 0" stroke="var(--on)" stroke-width="2" fill="none" stroke-dasharray="4 6"/>',
+food:'<path d="M110 200h180a90 52 0 0 1-180 0z" fill="var(--on)"/><g fill="#C98A4B"><ellipse cx="160" cy="190" rx="26" ry="14"/><ellipse cx="205" cy="184" rx="26" ry="14"/><ellipse cx="248" cy="192" rx="26" ry="14"/></g>',
+boat:'<path d="M0 238q25-10 50 0t50 0t50 0t50 0t50 0t50 0t50 0t50 0" stroke="var(--on)" stroke-width="2.5" fill="none" opacity=".7"/><path d="M90 215q110 30 220 0l-14-30H108z" fill="var(--ac)"/><path d="M300 190q30-20 10-50" stroke="var(--ac)" stroke-width="6" fill="none"/><path d="M150 185v-45l55 30z" fill="var(--on)"/><circle cx="130" cy="170" r="8" fill="#C98A4B"/>'};
+const scene=(k,i=0)=>`<svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="300" fill="var(--sky)"/><circle cx="${300-(i%4)*30}" cy="${64+(i%3)*10}" r="${32+(i%3)*4}" fill="#C98A4B" opacity=".85"/><path d="M-10 190C60 150 130 180 200 160S340 140 410 170V310H-10z" fill="var(--hill1)"/><path d="M-10 225C80 195 160 230 260 205S370 195 410 210V310H-10z" fill="var(--hill2)"/>${MOT[k]||""}<path d="M-10 268C100 250 220 276 410 255V310H-10z" fill="var(--hill3)"/></svg>`;
+/* Một số trình duyệt/GitHub Pages có thể không tìm thấy ảnh nếu phần mở rộng tên file khác.
+   Ảnh thuyền rồng được thử lần lượt theo các tên phổ biến trước khi dùng hình minh họa dự phòng. */
+const IMG_FALLBACKS={
+  "thuyen-rong-ca-hue":[
+    "./di-thuyen-rong-va-nghe-ca-hue-tren-song-huong.jpeg",
+    "./di-thuyen-rong-va-nghe-ca-hue-tren-song-huong.png",
+    "./di-thuyen-rong-va-nghe-ca-hue-tren-song-huong.JPG",
+    "./di-thuyen-rong-va-nghe-ca-hue-tren-song-huong-1.jpg",
+    "./di-thuyen-rong-nghe-ca-hue-tren-song-huong.jpg"
+  ]
+};
+const imgMarkup=(slug,alt="")=>`<img src="${IMG[slug]}" data-img-key="${slug}" data-img-try="0" alt="${alt}" loading="lazy">`;
+const pic=(slug,k,i)=>IMG[slug]?imgMarkup(slug,slug==="thuyen-rong-ca-hue"?"Đi thuyền rồng và nghe ca Huế trên sông Hương":""):scene(k,i);
+/* Thử các phần mở rộng/tên thay thế nếu tệp ảnh chính không tồn tại. */
+document.addEventListener("error",e=>{
+  const im=e.target;
+  if(!(im instanceof HTMLImageElement)||!im.dataset.imgKey)return;
+  const candidates=IMG_FALLBACKS[im.dataset.imgKey]||[];
+  const idx=Number(im.dataset.imgTry||0);
+  if(idx<candidates.length){im.dataset.imgTry=String(idx+1);im.src=candidates[idx];return;}
+  if(im.dataset.imgKey==="thuyen-rong-ca-hue"){
+    const wrap=im.parentElement;
+    if(wrap){wrap.classList.add("image-missing");wrap.setAttribute("data-image-note","Ảnh thuyền rồng chưa tải được — kiểm tra tên tệp trên GitHub");}
+    console.warn("Không tải được ảnh thuyền rồng. Hãy kiểm tra tên file trong repository:",im.currentSrc||im.src);
+  }
+},true);
+
+/* Hoạt động: id, tên, nhóm, giờ, mô tả, giá thấp, giá cao (nghìn VNĐ/người), ghi chú nếu 0 */
+const A=[
+["dainoi","Đại Nội Huế","A",3,"Dạo qua kinh thành triều Nguyễn.",200,270],
+["dongba","Chợ Đông Ba","A",1.5,"Chợ trung tâm của Huế.",0,0,"Miễn phí vào cửa"],
+["huong","Sông Hương và cầu Trường Tiền","A",1.5,"Đi bộ ven sông lúc chiều xuống.",0,0,"Miễn phí"],
+["ngoi","Cầu Ngói Thanh Toàn","A",1.5,"Cây cầu mái ngói giữa đồng.",50,80],
+["amthuc","Thưởng thức ẩm thực đặc sản Huế","A",1.5,"Nếm các món đặc sản của xứ Huế.",0,0,"Đã gồm trong chi phí ăn uống"],
+["thuyen","Đi thuyền rồng và nghe ca Huế trên sông Hương","A",1.5,"Ngồi thuyền trên sông và nghe ca Huế (tùy chọn).",100,150],
+["chole","Đi chợ quê","B",1.5,"Chọn nguyên liệu cho bữa cơm.",50,80],
+["nong","Làm nông theo mùa","B",2.5,"Xuống ruộng cùng người dân.",120,180],
+["cabat","Bắt cá","B",1.5,"Bắt cá dưới mương, ao làng.",100,150],
+["comque","Chuẩn bị bữa cơm quê","B",2,"Nấu và ăn cùng chủ nhà.",100,150],
+["tra","Uống trà, nghe kể chuyện làng","B",1.5,"Nằm võng, nghe chuyện cũ.",30,40],
+["oan","Ô ăn quan","C",1,"Trò chơi của bố mẹ.",30,50],
+["day","Nhảy dây","C",1,"Nhảy dây theo nhóm.",20,30],
+["keo","Kéo co","C",1,"Hai đội, một sợi dây.",30,50],
+["de","Bịt mắt bắt dê","C",1,"Trò chơi nhóm nhiều tiếng cười.",30,50],
+["bao","Nhảy bao bố","C",1,"Chạy đua trong bao bố.",40,70],
+["dieu","Trang trí và thả diều","C",2,"Tự vẽ diều rồi thả.",100,150],
+["tc","Làm hoa giấy, đồ thủ công","D",2,"Làm một món mang về.",100,150],
+["tranh","Trải nghiệm tranh dân gian","D",2,"Làm quen chất liệu và màu truyền thống.",100,150],
+["banh","Workshop làm bánh Huế","D",2,"Tự tay làm món bánh truyền thống.",100,150],
+["gl","Giao lưu với người dân địa phương","D",1.5,"Trò chuyện về tuổi thơ.",0,0,"Đã gồm trong chi phí trải nghiệm"],
+["bt","Viết “Bưu thiếp gửi một thế hệ”","D",1,"Viết cho một người thân.",0,0,"Đã gồm trong vật phẩm hành trình"]
+].map(([id,n,g,h,d,lo,hi,f])=>({id,n,g,h,d,lo,hi,f}));
+const byId=Object.fromEntries(A.map(a=>[a.id,a]));
+const sum=ids=>ids.reduce((s,i)=>s+byId[i].h,0);
+const aprice=a=>rng(a.lo,a.hi,a.f);
+
+/* 5 combo */
+const D1=["dainoi","dongba","huong","amthuc"];
+const CNOTE="Một số hoạt động phụ thuộc thời tiết, mùa vụ, địa điểm và đối tác tại thời điểm tổ chức; Chạm Mây sẽ xác nhận hoặc đề xuất hoạt động thay thế khi tư vấn.";
+const COMBOS=[
+{id:"lang-que",n:"Miền quê thương nhớ",t:"Trở về nhịp sống thôn quê, tự tay làm những công việc bình dị và cảm nhận tuổi thơ của các thế hệ trước.",tag:"lang-que",sc:"farm",hl:"Làm nông, bắt cá và nấu cơm quê.",p:[4000,4800],days:[
+{t:"Chạm vào nhịp sống Cố đô",ids:["dainoi", "dongba", "huong", "amthuc"],a:["Tham quan Đại Nội Huế, tìm hiểu những câu chuyện lịch sử và văn hóa cung đình.", "Khám phá chợ Đông Ba, tìm hiểu nguyên liệu và đặc sản địa phương.", "Dạo bên sông Hương, check-in cầu Trường Tiền.", "Thưởng thức ẩm thực Huế và nhận thông tin về hành trình trải nghiệm làng quê."]},
+{t:"Một ngày làm người làng",ids:["ngoi", "chole", "nong", "cabat", "comque", "tra"],a:["Tham quan Cầu Ngói Thanh Toàn và không gian làng quê.", "Ghé chợ quê, tìm hiểu cách người dân lựa chọn nguyên liệu cho bữa cơm gia đình.", "Trải nghiệm làm nông hoặc chăm sóc vườn rau theo mùa.", "Thử hoạt động bắt cá tại địa điểm tổ chức phù hợp, có người hướng dẫn.", "Cùng chuẩn bị và thưởng thức bữa cơm quê với nguyên liệu địa phương.", "Nghỉ ngơi, uống trà, trò chuyện và tìm hiểu nếp sống truyền thống."]},
+{t:"Giữ lại hương vị quê nhà",ids:["gl", "bt"],a:["Tham gia hoạt động chăm sóc hoặc thu hoạch nông sản nếu đúng mùa.", "Giao lưu với người dân địa phương, nghe kể về cuộc sống và tuổi thơ ngày trước.", "Tham gia hoạt động viết bưu thiếp “Một điều tôi muốn kể về tuổi thơ”.", "Tổng kết hành trình, chụp ảnh lưu niệm và kết thúc tour."]}]},
+{id:"ve-tuoi-tho",n:"Vé về tuổi thơ",t:"Tạm rời màn hình điện thoại để trở lại những trò chơi dân gian vui nhộn của tuổi thơ.",tag:"tro-choi",sc:"kite",hl:"Trò chơi dân gian và thả diều.",p:[4000,4700],days:[
+{t:"Khởi đầu hành trình",ids:["dainoi", "dongba", "huong"],a:["Tham quan Đại Nội Huế, tìm hiểu nét văn hóa và lịch sử Cố đô.", "Khám phá chợ Đông Ba và thưởng thức món ăn địa phương.", "Dạo sông Hương, check-in cầu Trường Tiền.", "Làm quen với các thành viên trong đoàn và giới thiệu những trò chơi dân gian sẽ trải nghiệm."]},
+{t:"Sân chơi tuổi thơ",ids:["ngoi", "comque", "oan", "day", "keo", "de", "bao"],a:["Tham quan Cầu Ngói Thanh Toàn và khám phá không gian làng quê.", "Tham gia trò chơi ô ăn quan.", "Trải nghiệm nhảy dây, kéo co và nhảy bao bố.", "Thử trò bịt mắt bắt dê hoặc trò chơi tập thể phù hợp với địa điểm.", "Tham gia thử thách theo nhóm, tính điểm vui nhộn và nhận phần quà lưu niệm.", "Cùng thưởng thức bữa ăn địa phương, chia sẻ những trò chơi từng gắn bó với tuổi thơ của mỗi người."]},
+{t:"Thả ước mơ bay xa",ids:["dieu", "bt"],a:["Tham gia hoạt động trang trí hoặc làm diều đơn giản.", "Trải nghiệm thả diều tại địa điểm phù hợp với thời tiết và điều kiện an toàn.", "Chia sẻ kỷ niệm về trò chơi yêu thích nhất.", "Viết bưu thiếp lưu giữ một ký ức đáng nhớ và chụp ảnh kết thúc hành trình."]}]},
+{id:"ky-uc",n:"Ký ức trao tay",t:"Tự tay tạo nên một sản phẩm thủ công và hiểu hơn những giá trị văn hóa được truyền từ thế hệ này sang thế hệ khác.",tag:"thu-cong",sc:"craft",hl:"Làm đồ thủ công và tìm hiểu làng nghề truyền thống.",p:[4000,4900],days:[
+{t:"Khám phá dấu ấn Huế",ids:["dainoi", "dongba", "huong", "amthuc"],a:["Tham quan Đại Nội Huế và tìm hiểu những nét văn hóa truyền thống.", "Khám phá chợ Đông Ba, tìm hiểu các sản phẩm thủ công và đặc sản địa phương.", "Dạo sông Hương, check-in cầu Trường Tiền.", "Thưởng thức ẩm thực Huế và giới thiệu về những làng nghề sẽ khám phá."]},
+{t:"Chạm vào nghề xưa",ids:["ngoi", "gl", "tc"],a:["Tham quan Cầu Ngói Thanh Toàn hoặc làng nghề phù hợp với hoạt động thực tế.", "Gặp gỡ nghệ nhân hoặc người làm nghề truyền thống.", "Tìm hiểu nguyên liệu, dụng cụ và các công đoạn tạo ra sản phẩm.", "Trải nghiệm làm đồ thủ công phù hợp với địa điểm tổ chức, chẳng hạn hoa giấy, sản phẩm trang trí hoặc sản phẩm làng nghề.", "Tự tay hoàn thiện một sản phẩm để mang về làm kỷ niệm.", "Giao lưu, chia sẻ câu chuyện đằng sau sản phẩm với người hướng dẫn."]},
+{t:"Trao lại một ký ức",ids:["banh", "bt"],a:["Tham gia workshop làm bánh Huế hoặc hoạt động thủ công bổ sung nếu điều kiện tổ chức cho phép.", "Trưng bày, giới thiệu sản phẩm do mình thực hiện.", "Viết bưu thiếp kể lại trải nghiệm và giá trị văn hóa ấn tượng nhất.", "Chụp ảnh lưu niệm và kết thúc hành trình."]}]},
+{id:"huong-vi",n:"Hương vị quê nhà",t:"Khám phá Huế qua những phiên chợ quê, nguyên liệu dân dã và bữa cơm gợi nhớ căn bếp gia đình.",tag:"am-thuc",sc:"cook",hl:"Khám phá chợ địa phương và trải nghiệm nấu ăn.",p:[4000,4800],days:[
+{t:"Dạo chợ, nếm vị Huế",ids:["dainoi", "dongba", "huong", "amthuc"],a:["Tham quan Đại Nội Huế.", "Khám phá chợ Đông Ba, tìm hiểu các loại nguyên liệu, gia vị và đặc sản.", "Dạo sông Hương, check-in cầu Trường Tiền.", "Thưởng thức một số món ăn địa phương và tìm hiểu nét đặc trưng của ẩm thực Huế."]},
+{t:"Tự tay nấu bữa cơm quê",ids:["ngoi", "chole", "comque", "gl"],a:["Ghé Cầu Ngói Thanh Toàn và khám phá chợ quê.", "Tìm hiểu nguyên liệu theo mùa, cách lựa chọn thực phẩm tươi.", "Tham gia chuẩn bị nguyên liệu và sơ chế dưới sự hướng dẫn.", "Thực hành chế biến một món ăn truyền thống phù hợp với địa điểm tổ chức.", "Cùng nhau bày mâm và thưởng thức bữa cơm quê.", "Giao lưu, nghe kể về nếp sinh hoạt gia đình và những món ăn gắn với tuổi thơ."]},
+{t:"Ngọt ngào vị Huế",ids:["banh", "bt"],a:["Tham gia workshop làm bánh Huế hoặc tìm hiểu cách chế biến một món đặc sản địa phương.", "Tìm hiểu câu chuyện văn hóa đằng sau món ăn.", "Thưởng thức thành phẩm và chia sẻ món ăn gợi nhớ gia đình nhất.", "Viết bưu thiếp “Hương vị tuổi thơ của tôi”, chụp ảnh lưu niệm và kết thúc tour."]}]},
+{id:"ket-noi",n:"Tuổi thơ kết nối",t:"Kết nối các thế hệ qua những câu chuyện đời thường, trò chơi xưa và những ký ức tưởng như đã quên.",tag:"ket-noi",sc:"story",hl:"Kể chuyện liên thế hệ và kết nối cảm xúc.",p:[3900,4700],days:[
+{t:"Tìm về miền ký ức",ids:["dainoi", "dongba", "huong", "amthuc"],a:["Tham quan Đại Nội Huế, tìm hiểu những dấu ấn lịch sử.", "Khám phá chợ Đông Ba và nhịp sống địa phương.", "Dạo sông Hương, check-in cầu Trường Tiền.", "Thưởng thức món ăn Huế và tham gia hoạt động làm quen, chia sẻ một kỷ niệm tuổi thơ."]},
+{t:"Nghe chuyện người xưa",ids:["ngoi", "gl", "comque", "oan", "day", "keo"],a:["Tham quan Cầu Ngói Thanh Toàn và không gian làng quê.", "Giao lưu với người dân địa phương hoặc người lớn tuổi tham gia chương trình.", "Lắng nghe câu chuyện về trường lớp, công việc, gia đình và trò chơi ngày trước.", "Cùng thưởng thức bữa cơm quê trong không gian phù hợp.", "Tham gia trò chơi dân gian như ô ăn quan, nhảy dây hoặc kéo co.", "Chia sẻ sự khác biệt giữa tuổi thơ ngày trước và cuộc sống hiện tại."]},
+{t:"Gửi lời thương về nhà",ids:["bt"],a:["Tham gia một hoạt động trò chơi dân gian hoặc trải nghiệm văn hóa được lựa chọn.", "Viết bưu thiếp gửi ông bà, cha mẹ hoặc một người thân đã gắn với ký ức tuổi thơ.", "Chia sẻ điều mình học được từ câu chuyện của thế hệ trước.", "Chụp ảnh lưu niệm, tổng kết hành trình và kết thúc tour."]}]}];
+COMBOS.forEach(c=>c.days.forEach((d,i)=>d.n="Ngày "+(i+1)));
+
+/* Bảng dự toán (nghìn VNĐ/khách, 3N2Đ) — đơn vị 'n': theo đêm */
+const COST=[["Lưu trú hai đêm","Khách sạn hoặc homestay tại Huế tiêu chuẩn hai người một phòng",700,1000,"n"],["Ăn uống","Hai bữa sáng, khoảng năm bữa chính, nước uống và món ăn quà vặt địa phương",800,1000],["Phương tiện di chuyển tại Huế","Xe đưa đón trong ba ngày theo lịch trình từ trung tâm Huế đến Thanh Toàn và các điểm trải nghiệm",500,700],["Vé tham quan","Vé Đại Nội và các điểm tham quan có thu phí trong chương trình",250,350],["Trải nghiệm tại Thanh Toàn","Làm nông, bắt cá, dụng cụ trải nghiệm, hỗ trợ của người dân địa phương",400,600],["Hoạt động thủ công và nghề truyền thống","Nguyên liệu và chi phí hướng dẫn làm tranh hoặc sản phẩm thủ công",200,300],["Đại hội trò chơi tuổi thơ","Chuẩn bị dụng cụ cho kéo co, nhảy dây, ô ăn quan, bịt mắt bắt dê, nhảy bao bố và các thử thách nhóm",150,250],["Làm và thả diều","Diều, vật liệu trang trí và dụng cụ hỗ trợ",100,150],["Hướng dẫn viên và điều phối","Hướng dẫn viên theo đoàn và nhân sự hỗ trợ tổ chức các hoạt động trong ba ngày",300,450],["Bảo hiểm du lịch","Bảo hiểm cơ bản cho khách trong thời gian tham gia tour",50,100],["Vật phẩm hành trình","Thẻ nhiệm vụ, bưu thiếp, sổ hoặc phiếu hành trình, quà lưu niệm nhỏ",100,150],["Marketing và quản lý","Chi phí truyền thông, thiết kế nội dung, quản lý và vận hành tour được phân bổ trên mỗi khách",200,300],["Chi phí dự phòng","Dự phòng biến động giá, thời tiết, phát sinh hoạt động hoặc chi phí khác",250,350]];
+/* Chi phí nền (không gắn với hoạt động cụ thể) dùng cho trang Du lịch cá nhân */
+const BASE=COST.filter(r=>/^(Lưu trú|Ăn uống|Phương tiện|Hướng dẫn|Bảo hiểm|Vật phẩm|Marketing|Chi phí dự phòng)/.test(r[0]));
+
+/* Địa điểm Khám phá Huế */
+const PLACES=[
+{s:"dai-noi",n:"Tham quan Đại Nội Huế",k:"gate",a:["dainoi"],d:"Dạo qua kinh thành triều Nguyễn, nơi mở đầu hành trình ngày đầu tiên.",tip:"Đến vào buổi sáng, mang giày thoải mái, nón và nước uống.",
+ p:["Đại Nội là khu cung thành nằm trong Kinh thành Huế, nơi các vua triều Nguyễn từng làm việc và sinh hoạt. Đi qua Ngọ Môn, bạn bước vào một không gian của sân rộng, điện đài, hành lang và những khoảng vườn cổ. Quần thể di tích Cố đô Huế được UNESCO công nhận là Di sản Văn hóa Thế giới năm 1993.","Trong hành trình của Chạm Mây, Đại Nội là điểm mở đầu ngày thứ nhất. Chúng mình đi chậm, dừng lâu ở những góc yên tĩnh thay vì chạy theo thật nhiều điểm chụp ảnh, để bạn có thời gian nhìn mái ngói, hoa văn và nghe người dẫn kể về đời sống chốn cung đình.","Nên đến khi nắng còn dịu. Một số khu vực có thể đang trùng tu nên lộ trình cụ thể sẽ được hướng dẫn viên xác nhận trong ngày."]},
+{s:"truong-tien-song-huong",n:"Dạo cầu Trường Tiền và sông Hương",k:"bridge",a:["huong"],d:"Đi bộ ven sông lúc chiều xuống, ngắm cây cầu quen thuộc của Huế.",tip:"Đi vào cuối chiều để ngắm sông đổi màu và cầu lên đèn.",
+ p:["Sông Hương chảy chậm qua trung tâm Huế và là nhịp sống êm của cả thành phố. Cầu Trường Tiền bắc qua sông, nối hai bờ khu trung tâm, là một trong những hình ảnh quen thuộc nhất khi nhắc đến Huế.","Buổi chiều, cùng đi bộ dọc bờ sông, bạn sẽ gặp người ngồi câu, người tập thể dục, những chiếc thuyền chậm rãi qua lại. Đây là lúc để nghỉ chân sau một ngày tham quan, uống một ly nước và nhìn thành phố lên đèn.","Mang theo áo khoác mỏng vì gió sông có thể se lạnh. Hoạt động này miễn phí, bạn có thể ghép thêm chuyến thuyền rồng nghe ca Huế nếu muốn."]},
+{s:"cho-dong-ba",n:"Khám phá chợ Đông Ba",k:"market",a:["dongba"],d:"Ngôi chợ lớn bên bờ sông Hương, nơi nghe tiếng rao và nếm vị Huế.",tip:"Đến sớm để chợ còn đông vui và đồ ăn còn nóng.",
+ p:["Chợ Đông Ba là ngôi chợ lớn và quen thuộc của người Huế, nằm bên bờ sông Hương gần cầu Trường Tiền. Ở đây có đủ thứ: đồ khô, đặc sản, vải vóc, quà lưu niệm và những quầy ăn vặt bốc khói.","Chạm Mây mời bạn đi chợ như một người địa phương: hỏi tên món, thử một vài hương vị mới và nghe người bán kể về món mình làm. Đây cũng là điểm để bạn chọn vài món quà nhỏ mang về.","Hãy mang tiền lẻ và đi giày dễ di chuyển vì lối đi có thể đông và trơn. Giá món ăn vặt đã được tính trong chi phí ăn uống của chương trình."]},
+{s:"cau-ngoi-thanh-toan",n:"Cầu Ngói Thanh Toàn",k:"ngoi",a:["ngoi"],d:"Cây cầu mái ngói giữa đồng, cửa ngõ vào ngày về làng quê.",tip:"Đi vào buổi sáng, ánh sáng đẹp và làng còn yên.",
+ p:["Cầu Ngói Thanh Toàn là cây cầu có mái ngói nằm ở làng Thanh Toàn, cách trung tâm Huế không xa. Cầu được dựng từ thế kỷ XVIII, mái ngói che cả lối đi và chỗ ngồi nghỉ, từng là nơi người làng dừng chân trò chuyện.","Đây là điểm đến chính của ngày thứ hai. Từ cây cầu, bạn bước vào không gian ruộng rau, ao mương và những ngôi nhà vườn, nơi bắt đầu các trải nghiệm làm nông, bắt cá, nấu cơm quê hoặc trò chơi dân gian tùy combo.","Mang nón, kem chống nắng và dép dễ tháo. Một phần chi phí tham quan, đóng góp bảo tồn được tính trong giá dự kiến."]},
+{s:"cho-que",n:"Khám phá chợ quê",k:"market",a:["chole"],d:"Len qua các gian hàng, nghe tiếng rao và chọn nguyên liệu cho bữa cơm.",tip:"Đi cùng chủ nhà để được chỉ cách chọn đồ tươi.",
+ p:["Chợ quê nhỏ hơn chợ thành phố nhưng gần gũi hơn nhiều: vài gian rau, cá, thịt, bánh trái bày ngay trên nền đất hoặc những chiếc sạp thấp. Người bán và người mua thường quen mặt nhau.","Trong ngày ở Thanh Toàn, bạn cùng người dân đi chợ để chọn nguyên liệu cho bữa cơm. Việc hỏi giá, chọn rau, nghe vài câu chuyện chợ làng sẽ khiến bữa cơm sau đó có thêm ý nghĩa.","Hãy mang túi vải hoặc giỏ nếu có. Nguyên liệu bạn chọn sẽ được dùng trực tiếp trong bữa cơm quê."]},
+{s:"lam-nong",n:"Trải nghiệm làm nông theo mùa",k:"farm",a:["nong"],d:"Xuống ruộng cùng người dân, làm những việc của mùa vụ.",tip:"Mặc đồ gọn, mang thêm một bộ để thay.",
+ p:["Làm nông là phần ký ức quen thuộc của nhiều thế hệ ông bà, bố mẹ. Tùy mùa, bạn có thể gieo, tưới, nhổ cỏ hoặc thu hoạch rau cùng người dân địa phương, theo hướng dẫn trực tiếp của họ.","Mục tiêu không phải là làm cho xong, mà là cảm nhận: đất ẩm dưới chân, mùi cây cỏ và nhịp làm việc chậm. Công việc cụ thể sẽ phụ thuộc vào mùa vụ và thời tiết ngày hôm đó.","Nên mặc quần áo thoải mái, mang nón và nước uống. Dụng cụ và sự hỗ trợ của người dân đã nằm trong chi phí trải nghiệm tại Thanh Toàn."]},
+{s:"bat-ca",n:"Trải nghiệm bắt cá cùng người dân",k:"fish",a:["cabat"],d:"Bắt cá ở mương, ao làng như ngày xưa.",tip:"Mang đồ dự phòng và giữ điện thoại trong túi chống nước.",
+ p:["Bắt cá ở mương, ao là thú vui quen thuộc của trẻ con làng quê ngày xưa. Với sự hướng dẫn của người dân, bạn sẽ thử các cách bắt cá đơn giản ở những điểm nước nông và an toàn.","Cả nhóm cùng cười, cùng lội và cùng ngạc nhiên với từng con cá nhỏ. Thành quả có thể góp vào bữa cơm quê buổi trưa hoặc được thả lại tùy điều kiện thực tế.","An toàn luôn được đặt lên hàng đầu: hoạt động chỉ diễn ra ở nơi phù hợp và có người dân đi cùng. Hãy thông báo trước nếu bạn không thạo bơi hoặc đi cùng trẻ nhỏ."]},
+{s:"com-que",n:"Đi chợ và nấu cơm quê",k:"cook",a:["comque"],d:"Tự tay chọn đồ, vào bếp cùng chủ nhà rồi ngồi vào mâm cơm.",tip:"Hãy báo trước nếu bạn ăn chay hoặc có dị ứng thực phẩm.",
+ p:["Bữa cơm quê không cầu kỳ nhưng đủ đầy: rau vườn, cá, canh và vài món kho đậm đà. Bạn sẽ cùng chủ nhà nhóm bếp, sơ chế nguyên liệu và học một vài mẹo nhỏ trong nấu nướng.","Điều đáng nhớ nhất thường là lúc cả nhóm ngồi quanh mâm cơm, vừa ăn vừa nghe câu chuyện gia đình. Một bữa cơm chung là cách dễ nhất để thấy mình là một phần của nơi này.","Hãy cho chúng mình biết nhu cầu ăn uống trước chuyến đi để chuẩn bị phù hợp. Thực đơn có thể thay đổi theo mùa và nguyên liệu trong ngày."]},
+{s:"tro-choi-dan-gian",n:"Chơi trò chơi dân gian",k:"games",a:["oan","day","keo","de","bao"],d:"Ô ăn quan, nhảy dây, kéo co, bịt mắt bắt dê, nhảy bao bố.",tip:"Chọn trang phục dễ vận động và giày kín.",
+ p:["Trò chơi dân gian là phần tuổi thơ không cần đồ chơi đắt tiền: một sợi dây, một ô vuông vẽ trên đất, vài viên sỏi là đủ cho cả buổi chiều. Ô ăn quan, nhảy dây, kéo co, bịt mắt bắt dê và nhảy bao bố là những trò Chạm Mây giới thiệu trong chương trình.","Bạn sẽ chơi theo đội, cùng cười, cùng hồi hộp và có thể cùng chơi với người lớn tuổi để nghe họ kể luật chơi ngày xưa. Cuối buổi là những phần thử thách nhỏ và quà lưu niệm.","Các trò có thể điều chỉnh theo số lượng khách, độ tuổi và sức khỏe. Hãy cho chúng mình biết nếu trong nhóm có người lớn tuổi hoặc trẻ nhỏ."]},
+{s:"tha-dieu",n:"Tự tay trang trí và thả diều",k:"kite",a:["dieu"],d:"Vẽ chiếc diều của riêng mình rồi thả ra bãi đất rộng.",tip:"Thả diều hợp nhất vào buổi chiều có gió nhẹ.",
+ p:["Một chiếc diều giấy không chỉ là đồ chơi, nó là cách nhiều người lớn nhớ về những buổi chiều chạy theo gió. Bạn sẽ tự trang trí chiếc diều của mình, chọn màu, vẽ họa tiết và viết một dòng nhỏ lên cánh diều.","Sau đó, cả nhóm ra bãi đất rộng phù hợp để thả. Nếu gió yếu, chúng mình sẽ điều chỉnh thời gian hoặc địa điểm để bạn vẫn có một buổi thả diều trọn vẹn.","Hãy mang nón và nước. Dụng cụ, vật liệu trang trí được chuẩn bị sẵn, bạn có thể mang diều về làm kỷ niệm."]},
+{s:"thu-cong",n:"Làm hoa giấy, tranh dân gian, đồ thủ công",k:"craft",a:["tc","tranh"],d:"Làm một món mang về từ chất liệu truyền thống.",tip:"Chuẩn bị tâm thế kiên nhẫn, sản phẩm đẹp cần thời gian.",
+ p:["Hoa giấy, tranh dân gian và những món thủ công nhỏ đều bắt đầu từ chất liệu rất giản dị: giấy, màu, tre, vải. Bạn sẽ được nghệ nhân hoặc người địa phương hướng dẫn từng bước để hoàn thành một sản phẩm của riêng mình.","Không cần khéo tay. Điều chúng mình mong là bạn ngồi lại, nghe người làm nghề kể vì sao họ giữ nghề, và mang về một món có dấu tay của mình.","Loại sản phẩm cụ thể có thể thay đổi theo làng nghề và nghệ nhân tham gia chương trình. Nguyên liệu và chi phí hướng dẫn nằm trong giá dự kiến."]},
+{s:"ke-chuyen-tuoi-tho",n:"Nghe kể chuyện tuổi thơ",k:"tea",a:["tra","gl"],d:"Ông bà, bố mẹ kể lại tuổi thơ của họ, bên chén trà và chiếc võng.",tip:"Chuẩn bị vài câu hỏi để hỏi người lớn tuổi.",
+ p:["Có những câu chuyện chỉ nghe được khi ngồi cạnh người kể: chuyện đến trường, chuyện làm đồng, chuyện chơi trò gì sau giờ học. Buổi chiều ở làng quê là lúc phù hợp nhất để nằm võng, uống trà và lắng nghe.","Chạm Mây tạo không gian để người lớn tuổi và người trẻ trò chuyện thoải mái, không cần chuẩn bị kịch bản. Bạn có thể hỏi, ghi lại hoặc chỉ ngồi nghe.","Hãy mang theo một cuốn sổ nhỏ nếu bạn muốn ghi chép. Những câu chuyện này cũng là chất liệu cho tấm bưu thiếp bạn sẽ viết vào ngày cuối."]},
+{s:"buu-thiep-gui-mot-the-he",n:"Viết “Bưu thiếp gửi một thế hệ”",k:"story",a:["bt"],d:"Viết tay một tấm bưu thiếp gửi người thân.",tip:"Nghĩ trước người bạn muốn gửi và điều muốn nói.",
+ p:["“Bưu thiếp gửi một thế hệ” là hoạt động khép lại hành trình: bạn viết tay vài dòng gửi ông bà, bố mẹ hoặc một người bạn muốn cảm ơn. Chúng mình chuẩn bị bưu thiếp và bút để bạn viết ngay tại chỗ.","Sau những trải nghiệm trong ngày, lời viết thường chân thật hơn. Một câu cảm ơn, một ký ức nhỏ hoặc một lời hứa về lần gặp tới đều có giá trị.","Bạn có thể gửi bưu thiếp đi hoặc đem về tự trao tận tay. Chi phí bưu thiếp đã nằm trong vật phẩm hành trình."]},
+{s:"am-thuc-hue",n:"Thưởng thức ẩm thực đặc sản Huế",k:"food",a:["amthuc","banh"],d:"Nếm các món đặc sản của xứ Huế.",tip:"Báo trước nếu bạn có dị ứng hoặc ăn chay.",
+ p:["Ẩm thực Huế nổi tiếng với những món nhỏ, nêm nếm tinh tế và cách bày biện chăm chút. Trong hành trình, bạn sẽ nếm các món đặc sản địa phương ở những quán, chợ và cơ sở được chọn lọc.","Một số combo có thêm workshop làm bánh Huế hoặc chế biến món ăn truyền thống, để bạn không chỉ ăn mà còn hiểu cách món ăn được làm ra.","Thực đơn cụ thể sẽ thay đổi theo mùa và nhóm khách. Chi phí các bữa ăn nằm trong dự toán ăn uống; workshop làm bánh được tính riêng ở các combo có hoạt động này."]},
+{s:"thuyen-rong-ca-hue",n:"Đi thuyền rồng và nghe ca Huế trên sông Hương",k:"boat",a:["thuyen"],d:"Ngồi thuyền trên sông và nghe ca Huế.",tip:"Hoạt động tùy chọn, nên đặt trước khi đi.",
+ p:["Ca Huế là loại hình âm nhạc truyền thống của vùng đất này, thường được trình diễn với đàn tranh, đàn nguyệt, đàn nhị và giọng ca nhẹ nhàng. Nghe ca Huế trên thuyền giữa sông Hương vào buổi tối là trải nghiệm rất riêng của nơi đây.","Chuyến thuyền chậm, không vội, phù hợp để kết thúc một ngày tham quan. Bạn có thể ngồi lặng, uống trà và nghe tiếng đàn hòa với tiếng nước.","Đây là hoạt động tùy chọn, không nằm trong dự toán cơ bản của các combo. Lịch và chi phí thực tế sẽ được xác nhận khi tư vấn."]}
+];
+const pById=Object.fromEntries(PLACES.map(p=>[p.s,p]));
+const pAct=p=>p.a.map(i=>byId[i]);
+const pCombos=p=>COMBOS.filter(c=>c.days.some(d=>d.ids.some(i=>p.a.includes(i))));
+
+/* Chính sách */
+const POLS=[
+{s:"bao-mat",n:"Chính sách bảo mật",i:"Cách Chạm Mây thu thập, sử dụng và bảo vệ thông tin của bạn.",c:[
+["Thông tin chúng mình thu thập","Khi bạn điền biểu mẫu liên hệ, đặt tour hoặc đăng ký nhận tin, chúng mình có thể nhận họ tên, email, số điện thoại (không bắt buộc), ngày dự kiến, số khách và nội dung bạn viết. Lịch trình bạn tự thiết kế được tạo trong trình duyệt; khi gửi yêu cầu tư vấn, nội dung lịch trình sẽ được gửi cùng biểu mẫu liên hệ."],
+["Mục đích sử dụng","Thông tin chỉ dùng để tư vấn hành trình, xác nhận yêu cầu, liên hệ với bạn và cải thiện nội dung website. Chúng mình chỉ gửi tin khuyến mại khi bạn đã đăng ký nhận tin."],
+["Chia sẻ thông tin","Chúng mình không bán thông tin cá nhân. Thông tin chỉ được chia sẻ với đơn vị thực hiện chuyến đi như nơi lưu trú, xe đưa đón hoặc người dân tham gia chương trình, ở mức cần thiết và sau khi bạn đồng ý đặt tour."],
+["Lưu trữ và bảo mật","Thông tin được lưu trong thời gian cần thiết để phục vụ tư vấn và vận hành chuyến đi, cùng các biện pháp bảo vệ hợp lý. Không có hệ thống nào an toàn tuyệt đối, vì vậy hãy thận trọng khi chia sẻ thông tin nhạy cảm."],
+["Quyền của bạn","Bạn có quyền yêu cầu xem, chỉnh sửa hoặc xóa thông tin đã gửi, và rút lại đồng ý nhận tin bất cứ lúc nào. Hãy liên hệ qua trang Liên hệ."],
+["Gửi biểu mẫu và lưu trữ","Yêu cầu tư vấn/đặt tour được gửi đến hệ thống khi bạn xác nhận gửi thành công. Đăng ký nhận tin và đánh giá được lưu theo các bảng dữ liệu tương ứng. Lịch trình cá nhân được tạo tại trình duyệt; chỉ được gửi đến Chạm Mây khi bạn chủ động gửi yêu cầu tư vấn."]]},
+{s:"dieu-khoan",n:"Điều khoản sử dụng",i:"Những quy định khi bạn sử dụng website Chạm Mây Travel.",c:[
+["Phạm vi áp dụng","Điều khoản này áp dụng cho việc truy cập và sử dụng website, các công cụ tự thiết kế lịch trình và biểu mẫu trên website."],
+["Nội dung và hình ảnh","Nội dung giới thiệu hành trình mang tính tham khảo. Chương trình thực tế có thể điều chỉnh theo thời tiết, mùa vụ và điều kiện địa phương."],
+["Giá và thời lượng dự kiến","Giá và thời lượng hoạt động trên website là mức dự kiến cho mỗi khách, chưa phải báo giá chính thức. Giá cuối cùng được xác nhận khi tư vấn và ghi trong xác nhận đặt tour."],
+["Trách nhiệm của người dùng","Bạn cung cấp thông tin chính xác khi gửi yêu cầu và không sử dụng website vào mục đích trái pháp luật hoặc gây ảnh hưởng đến người khác."],
+["Quyền sở hữu nội dung","Nội dung, hình minh họa và thiết kế trên website thuộc về Chạm Mây Travel. Vui lòng không sao chép hoặc sử dụng lại cho mục đích thương mại khi chưa được đồng ý."],
+["Thay đổi điều khoản","Điều khoản có thể được cập nhật khi cần. Phiên bản mới có hiệu lực khi được đăng trên website."]]},
+{s:"dat-tour-thanh-toan",n:"Chính sách đặt tour và thanh toán",i:"Quy trình đặt tour, những gì đã bao gồm và cách thanh toán.",c:[
+["Quy trình đặt tour","Bạn gửi yêu cầu qua trang Liên hệ, Chạm Mây tư vấn và báo giá, bạn xác nhận lịch trình, sau đó thanh toán theo hướng dẫn trong xác nhận. Một yêu cầu đặt tour chỉ trở thành đặt chỗ khi có xác nhận từ Chạm Mây."],
+["Giá dự kiến và những gì đã bao gồm","Giá dự kiến mỗi khách gồm lưu trú tiêu chuẩn hai người một phòng, ăn uống theo chương trình, xe đưa đón tại Huế, vé tham quan trong chương trình, trải nghiệm và vật liệu hoạt động, hướng dẫn viên, bảo hiểm du lịch cơ bản và vật phẩm hành trình."],
+["Những khoản chưa bao gồm","Chi phí đi đến và rời Huế, chi tiêu cá nhân, đồ uống hoặc món ăn ngoài chương trình, hoạt động tùy chọn như thuyền rồng nghe ca Huế và phụ thu phòng đơn (nếu có) không nằm trong giá dự kiến."],
+["Phương thức thanh toán","Thông tin và phương thức thanh toán cụ thể sẽ được gửi riêng trong xác nhận đặt tour. Vui lòng không chuyển tiền qua kênh chưa được Chạm Mây xác nhận."],
+["Thay đổi thông tin","Nếu bạn muốn đổi ngày, số khách hoặc hoạt động, hãy liên hệ sớm. Chạm Mây sẽ cố gắng hỗ trợ tùy theo tình trạng chỗ ở và các đối tác tại thời điểm đó."]]},
+{s:"huy-hoan-tien",n:"Chính sách hủy và hoàn tiền",i:"Nguyên tắc khi bạn cần hủy, đổi tour hoặc khi chương trình có thay đổi.",c:[
+["Khi bạn cần hủy hoặc đổi tour","Hãy gửi yêu cầu hủy hoặc đổi qua email hoặc kênh liên hệ chính thức, càng sớm càng tốt. Mức hoàn tiền phụ thuộc vào thời điểm hủy và những khoản đã chi cho đối tác; mức cụ thể được ghi rõ trong xác nhận đặt tour."],
+["Khi thời tiết hoặc điều kiện thực tế thay đổi","Một số hoạt động như làm nông, thả diều hoặc bắt cá phụ thuộc vào thời tiết. Khi cần, Chạm Mây sẽ đề xuất hoạt động thay thế phù hợp hoặc điều chỉnh thứ tự trong lịch trình."],
+["Khi Chạm Mây phải hủy tour","Nếu chương trình không thể diễn ra, bạn được lựa chọn đổi sang ngày khác hoặc nhận lại các khoản đã thanh toán cho phần chưa thực hiện."],
+["Thời gian xử lý hoàn tiền","Thời gian và hình thức hoàn tiền được thông báo trong xác nhận đặt tour và qua kênh liên hệ chính thức."],
+["Trường hợp bất khả kháng","Với thiên tai, dịch bệnh hoặc quyết định của cơ quan chức năng, hai bên sẽ cùng trao đổi để tìm phương án hợp lý nhất."]]},
+{s:"an-toan-bao-hiem",n:"Chính sách an toàn và bảo hiểm",i:"Những điều Chạm Mây và bạn cùng lưu ý để chuyến đi trọn vẹn và an toàn.",c:[
+["Bảo hiểm du lịch","Giá dự kiến đã gồm bảo hiểm du lịch cơ bản cho khách trong thời gian tham gia tour. Phạm vi bảo hiểm cụ thể được thông báo trong xác nhận đặt tour."],
+["An toàn trong hoạt động","Các hoạt động ngoài trời như làm nông, bắt cá, thả diều và trò chơi dân gian được tổ chức ở nơi phù hợp, có hướng dẫn viên và người dân địa phương đi cùng. Vui lòng làm theo hướng dẫn trong từng hoạt động."],
+["Sức khỏe và nhu cầu đặc biệt","Hãy báo trước nếu bạn đi cùng trẻ nhỏ, người lớn tuổi, có hạn chế vận động, dị ứng thực phẩm hoặc nhu cầu ăn uống riêng để chúng mình chuẩn bị phù hợp."],
+["Trang phục và vật dụng","Nên mang giày dễ di chuyển, nón, kem chống nắng, áo mưa mỏng và một bộ quần áo dự phòng cho các hoạt động ngoài đồng."],
+["Tài sản cá nhân","Bạn nên tự giữ gìn giấy tờ, điện thoại và tài sản có giá trị. Chạm Mây sẽ hỗ trợ trong khả năng khi có sự cố."]]}];
+const polBy=Object.fromEntries(POLS.map(p=>[p.s,p]));
+
+/* Render chung */
+const cardMini=(c,i)=>`<a class="cm tilt" data-t="6" href="#/tour/${c.id}"><div class="im pop">${pic(({"lang-que":"cau-ngoi-thanh-toan","ve-tuoi-tho":"tro-choi-dan-gian","ky-uc":"thu-cong","huong-vi":"am-thuc-hue","ket-noi":"ke-chuyen-tuoi-tho"})[c.id]||"cau-ngoi-thanh-toan",c.sc,i)}</div><div class="bd"><span class="pr">Giá ước tính: ${rng(c.p[0],c.p[1])}/người</span><h3>${c.n}</h3><p class="hl">${c.hl}</p></div></a>`;
+const placeCard=(p,i)=>`<a class="pc tilt" data-t="6" href="#/kham-pha-hue/${p.s}"><div class="im">${pic(p.s,p.k,i)}</div><div class="bd"><h3>${p.n}</h3><p>${p.d}</p><span class="more">Đọc bài giới thiệu</span></div></a>`;
+$("#home-combos").innerHTML=COMBOS.map(cardMini).join("");
+$("#home-hue").innerHTML=["dai-noi","truong-tien-song-huong","cau-ngoi-thanh-toan","lam-nong","tha-dieu","thuyen-rong-ca-hue"].map(s=>placeCard(pById[s],PLACES.indexOf(pById[s]))).join("");
+$("#places").innerHTML=PLACES.map(placeCard).join("");
+const FACEBOOK_URL="https://www.facebook.com/chammaytravel";
+const GUIDES=[
+ {id:"thoi-diem",title:"Nên đi Huế vào thời điểm nào?",category:"Lên kế hoạch",image:"./banner-kham-pha-hue.jpg",desc:"Chọn thời điểm phù hợp, chuẩn bị cho nắng nóng hoặc mưa Huế và thiết kế lịch trình linh hoạt.",read:"6–8 phút",body:`
+ <p>Chạm Mây khuyên bạn chọn thời điểm đi Huế dựa trên kiểu trải nghiệm mình mong muốn, thay vì chỉ tìm một tháng được xem là đẹp nhất. Huế có thể rất nắng vào mùa hè, nhưng cũng có những ngày mưa kéo dài; cùng một lịch trình sẽ cần cách chuẩn bị khác nhau tùy thời tiết thực tế.</p>
+ <h2>1. Mùa nào phù hợp với chuyến đi của bạn?</h2>
+ <h3>Khoảng tháng 2–4: thuận tiện cho việc tham quan ngoài trời</h3><p>Đây thường là khoảng thời gian thời tiết tương đối dễ chịu hơn để đi bộ trong khu di tích, ghé lăng tẩm, dạo ven sông Hương hoặc về làng quê. Dù vậy, thời tiết từng năm không giống nhau, nên bạn vẫn cần kiểm tra dự báo trước khi chốt các hoạt động ngoài trời.</p>
+ <h3>Khoảng tháng 5–8: ưu tiên tránh nắng giữa trưa</h3><p>Thời tiết có thể nóng và oi. Chạm Mây khuyên bạn bắt đầu hoạt động ngoài trời từ sáng sớm, dành khung giữa trưa để ăn uống, nghỉ ngơi hoặc tham quan không gian trong nhà, rồi tiếp tục vào chiều muộn. Mang nước uống, nón và kem chống nắng là điều nên làm.</p>
+ <h3>Khoảng tháng 9–12 và những đợt mưa kéo dài: cần lịch trình dự phòng</h3><p>Đây là giai đoạn Huế có thể gặp mưa lớn, thời tiết xấu hoặc ngập cục bộ. Hãy cân nhắc kỹ nếu chuyến đi phụ thuộc nhiều vào hoạt động đồng ruộng, đi thuyền hoặc di chuyển xa. Không nên cố đi theo lịch trình đã định nếu có cảnh báo thời tiết hay hướng dẫn an toàn tại địa phương.</p>
+ <div class="guide-callout"><b>Chạm Mây khuyên bạn:</b> Đừng xem các mốc tháng là cam kết chắc chắn về thời tiết. Hãy kiểm tra dự báo trước chuyến đi khoảng 3–7 ngày và xem lại trong 24 giờ trước khi khởi hành; hỏi đơn vị cung cấp dịch vụ về việc đổi lịch nếu mưa lớn.</div>
+ <h2>2. Lên lịch theo thời tiết như thế nào?</h2><ul><li><b>Buổi sáng:</b> ưu tiên Đại Nội, lăng tẩm, đi bộ khám phá phố hoặc hoạt động ngoài làng quê.</li><li><b>Giữa trưa:</b> bố trí bữa ăn, nghỉ ngơi, cà phê hoặc điểm tham quan trong nhà.</li><li><b>Buổi chiều:</b> chọn hoạt động nhẹ, dạo phố hoặc quay lại ngoài trời khi nắng dịu hơn.</li><li><b>Ngày mưa:</b> chuẩn bị phương án thay thế như tìm hiểu văn hóa, làm thủ công, thưởng thức ẩm thực hoặc nghỉ ngơi; chỉ đi thuyền khi nhà cung cấp xác nhận điều kiện an toàn.</li></ul>
+ <h2>3. Khi nào nên đặt phòng và dịch vụ?</h2><p>Nếu đi vào cuối tuần, dịp lễ, Tết hoặc thời điểm có sự kiện lớn, Chạm Mây khuyên bạn đặt chỗ ở và dịch vụ quan trọng sớm sau khi đã chốt ngày đi. Trước khi thanh toán, hãy đọc rõ điều kiện đổi ngày, hủy và hoàn tiền. Với lịch trình linh hoạt, nên chọn các dịch vụ có chính sách thay đổi phù hợp với kế hoạch của bạn.</p>
+ <h2>4. Danh sách kiểm tra trước khi đi</h2><div class="guide-check"><h3>Checklist thời tiết</h3><ul><li>Đã kiểm tra dự báo và cảnh báo thời tiết tại Huế.</li><li>Đã chuẩn bị áo mưa mỏng hoặc ô gọn, giày dễ đi.</li><li>Đã có hoạt động thay thế nếu trời mưa hoặc quá nắng.</li><li>Đã xác nhận giờ mở cửa, lịch hoạt động và tình trạng dịch vụ.</li><li>Đã lưu thông tin nơi lưu trú và cách liên hệ đơn vị cung cấp dịch vụ.</li></ul></div>
+ </a>. Thông tin thời tiết và vận hành có thể thay đổi, vì vậy hãy kiểm tra lại trước ngày đi.</p>`},
+ {id:"hanh-ly",title:"Hành lý gọn nhẹ cho chuyến đi Huế",category:"Chuẩn bị",image:"./banner-du-lich-ca-nhan.jpg",desc:"Checklist trang phục, đồ dùng cá nhân và vật dụng cần mang khi đi di tích, ven sông và trải nghiệm làng quê.",read:"7–9 phút",body:`
+ <p>Chạm Mây khuyên bạn đóng hành lý theo hoạt động thực tế trong lịch trình, không theo tâm lý “mang cho chắc”. Một chiếc vali gọn, đôi giày phù hợp và một túi nhỏ mang theo trong ngày thường hữu ích hơn nhiều món đồ ít dùng.</p>
+ <h2>1. Giấy tờ và thông tin quan trọng</h2><ul><li>CCCD/hộ chiếu và thông tin đặt phòng, vé tàu hoặc vé máy bay.</li><li>Thông tin liên hệ của người đi cùng, nơi lưu trú và đơn vị tổ chức hoạt động.</li><li>Ảnh chụp hoặc bản sao điện tử của giấy tờ quan trọng, lưu ở nơi an toàn; vẫn mang giấy tờ bản gốc khi dịch vụ yêu cầu.</li><li>Một ít tiền mặt mệnh giá nhỏ để tiện mua đồ ở chợ hoặc quán nhỏ; không nên để toàn bộ tiền và thẻ ở cùng một chỗ.</li></ul>
+ <h2>2. Trang phục nên mang</h2><h3>Để đi di tích và các điểm văn hóa</h3><p>Chọn quần áo thoáng, dễ vận động và giày dép êm chân vì bạn có thể phải đi bộ nhiều. Khi vào nơi thờ tự, hãy chọn trang phục lịch sự, kín đáo và tuân theo bảng hướng dẫn tại điểm đến. Nếu dự định chụp ảnh trong một không gian cụ thể, hãy kiểm tra quy định chụp ảnh trước.</p>
+ <h3>Để đi làng quê, làm nông hoặc bắt cá</h3><p>Chạm Mây khuyên bạn mang thêm một bộ quần áo dễ thay, khăn nhỏ và dép hoặc giày có độ bám phù hợp. Hoạt động có thể làm quần áo dính bùn hoặc ướt, vì vậy hãy cất đồ khô trong túi riêng. Không đi chân trần ở khu vực không quen thuộc nếu chưa được hướng dẫn.</p>
+ <h3>Để đối phó nắng và mưa</h3><p>Chuẩn bị nón, kính râm, kem chống nắng, áo khoác mỏng và áo mưa gấp gọn. Ô có thể hữu ích khi đi bộ ở trung tâm, nhưng áo mưa thường tiện hơn trong một số hoạt động ngoài trời hoặc khi có gió. Xem dự báo sát ngày đi để điều chỉnh đồ mang theo.</p>
+ <h2>3. Túi nhỏ nên mang theo mỗi ngày</h2><ul><li>Điện thoại, sạc dự phòng và dây sạc.</li><li>Bình nước cá nhân, khăn giấy và khăn ướt vừa đủ.</li><li>Thuốc cá nhân thường dùng, băng cá nhân và vật dụng chăm sóc cá nhân phù hợp.</li><li>Túi chống nước cho điện thoại khi ở gần sông, ao hoặc tham gia hoạt động ngoài trời.</li><li>Túi đựng rác nhỏ để không bỏ rác lại ở điểm tham quan.</li></ul>
+ <h2>4. Nếu đi cùng trẻ nhỏ hoặc người lớn tuổi</h2><p>Chạm Mây khuyên bạn chuẩn bị thuốc và vật dụng quen dùng, đồ ăn nhẹ phù hợp, mũ, nước và khoảng nghỉ trong lịch trình. Trao đổi trước với đơn vị tổ chức về quãng đường đi bộ, bề mặt di chuyển, nhà vệ sinh và khả năng tiếp cận của địa điểm. Không nên cố hoàn thành toàn bộ lịch trình nếu người đi cùng mệt hoặc thời tiết quá nóng.</p>
+ <h2>5. Những thứ thường không cần mang quá nhiều</h2><p>Hạn chế mang nhiều giày, đồ trang sức đắt tiền, quá nhiều mỹ phẩm hoặc quần áo không phù hợp thời tiết dự báo. Không để giấy tờ, tiền mặt, điện thoại và thuốc thiết yếu trong hành lý ký gửi hoặc một ngăn duy nhất. Với vật dụng bị hạn chế khi đi tàu bay, hãy kiểm tra quy định của hãng vận chuyển trước khi đóng gói.</p>
+ <div class="guide-check"><h3>Checklist trước khi kéo khóa vali</h3><ul><li>Giấy tờ, vé và xác nhận đặt chỗ.</li><li>Giày đi bộ thoải mái, trang phục lịch sự và một bộ đồ dự phòng.</li><li>Nón, kem chống nắng, áo mưa gấp gọn.</li><li>Điện thoại, sạc, tiền mặt vừa đủ và thuốc cá nhân.</li><li>Túi chống nước và túi đựng quần áo ướt/bẩn nếu có hoạt động ngoài trời.</li></ul></div>`},
+ {id:"an-gi",title:"Ăn gì khi khám phá Huế?",category:"Ẩm thực",image:"./thuong-thuc-am-thuc-dac-san-hue.jpeg",desc:"Gợi ý khám phá món Huế, đi chợ địa phương và lưu ý về độ cay, dị ứng, vệ sinh thực phẩm.",read:"7–9 phút",body:`
+ <p>Chạm Mây khuyên bạn dành thời gian cho ẩm thực Huế như một phần của trải nghiệm văn hóa, không chỉ là khoảng dừng giữa hai điểm tham quan. Thay vì cố thử mọi món trong một bữa, hãy chia nhỏ trải nghiệm thành nhiều lần ăn và chọn khẩu phần vừa sức.</p>
+ <h2>1. Những món nên tìm hiểu</h2><ul><li><b>Bún bò Huế:</b> món nước có hương vị đậm, thường có vị cay và mùi sả đặc trưng. Hãy hỏi trước về mức cay và thành phần nước dùng nếu bạn có chế độ ăn riêng.</li><li><b>Cơm hến hoặc bún hến:</b> thường có nhiều thành phần ăn kèm và gia vị. Nếu dị ứng hải sản hoặc nhuyễn thể, cần hỏi kỹ và tránh dùng khi chưa rõ thành phần.</li><li><b>Bánh bèo, bánh nậm, bánh lọc:</b> thích hợp để thử nhiều loại bánh với khẩu phần nhỏ. Nhân bánh và nước chấm có thể khác nhau tùy nơi.</li><li><b>Bánh khoái:</b> món bánh giòn ăn kèm rau và nước chấm; hãy cân nhắc khẩu phần nếu đi theo nhóm để có thể thử thêm món khác.</li><li><b>Chè Huế:</b> có nhiều loại ngọt và nguyên liệu khác nhau. Bạn có thể hỏi thành phần nếu không ăn được một số loại hạt, đậu hoặc sữa.</li></ul>
+ <h2>2. Cách lên một hành trình ăn uống dễ chịu</h2><p>Chạm Mây khuyên bạn chọn một món chính cho mỗi bữa, sau đó bổ sung món ăn nhẹ hoặc món tráng miệng nếu còn muốn thử. Nếu đi nhóm, gọi vài món để chia sẻ giúp mọi người trải nghiệm được nhiều hương vị hơn mà không gọi quá dư.</p><p>Khi ghé chợ địa phương, hãy đi vào thời gian phù hợp với giờ hoạt động của chợ, hỏi giá trước khi mua và giữ tiền, điện thoại cẩn thận ở nơi đông người. Giá bán và giờ mở cửa có thể thay đổi, nên đừng dựa hoàn toàn vào thông tin truyền miệng đã lâu.</p>
+ <h2>3. Lưu ý về vệ sinh thực phẩm</h2><ul><li>Ưu tiên món được chế biến nóng, phục vụ sạch sẽ và nơi bán có cách bảo quản thực phẩm phù hợp.</li><li>Uống nước đóng chai còn niêm phong hoặc nước từ nguồn bạn tin cậy; dùng đá khi bạn cảm thấy an tâm về nguồn cung cấp.</li><li>Rửa tay trước khi ăn, đặc biệt sau khi tham gia hoạt động ngoài trời hoặc đi chợ.</li><li>Không ăn món có mùi, màu hoặc trạng thái bất thường; dừng ăn nếu thấy dấu hiệu không an toàn.</li></ul>
+ <h2>4. Nếu bạn ăn chay, dị ứng hoặc có chế độ ăn đặc biệt</h2><p>Chạm Mây khuyên bạn nói rõ nhu cầu trước khi gọi món, thay vì chỉ hỏi chung chung món đó có “ăn được không”. Hãy nêu cụ thể thành phần cần tránh, ví dụ tôm, cua, cá, đậu phộng, trứng, sữa hoặc nước mắm. Với dị ứng nghiêm trọng, hãy trao đổi rõ về nguy cơ nhiễm chéo trong quá trình chế biến; nếu cơ sở không thể xác nhận, lựa chọn món khác an toàn hơn.</p>
+ <h2>5. Ngân sách ăn uống và cách ứng xử</h2><p>Chi phí phụ thuộc vào món, khẩu phần, địa điểm và cách gọi món. Chạm Mây khuyên bạn xem menu hoặc hỏi giá trước khi gọi, nhất là với hải sản, món theo thời giá hay các phần ăn không niêm yết rõ. Tôn trọng không gian sinh hoạt của người dân, xin phép trước khi chụp ảnh người khác và hạn chế làm ồn ở quán nhỏ hoặc nơi thờ tự.</p>
+ <div class="guide-callout"><b>Mẹo của Chạm Mây:</b> Ghi lại tên món bạn thích và địa chỉ quán do người địa phương hoặc nguồn đáng tin cậy gợi ý. Đừng quên hỏi thành phần nếu có dị ứng; danh sách món phổ biến không thay thế việc xác nhận nguyên liệu tại từng hàng quán.</div>`},
+ {id:"di-cham",title:"Khám phá Huế theo nhịp sống chậm",category:"Trải nghiệm",image:"./dao-cau-truong-tien-va-song-huong.jpg",desc:"Gợi ý cách sắp xếp 3 ngày 2 đêm, kết hợp di tích, làng quê, sông Hương và thời gian nghỉ.",read:"8–10 phút",body:`
+ <p>Chạm Mây khuyên bạn không biến chuyến đi Huế thành cuộc chạy đua check-in. Huế có nhiều lớp trải nghiệm: di tích triều Nguyễn, nhịp sống ven sông, món ăn địa phương và những hoạt động thường ngày ở làng quê. Hãy chọn những điểm thật sự phù hợp và để thời gian cho việc quan sát, trò chuyện, nghỉ ngơi.</p>
+ <h2>1. Gợi ý lịch trình 3 ngày 2 đêm</h2>
+ <h3>Ngày 1 – Làm quen với trung tâm Huế</h3><p>Buổi sáng, dành thời gian cho Đại Nội hoặc một điểm di tích chính. Khuôn viên rộng, vì vậy hãy mang giày dễ đi, nước uống và đừng cố tham quan quá nhanh. Sau bữa trưa, nghỉ ngơi vào giờ nóng rồi chọn một điểm nhẹ nhàng như dạo phố, ghé quán địa phương hoặc đi bộ ven sông Hương.</p><p>Buổi tối, bạn có thể tìm hiểu hoạt động thuyền rồng và nghe ca Huế nếu dịch vụ có tổ chức trong ngày bạn đi. Chạm Mây khuyên bạn đặt qua đơn vị rõ ràng, xác nhận thời lượng, giá, điểm lên thuyền, giờ khởi hành và điều kiện vận hành khi thời tiết xấu.</p>
+ <h3>Ngày 2 – Dành thời gian cho đời sống địa phương</h3><p>Chọn một hoạt động ở khu vực làng quê như tìm hiểu nghề truyền thống, trò chơi dân gian, làm nông hoặc trải nghiệm ẩm thực. Nếu ghé khu vực cầu ngói Thanh Toàn, hãy xem trước điều kiện tổ chức, đường đi và thời tiết. Các hoạt động có thể phụ thuộc vào mùa vụ, sự đồng ý của người dân và tình trạng thực tế; không nên tự vào ruộng, ao hoặc khu vực làm việc khi chưa được phép.</p><p>Buổi chiều nên chừa thời gian nghỉ và tổng kết trải nghiệm, thay vì cố ghé thêm nhiều điểm xa nhau. Có thể dành một khoảng để trò chuyện với người địa phương hoặc viết bưu thiếp gửi người thân như tinh thần “một phiên bản tuổi thơ” của Chạm Mây.</p>
+ <h3>Ngày 3 – Chọn một điểm cuối cùng trước khi rời Huế</h3><p>Hãy chọn một lăng tẩm, ngôi chùa hoặc khu phố mà bạn thực sự muốn tìm hiểu, cân nhắc thời gian di chuyển đến ga hoặc sân bay. Trước khi rời đi, kiểm tra lại giờ khởi hành, phương tiện và hành lý. Tránh đặt lịch tham quan sát giờ tàu bay hoặc tàu hỏa để giảm rủi ro trễ chuyến.</p>
+ <h2>2. Cách chọn điểm đến để không bị quá tải</h2><ul><li>Gom các điểm gần nhau trong cùng một buổi; kiểm tra đường đi thay vì nhìn mỗi khoảng cách trên bản đồ.</li><li>Chỉ chọn một hoặc hai điểm chính mỗi ngày nếu muốn nghe thuyết minh, chụp ảnh và nghỉ giữa các hoạt động.</li><li>Đặt thời gian ăn uống, nghỉ ngơi và di chuyển vào lịch trình, không chỉ ghi tên điểm tham quan.</li><li>Để sẵn phương án thay thế nếu mưa, nắng gắt hoặc điểm đến đóng cửa.</li><li>Nếu đi cùng trẻ nhỏ hay người lớn tuổi, giảm số điểm và tăng thời gian nghỉ.</li></ul>
+ <h2>3. Di chuyển và ứng xử khi trải nghiệm</h2><p>Trong khu vực trung tâm, bạn có thể đi bộ ở những tuyến phù hợp, thuê xe đạp hoặc dùng phương tiện đưa đón tùy khoảng cách và điều kiện thực tế. Với lăng tẩm hoặc khu vực ngoại thành, hãy xác nhận thời gian di chuyển và chi phí trước khi đi. Khi đi xe đạp, thuyền hoặc tham gia hoạt động dưới sự hướng dẫn, hãy tuân theo quy tắc an toàn; không đi thuyền khi nhà cung cấp hoặc cơ quan chức năng thông báo không bảo đảm điều kiện.</p><p>Chạm Mây khuyên bạn xin phép trước khi chụp chân dung người dân, không tự ý chạm vào đồ thờ hay hiện vật, không xả rác và không đi vào khu vực riêng tư. Một trải nghiệm có ý nghĩa là trải nghiệm đem lại sự tôn trọng cho nơi mình đến.</p>
+ <h2>4. Điều nên chuẩn bị trước ngày khởi hành</h2><div class="guide-check"><h3>Checklist chuyến đi chậm</h3><ul><li>Chọn 1–2 hoạt động chính mỗi ngày và sắp xếp các điểm gần nhau.</li><li>Kiểm tra thời tiết, giờ mở cửa, chi phí vé và tình trạng dịch vụ.</li><li>Xác nhận đặt phòng, phương tiện, điểm đón và giờ khởi hành.</li><li>Chuẩn bị giày dễ đi, nước, đồ chống nắng/mưa và quần áo dự phòng nếu đi làng quê.</li><li>Dành thời gian ăn chậm, trò chuyện và nghỉ ngơi; không cố theo lịch trình khi mệt.</li></ul></div>
+ <p>Nếu bạn muốn tham khảo một lịch trình nền, xem thêm <a href="https://vietnam.travel/things-to-do/hue-itinerary" target="_blank" rel="noopener noreferrer"></a>, sau đó điều chỉnh theo thời gian và nhu cầu của riêng mình.</p>`},
+ {id:"di-lai",title:"Di chuyển và sắp xếp lịch trình ở Huế",category:"Lịch trình",image:"./tham-quan-dai-noi-hue.jpg",desc:"Cách chọn phương tiện, gom điểm tham quan theo khu vực và dự trù thời gian di chuyển hợp lý.",read:"6–8 phút",body:`
+ <p>Chạm Mây khuyên bạn tính thời gian di chuyển như một phần của lịch trình, không phải khoảng trống có thể bỏ qua. Khoảng cách trên bản đồ chưa phản ánh hết thời gian tìm xe, đỗ xe, đi bộ trong khu di tích hoặc chờ dịch vụ.</p>
+ <h2>1. Từ nơi bạn đến vào trung tâm Huế</h2><p>Bạn có thể tới Huế bằng tàu hỏa, xe khách, ô tô hoặc máy bay kết hợp phương tiện đường bộ. Hãy so sánh tổng thời gian từ cửa đến cửa, giờ đến nơi và chi phí hành lý, đưa đón; đừng chỉ so sánh giá vé. Nếu đến muộn, nên sắp xếp nhận phòng và ăn nhẹ trước, không nên cố đi tham quan khi đã mệt.</p>
+ <h2>2. Chọn phương tiện trong thành phố</h2><ul><li><b>Đi bộ:</b> phù hợp với đoạn đường ngắn và khu vực có lối đi an toàn; mang giày êm và uống đủ nước.</li><li><b>Xe đạp:</b> phù hợp nếu bạn quen đi xe và tuyến đường cho phép; kiểm tra phanh, đèn và khóa xe trước khi sử dụng.</li><li><b>Taxi hoặc xe công nghệ:</b> thuận tiện khi đi nhóm, trời nóng hoặc cần di chuyển xa. Kiểm tra điểm đón, phí và điểm trả trước khi xác nhận.</li><li><b>Xe thuê hoặc xe có tài xế:</b> có thể phù hợp khi kết hợp nhiều lăng tẩm hoặc điểm ngoại thành. Thống nhất giá, thời lượng, phí chờ và điểm đón trước chuyến đi.</li><li><b>Thuyền rồng:</b> chỉ dành cho tuyến có đơn vị vận hành rõ ràng; xác nhận bến, giờ, thời lượng, giá và điều kiện thời tiết.</li></ul>
+ <h2>3. Gom điểm tham quan theo khu vực</h2><p>Với một ngày trong trung tâm, bạn có thể ưu tiên một điểm lớn như Đại Nội rồi kết hợp ăn uống và dạo quanh khu vực lân cận. Một ngày khác dành cho làng quê hoặc lăng tẩm ở ngoại thành sẽ đỡ phải quay đi quay lại. Trước khi ghép các điểm, kiểm tra giờ mở cửa và lượng thời gian muốn dành cho mỗi nơi.</p>
+ <h2>4. Dự trù ngân sách di chuyển</h2><p>Chi phí phụ thuộc vào số người, quãng đường, phương tiện, thời gian chờ và dịch vụ đi kèm. Chạm Mây khuyên bạn yêu cầu giá rõ ràng trước khi khởi hành, hỏi các khoản phụ thu có thể phát sinh và giữ lại xác nhận đặt dịch vụ. Không nên mặc định giá trên bài viết cũ vẫn còn chính xác ở thời điểm bạn đi.</p>
+ <h2>5. Các lưu ý an toàn và tiện lợi</h2><ul><li>Lưu địa chỉ nơi ở và điểm đón bằng văn bản, không chỉ nhớ tên địa điểm.</li><li>Giữ điện thoại đủ pin, bật bản đồ ngoại tuyến nếu cần và thống nhất điểm gặp nếu đi nhóm.</li><li>Để thêm thời gian dự phòng trước giờ tàu, xe hoặc chuyến bay.</li><li>Không lên phương tiện khi không rõ giá hoặc điều kiện dịch vụ; xác nhận lại nếu có thay đổi.</li><li>Khi mưa lớn hoặc có cảnh báo thời tiết, ưu tiên hướng dẫn của cơ quan chức năng và đơn vị vận hành.</li></ul>
+ <div class="guide-callout"><b>Chạm Mây khuyên bạn:</b> Lịch trình thoải mái không phải là lịch trình ít trải nghiệm; đó là lịch trình có đủ thời gian để bạn thực sự cảm nhận từng nơi và không phải liên tục nhìn đồng hồ.</div>`}
+];
+const escapeHtml=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+$("#guides").innerHTML=GUIDES.map((g,i)=>`<article class="pc guide-card tilt" data-t="3"><a class="im" href="#/cam-nang/${g.id}" aria-label="Đọc cẩm nang: ${g.title}"><img src="${g.image}" alt="${g.title}" loading="lazy" onerror="this.onerror=null;this.src='./banner-kham-pha-hue.jpg'"></a><div class="bd"><span class="pill">${g.category}</span><h3>${g.title}</h3><p>${g.desc}</p><div class="guide-meta"><span>${g.read} đọc</span><span>Chạm Mây Travel</span></div><a class="more" href="#/cam-nang/${g.id}">Đọc bài hướng dẫn chi tiết</a></div></article>`).join("");
+function renderGuide(id){
+ const g=GUIDES.find(x=>x.id===id);if(!g){location.replace("#/cam-nang");return}
+ const others=GUIDES.filter(x=>x.id!==id);
+ const box=$("#guide-article");
+ box.innerHTML=`<div class="pagehead" style="--page-banner:url('${g.image}')"><div class="wrap"><p class="note" style="color:var(--on);margin-bottom:12px"><a href="#/cam-nang" style="text-decoration:none">Cẩm nang du lịch</a> / ${g.category}</p><h1>${g.title}</h1><p>${g.desc}</p><div class="guide-meta" style="color:var(--on);margin-bottom:0"><span>${g.read} đọc</span><span>Biên soạn bởi Chạm Mây Travel</span></div></div></div>
+ <section><div class="wrap guide-article-layout"><article class="guide-content rv">${g.body}
+ <div class="guide-actions"><a class="btn" href="${FACEBOOK_URL}" target="_blank" rel="noopener noreferrer">Hỏi Chạm Mây trên Facebook</a><a class="btn ghost dk" href="#/lien-he">Gửi yêu cầu tư vấn</a></div>
+ <p class="guide-source">Thông tin mang tính hướng dẫn chung. Giờ mở cửa, thời tiết, giá dịch vụ và điều kiện vận hành có thể thay đổi; hãy xác nhận với đơn vị liên quan trước ngày đi. Chạm Mây khuyên bạn ưu tiên thông báo an toàn tại địa phương.</p>
+ <div class="guide-next"><h2>Đọc thêm cẩm nang khác</h2><div class="pgrid">${others.slice(0,3).map(o=>`<a class="pc" href="#/cam-nang/${o.id}"><div class="im"><img src="${o.image}" alt="${o.title}" loading="lazy" onerror="this.onerror=null;this.src='./banner-kham-pha-hue.jpg'"></div><div class="bd"><span class="pill">${o.category}</span><h3>${o.title}</h3><p>${o.desc}</p><span class="more">Đọc tiếp</span></div></a>`).join("")}</div></div></article>
+ <aside class="guide-aside rv"><h3>Trong bài viết</h3><div class="guide-nav"><a href="#/cam-nang">← Tất cả cẩm nang</a><a href="https://www.facebook.com/chammaytravel" target="_blank" rel="noopener noreferrer">Facebook Chạm Mây ↗</a><a href="#/kham-pha-hue">Khám phá các địa điểm Huế</a><a href="#/tour">Xem tour 3 ngày 2 đêm</a><a href="#/ca-nhan">Tự thiết kế hành trình</a></div><p class="note" style="margin-top:16px">Chạm Mây khuyên bạn xác nhận thông tin dịch vụ trước khi đi, đặc biệt khi thời tiết thay đổi.</p></aside></div></section>`;
+}
+$("#about-art").innerHTML=scene("farm",2);
+/* Bưu thiếp tự viết */
+(()=>{const fl=$("#flip"),front=$("#flip-f"),msg=$("#pc-msg"),to=$("#pc-to"),from=$("#pc-from"),hint=$("#pc-hint"),rs=$("#pc-reset");let photo=null,url=null;const H0=hint.textContent;
+const flip=v=>{const o=v===undefined?!fl.classList.contains("on"):v;fl.classList.toggle("on",o);$("#pc-flip").textContent=o?"Xem mặt trước":"Lật bưu thiếp"};
+front.onclick=()=>flip();$("#pc-flip").onclick=()=>flip();
+const note=t=>{hint.textContent=t;clearTimeout(note.t);note.t=setTimeout(()=>hint.textContent=H0,4500)};
+const reset=()=>{if(url)URL.revokeObjectURL(url);photo=url=null;front.innerHTML=scene("games",1);rs.hidden=true;$("#pc-file").value=""};
+reset();rs.onclick=reset;
+$("#pc-file").onchange=e=>{const f=e.target.files[0];if(!f)return;if(!/^image\//.test(f.type)){note("Vui lòng chọn một tệp ảnh.");return}if(f.size>20*1024*1024){note("Ảnh quá lớn, vui lòng chọn ảnh dưới 20MB.");return}
+const u=URL.createObjectURL(f),im=new Image();im.onload=()=>{if(url)URL.revokeObjectURL(url);url=u;photo=im;front.innerHTML="";const t=document.createElement("img");t.src=u;t.alt="Ảnh bưu thiếp của bạn";front.appendChild(t);rs.hidden=false;flip(false)};im.onerror=()=>{URL.revokeObjectURL(u);note("Không đọc được ảnh này, hãy thử ảnh khác.")};im.src=u};
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const wrap=(c,t,w)=>{const out=[];t.split("\n").forEach(p=>{let l="";p.split(/\s+/).filter(Boolean).forEach(x=>{const n=l?l+" "+x:x;if(c.measureText(n).width>w&&l){out.push(l);l=x}else l=n});out.push(l)});return out};
+const loadSvg=()=>new Promise(r=>{const sv=front.querySelector("svg");if(!sv)return r(null);let x=new XMLSerializer().serializeToString(sv);x=x.replace(/var\((--[\w-]+)\)/g,(m,n)=>css(n)||"#E6D5B8");if(!/xmlns=/.test(x.slice(0,200)))x=x.replace("<svg",'<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300"');else x=x.replace("<svg",'<svg width="400" height="300"');const im=new Image();im.onload=()=>r(im);im.onerror=()=>r(null);im.src="data:image/svg+xml;charset=utf-8,"+encodeURIComponent(x)});
+const cover=(c,im,x,y,w,h)=>{const iw=im.naturalWidth||im.width,ih=im.naturalHeight||im.height,k=Math.max(w/iw,h/ih),dw=iw*k,dh=ih*k;c.save();c.beginPath();c.rect(x,y,w,h);c.clip();c.drawImage(im,x+(w-dw)/2,y+(h-dh)/2,dw,dh);c.restore()};
+$("#pc-dl").onclick=async()=>{try{await Promise.all(['italic 600 40px "Cormorant Garamond"','700 52px "Cormorant Garamond"'].map(f=>document.fonts.load(f))).catch(()=>{})}catch(e){}
+const P=800,Hh=1000,cv=document.createElement("canvas");cv.width=P*2;cv.height=Hh;const c=cv.getContext("2d");
+c.fillStyle=css("--bg")||"#F2EBDF";c.fillRect(0,0,P*2,Hh);
+const im=photo||await loadSvg();if(im)cover(c,im,0,0,P,Hh);else{c.fillStyle="#E6D5B8";c.fillRect(0,0,P,Hh)}
+const bx=P;c.fillStyle=css("--card")||"#FAF5EA";c.fillRect(bx,0,P,Hh);c.fillStyle=css("--line")||"#D8C9B0";c.fillRect(bx,0,2,Hh);
+const ac=css("--ac")||"#8C3D0F",tx=css("--tx")||"#593202",pad=64;c.textBaseline="alphabetic";
+c.fillStyle=css("--ac2")||"#73280D";const ttl=$("#pc-title").value.trim()||"Bưu thiếp gửi một thế hệ";let fs=52;c.font=`700 ${fs}px "Cormorant Garamond",serif`;while(c.measureText(ttl).width>P-pad*2&&fs>24){fs-=2;c.font=`700 ${fs}px "Cormorant Garamond",serif`}c.fillText(ttl,bx+pad,pad+44);
+c.fillStyle=tx;c.font='italic 600 40px "Cormorant Garamond",serif';let y=pad+120;
+const t=to.value.trim();if(t){c.fillText("Gửi "+t+",",bx+pad,y);y+=64}
+const text=msg.value.trim()||msg.placeholder,lines=wrap(c,text,P-pad*2),lh=54,max=Math.floor((Hh-y-230)/lh);
+lines.slice(0,Math.max(max,1)).forEach((l,i)=>{c.fillText(l,bx+pad,y+i*lh)});
+c.strokeStyle=css("--line")||"#D8C9B0";c.lineWidth=2;for(let i=0;i<=max;i++){const yy=y+i*lh+14;c.beginPath();c.moveTo(bx+pad,yy);c.lineTo(bx+P-pad,yy);c.stroke()}
+const f=from.value.trim();if(f){c.textAlign="right";c.fillStyle=tx;c.fillText(f,bx+P-pad,Hh-pad-70);c.textAlign="left"}
+c.save();c.translate(bx+P-pad-120,Hh-pad-20);c.rotate(.07);c.setLineDash([8,6]);c.lineWidth=3;c.strokeStyle=ac;c.strokeRect(-110,-24,230,44);c.setLineDash([]);c.fillStyle=ac;c.font='600 22px "Be Vietnam Pro",sans-serif';c.textAlign="center";c.fillText("Huế · Chạm Mây",5,6);c.restore();
+cv.toBlob(b=>{if(!b){note("Không tạo được ảnh, hãy thử lại.");return}const a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="buu-thiep-cham-may.png";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),4000);note("Đã tải bưu thiếp về máy của bạn.")},"image/png")}})();
+
+/* Trang Tour */
+let cf="",openId="";
+function comboFull(c,i){return `<article class="cbx ${i%2?"rev":""}" id="cb-${c.id}"><div class="cmedia tilt" data-t="6">${pic(({"lang-que":"cau-ngoi-thanh-toan","ve-tuoi-tho":"tro-choi-dan-gian","ky-uc":"thu-cong","huong-vi":"am-thuc-hue","ket-noi":"ke-chuyen-tuoi-tho"})[c.id]||"cau-ngoi-thanh-toan",c.sc,i)}</div><div><span class="pill">Combo ${COMBOS.indexOf(c)+1}</span><h3>${c.n}</h3><p style="margin-bottom:4px">${c.t}</p><p class="hlx">Hoạt động nổi bật: ${c.hl}</p><div class="big">${rng(c.p[0],c.p[1])}/người</div><div>${c.days.map((d,k)=>`<details class="dd"${k===0||openId===c.id?" open":""}><summary>Ngày ${k+1} – ${d.t}</summary><div class="db"><ul class="dl">${d.a.map(x=>`<li>${x}</li>`).join("")}</ul><div class="chips">${d.ids.map(x=>{const dest=({dainoi:"dai-noi",dongba:"cho-dong-ba",huong:"truong-tien-song-huong",ngoi:"cau-ngoi-thanh-toan",chole:"cho-que",nong:"lam-nong",cabat:"bat-ca",comque:"com-que",tra:"ke-chuyen-tuoi-tho",oan:"tro-choi-dan-gian",day:"tro-choi-dan-gian",keo:"tro-choi-dan-gian",de:"tro-choi-dan-gian",bao:"tro-choi-dan-gian",dieu:"tha-dieu",tc:"thu-cong",tranh:"thu-cong",banh:"am-thuc-hue",thuyen:"thuyen-rong-ca-hue",gl:"ke-chuyen-tuoi-tho",bt:"buu-thiep-gui-mot-the-he",amthuc:"am-thuc-hue"})[x];const place=PLACES.find(p=>p.s===dest);return `<a class="chip activity-chip" href="#/kham-pha-hue/${dest}" title="Xem ${place?place.n:byId[x].n} trong Khám phá Huế">${byId[x].n} ↗</a>`}).join("")}</div></div></details>`).join("")}<p class="cnote">${CNOTE}</p></div><div class="btns" style="margin-top:16px"><button class="btn use" data-c="${c.id}">Dùng làm lịch trình của tôi</button><a class="btn" href="#/lien-he" data-ask="${c.id}" data-type="book">Đặt tour</a><a class="btn ghost dk" href="#/lien-he" data-ask="${c.id}">Hỏi tư vấn</a></div></div></article>`}
+function renderCombos(){const l=COMBOS.filter(c=>!cf||c.tag===cf);$("#combos").innerHTML=l.map((c,i)=>comboFull(c,COMBOS.indexOf(c))).join("");$("#cnone").hidden=l.length>0;$$("#combos .cbx").forEach(e=>e.classList.add("rv"));rvScan($('.view[data-v="/tour"]'))}
+$("#cf").innerHTML=[["","Tất cả"],...Object.entries(TAGS)].map(([v,l])=>`<button type="button" data-v="${v}" aria-pressed="${v===cf}">${l}</button>`).join("");
+$("#cf").onclick=e=>{const b=e.target.closest("button");if(!b)return;cf=b.dataset.v;$$("#cf button").forEach(x=>x.setAttribute("aria-pressed",x===b));renderCombos()};
+$("#cclear").onclick=()=>{cf="";$$("#cf button").forEach(x=>x.setAttribute("aria-pressed",x.dataset.v===""));renderCombos()};
+
+/* Planner */
+$("#acts").innerHTML=Object.keys(GROUPS).map(g=>`<h3 style="margin-top:14px">${GROUPS[g]}</h3><div class="opts">${A.filter(a=>a.g===g).map(a=>`<label class="opt"><input type="checkbox" class="act" value="${a.id}"><span>${a.n}<small>${a.d} Khoảng ${a.h} giờ.</small></span></label>`).join("")}</div>`).join("");
+const cOpts=COMBOS.map(c=>`<option value="${c.id}">${c.n}</option>`).join("");
+$("#c-combo").innerHTML='<option value="">Chưa chọn</option>'+cOpts;
+$("#f-pol").innerHTML=POLS.map(p=>`<li><a href="#/chinh-sach/${p.s}">${p.n}</a></li>`).join("");
+$("#ct-mail").textContent=CONTACT.email;$("#ct-tel").textContent=CONTACT.tel;$("#ct-addr").textContent=CONTACT.addr;$("#ct-fb").innerHTML=`<a href="${FACEBOOK_URL}" target="_blank" rel="noopener noreferrer">Facebook Chạm Mây ↗</a>`;$("#yr").textContent=new Date().getFullYear();
+(()=>{const box=$("#f-social"),ks=Object.keys(SOCIAL_META).map(k=>[k,socialUrl(k)]).filter(x=>x[1]);
+if(!ks.length){box.innerHTML='<p class="soc-empty">Đang cập nhật các kênh của Chạm Mây.</p>';return}
+ks.forEach(([k,u])=>{const a=document.createElement("a"),t=document.createElement("span");a.className="soc";a.href=u;a.target="_blank";a.rel="noopener noreferrer";a.setAttribute("aria-label",SOCIAL_META[k].n+" (mở trong tab mới)");a.innerHTML=SOCIAL_META[k].i;t.textContent=SOCIAL_META[k].n;a.append(t);box.append(a)})})();
+
+let plan=null,over=[];
+function save(){try{localStorage.setItem("cm_plan",JSON.stringify(plan))}catch(e){}}
+try{const s=JSON.parse(localStorage.getItem("cm_plan")||"null");if(Array.isArray(s)&&s.every(d=>Array.isArray(d)&&d.every(i=>byId[i])))plan=s}catch(e){}
+if(plan)plan.flat().forEach(i=>{const c=$(`.act[value="${i}"]`);if(c)c.checked=true});
+$("#acts").addEventListener("change",renderLive);$("#p-n").addEventListener("input",renderLive);
+function sched(ids){let t=8,l=false,o=[];for(const id of ids){if(!l&&t>=11){const s=Math.max(t,11.5);o.push({l:1,s,e:s+1.5});t=s+1.5;l=true}const a=byId[id];o.push({a,s:t,e:t+a.h});t+=a.h+.5}return o}
+function estimate(pl){return estimateIds(pl.flat(),pl.length)}
+function estimateIds(ids,days){const nights=Math.max(days-1,0);let lo=0,hi=0;ids.forEach(i=>{lo+=byId[i].lo;hi+=byId[i].hi});
+const base=BASE.map(r=>{const f=r[4]==="n"?nights/2:days/3;return [r[0],Math.round(r[2]*f/10)*10,Math.round(r[3]*f/10)*10]});
+const bl=base.reduce((s,r)=>s+r[1],0),bh=base.reduce((s,r)=>s+r[2],0);return {act:[lo,hi],base,tot:[lo+bl,hi+bh]}}
+const PNOTE="Giá ước tính theo hai khách một phòng, chưa gồm chi phí đến và rời Huế; ở một mình có thể phát sinh phụ thu phòng. Đây không phải báo giá xác nhận cuối cùng, giá chính thức được xác nhận khi tư vấn.";
+function estRows(E,n,ids){return (ids?ids.map(i=>`<div class="er"><span>${byId[i].n}</span><span>${aprice(byId[i])}${byId[i].lo||byId[i].hi?"/người":""}</span></div>`).join(""):"")+`<div class="er"><span>${ids?"Cộng hoạt động đã chọn":"Hoạt động đã chọn"}</span><span>${rng(E.act[0],E.act[1])}</span></div>${E.base.map(r=>`<div class="er"><span>${r[0]}</span><span>${num(r[1]*1000)} – ${num(r[2]*1000)}</span></div>`).join("")}<div class="er t"><span>Tổng ước tính</span><span>${rng(E.tot[0],E.tot[1])}</span></div>${n>1?`<div class="er"><span>Cho ${n} khách</span><span>${rng(E.tot[0]*n,E.tot[1]*n)}</span></div>`:""}<p class="note" style="margin:12px 0 0">${PNOTE}</p>`}
+function renderLive(){const box=$("#live"),ids=$$(".act:checked").map(c=>c.value);
+if(!ids.length){box.hidden=true;box.classList.remove("show");box.innerHTML="";return}
+const n=Math.max(1,Math.min(30,Math.floor(+$("#p-n").value)||1)),was=box.hidden;
+box.innerHTML=`<h3>Giá ước tính cho hoạt động bạn đã chọn</h3><p class="ps">Tự cập nhật khi bạn chọn hoặc bỏ chọn hoạt động, tính theo 3 ngày 2 đêm.</p>`+estRows(estimateIds(ids,3),n,ids);
+box.hidden=false;if(was){box.classList.remove("show");void box.offsetWidth;box.classList.add("show")}}
+renderLive();
+function renderPlan(){const box=$("#plan");if(!plan){box.innerHTML="";return}
+const used=new Set(plan.flat());const free=A.filter(a=>!used.has(a.id));const n=Math.max(1,+$("#p-n").value||1);const E=estimate(plan);
+box.innerHTML=`<h2 style="margin-top:40px">Hành trình của bạn</h2>`+(over.length?`<div class="msg">Không đủ chỗ cho: ${over.map(i=>byId[i].n).join(", ")}. Hãy tăng số ngày hoặc chọn nhịp độ năng động hơn.</div>`:"")+plan.map((d,di)=>{const s=sched(d);const end=s.length?s[s.length-1].e:0;return `<div class="day"><h3>Ngày ${di+1}${end?` (khoảng ${fmt(8)}–${fmt(end)})`:""}</h3>${end>18.5?`<div class="msg">Ngày này kết thúc sau 18:30. Nên bỏ bớt một hoạt động.</div>`:""}<ol>${s.length?s.map((x,k)=>x.l?`<li class="item lunch"><span class="tm">${fmt(x.s)}</span><span>Nghỉ trưa và di chuyển</span><span></span><span></span></li>`:`<li class="item" style="animation-delay:${k*.05}s"><span class="tm">${fmt(x.s)}–${fmt(x.e)}</span><span>${x.a.n}<small style="display:block;color:var(--sub)">${GROUPS[x.a.g]}</small></span><span class="pr">${aprice(x.a)}</span><span><button data-do="up" data-d="${di}" data-i="${d.indexOf(x.a.id)}" aria-label="Chuyển lên">↑</button> <button data-do="dn" data-d="${di}" data-i="${d.indexOf(x.a.id)}" aria-label="Chuyển xuống">↓</button> <button data-do="rm" data-d="${di}" data-i="${d.indexOf(x.a.id)}" aria-label="Xóa ${x.a.n}">✕</button></span></li>`).join(""):`<li class="item"><span></span><span>Ngày tự do để nghỉ ngơi.</span><span></span><span></span></li>`}</ol></div>`}).join("")+
+(plan.flat().length?`<div class="est"><h3>Giá ước tính cho mỗi khách</h3>${estRows(E,n)}</div>`:"")+
+(free.length?`<div class="row tools" style="align-items:flex-end"><label class="f">Thêm hoạt động<select id="add-a">${free.map(a=>`<option value="${a.id}">${a.n}</option>`).join("")}</select></label><label class="f">Vào ngày<select id="add-d">${plan.map((_,i)=>`<option value="${i}">Ngày ${i+1}</option>`).join("")}</select></label><button class="btn ghost dk" id="add-b" type="button">Thêm</button></div>`:"")+
+`<div class="tools"><button class="btn" id="ask" type="button">Gửi yêu cầu tư vấn chuyến đi</button><button class="btn ghost dk" id="redo" type="button">Chỉnh lại lựa chọn</button><button class="btn ghost dk" id="prt" type="button">In lịch trình</button></div><p class="note">Lịch trình được tạo trong trình duyệt. Khi chọn “Gửi yêu cầu tư vấn chuyến đi”, lịch trình sẽ được đưa vào biểu mẫu để bạn kiểm tra và chủ động gửi cho Chạm Mây. Thời gian chỉ là ước tính, chưa phải lịch vận hành chính thức.</p>`}
+function generate(ids,n,budget){if(!ids.length){$("#pmsg").innerHTML='<div class="msg">Hãy chọn ít nhất một hoạt động.</div>';return}
+$("#pmsg").innerHTML="";plan=Array.from({length:n},()=>[]);over=[];const u=Array(n).fill(0);
+ids.forEach(id=>{const h=byId[id].h,d=u.findIndex(x=>x+h<=budget);if(d<0)over.push(id);else{plan[d].push(id);u[d]+=h}});save();renderPlan();$("#plan").scrollIntoView({behavior:"smooth"})}
+$("#planner-form").onsubmit=e=>{e.preventDefault();generate($$(".act:checked").map(c=>c.value),+$("#p-days").value,+$("#pace").value)};
+$("#p-n").onchange=()=>{if(plan)renderPlan()};
+$("#plan").onclick=e=>{const b=e.target.closest("button");if(!b)return;
+if(b.dataset.do){const d=+b.dataset.d,i=+b.dataset.i,L=plan[d];if(b.dataset.do==="rm"){const r=L.splice(i,1)[0],cb=$(`.act[value="${r}"]`);if(cb)cb.checked=false}else{const j=b.dataset.do==="up"?i-1:i+1;if(j>=0&&j<L.length)[L[i],L[j]]=[L[j],L[i]]}save();renderPlan();renderLive()}
+else if(b.id==="add-b"){const v=$("#add-a").value;plan[+$("#add-d").value].push(v);const cb=$(`.act[value="${v}"]`);if(cb)cb.checked=true;save();renderPlan();renderLive()}
+else if(b.id==="redo")$("#planner-form").scrollIntoView({behavior:"smooth"});
+else if(b.id==="prt")window.print();
+else if(b.id==="ask"){location.hash="#/lien-he";setTimeout(()=>{$("#c-msg").value=planText()},50)}};
+function planText(){const E=estimate(plan);return "Mình muốn tư vấn hành trình ("+$("#p-n").value+" khách"+($("#p-date").value?", dự kiến đi "+$("#p-date").value:"")+"):\n"+plan.map((d,i)=>"Ngày "+(i+1)+": "+(d.map(x=>byId[x].n).join(", ")||"tự do")).join("\n")+(plan.flat().length?"\nGiá ước tính trên trang: "+rng(E.tot[0],E.tot[1])+"/người (chưa phải báo giá chính thức).":"")}
+document.addEventListener("click",e=>{const u=e.target.closest(".use");if(u){const c=COMBOS.find(x=>x.id===u.dataset.c);const ids=c.days.flatMap(d=>d.ids);$$(".act").forEach(x=>x.checked=ids.includes(x.value));plan=c.days.map(d=>[...d.ids]);over=[];save();renderPlan();renderLive();location.hash="#/ca-nhan"}
+const q=e.target.closest("[data-ask]");if(q){setTimeout(()=>{$("#c-combo").value=q.dataset.ask;$("#c-type").value=q.dataset.type||"ask"},50)}});
+
+/* Tìm hành trình nhanh */
+$("#quick").onsubmit=e=>{e.preventDefault();const g=$("#q-t").value,n=+$("#q-n").value,o=$("#q-out");o.hidden=false;
+if(!n||n<1){o.textContent="Hãy nhập số khách (ít nhất 1 người).";return}
+const r=COMBOS.filter(c=>!g||c.tag===g);
+o.innerHTML=r.length?`Có ${r.length} hành trình phù hợp cho ${n} khách: ${r.map(c=>`<a href="#/tour/${c.id}">${c.n} (${rng(c.p[0],c.p[1])})</a>`).join(", ")}. Ngày khởi hành và giá được xác nhận khi tư vấn.`:"Chưa có hành trình phù hợp. Thử chọn loại trải nghiệm khác."};
+
+/* Gửi yêu cầu tư vấn/đặt tour lên Supabase */
+async function saveContactRequest(button){
+  const o=$("#c-out");
+  const bk=$("#c-type").value==="book";
+  const comboText=$("#c-combo").selectedOptions[0]?.textContent || "Chưa chọn combo";
+  const requestNote=[
+    "Loại yêu cầu: "+(bk?"Yêu cầu đặt tour":"Xin tư vấn"),
+    "Ngày dự kiến: "+($("#c-date").value||"Chưa chọn"),
+    "Nội dung: "+$("#c-msg").value.trim(),
+    "Chi phí sẽ được xác nhận khi tư vấn."
+  ].join("\n");
+  button.disabled=true;
+  const oldText=button.textContent;
+  button.textContent="Đang gửi...";
+  o.innerHTML='<div class="msg">Đang gửi yêu cầu của bạn...</div>';
+  try{
+    const {error}=await supabaseClient.from("tour_bookings").insert([{
+      full_name:$("#c-name").value.trim(),
+      phone:$("#c-tel").value.trim() || null,
+      email:$("#c-mail").value.trim(),
+      tour_name:comboText==="Chưa chọn combo"?(bk?"Yêu cầu đặt tour":"Yêu cầu tư vấn"):comboText,
+      travel_date:$("#c-date").value || null,
+      guests:Math.max(1,Math.min(30,Math.floor(Number($("#c-n").value)||1))),
+      note:requestNote
+    }]);
+    if(error) throw error;
+    o.innerHTML='<div class="msg"><b>Đã gửi yêu cầu thành công.</b><p>'+(bk?'Đây là yêu cầu đặt tour, chưa phải xác nhận đặt chỗ.':'Chạm Mây đã nhận được yêu cầu tư vấn của bạn.')+' Chúng mình sẽ liên hệ để xác nhận thông tin.</p></div>';
+    $("#cf-form").reset();
+  }catch(err){
+    console.error("Supabase insert error:",err);
+    o.innerHTML='<div class="msg"><b>Chưa gửi được yêu cầu.</b><p>Hãy thử lại sau. Nếu lỗi tiếp tục xảy ra, cần kiểm tra tên cột của bảng tour_bookings và chính sách RLS cho phép INSERT.</p></div>';
+  }finally{
+    button.disabled=false;
+    button.textContent=oldText;
+  }
+}
+$("#cf-form").onsubmit=e=>{
+  e.preventDefault();let ok=true;
+  const v=(id,er,cond,m)=>{const bad=!cond($(id).value.trim());$(er).textContent=bad?m:"";if(bad)ok=false};
+  v("#c-name","#e-name",s=>s.length>1,"Hãy nhập họ và tên.");
+  v("#c-mail","#e-mail",s=>/^\S+@\S+\.\S+$/.test(s),"Email chưa đúng, ví dụ ten@example.com.");
+  v("#c-tel","#e-tel",s=>!s||/^[0-9+\s().-]{8,15}$/.test(s),"Số điện thoại cần 8–15 chữ số.");
+  v("#c-msg","#e-msg",s=>s.length>=5,"Hãy cho chúng mình biết bạn cần tư vấn gì.");
+  const o=$("#c-out");if(!ok){o.innerHTML='<div class="msg">Vui lòng sửa các mục báo lỗi ở trên.</div>';return}
+  const bk=$("#c-type").value==="book";
+  if(bk){
+    o.innerHTML='<div class="msg"><b>Rà soát trước khi gửi</b><p id="rv"></p><button class="btn" type="button" id="c-ok">Xác nhận gửi</button></div>';
+    $("#rv").textContent="Họ tên: "+$("#c-name").value.trim()+" | Email: "+$("#c-mail").value.trim()+" | Combo: "+($("#c-combo").selectedOptions[0]?.textContent||"Chưa chọn combo")+" | Ngày dự kiến: "+($("#c-date").value||"chưa chọn")+" | Số khách: "+($("#c-n").value||"2");
+    $("#c-ok").onclick=()=>saveContactRequest($("#c-ok"));
+  }else{
+    saveContactRequest($("#cf-form").querySelector('button[type="submit"]'));
+  }
+};
+$("#news").onsubmit=async e=>{
+ e.preventDefault();const email=$("#n-mail").value.trim().toLowerCase(),o=$("#n-out"),btn=e.submitter||$("#news button[type=submit]");
+ if(!/^\S+@\S+\.\S+$/.test(email)){o.textContent="Email chưa đúng định dạng.";return}
+ const old=btn.textContent;btn.disabled=true;btn.textContent="Đang đăng ký...";o.textContent="Đang lưu đăng ký nhận tin...";
+ try{const {error}=await supabaseClient.from("newsletter_subscribers").insert([{email}]);if(error){if(error.code==="23505"){o.textContent="Email này đã đăng ký nhận tin trước đó.";return}throw error}o.textContent="Đăng ký nhận tin thành công.";$("#news").reset()}
+ catch(err){console.error("Newsletter save error:",err);o.textContent="Chưa đăng ký được: "+(err?.message||"lỗi kết nối");}
+ finally{btn.disabled=false;btn.textContent=old}
+};
+
+/* Tìm kiếm, thư viện ảnh, đánh giá */
+const nz=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/đ/g,"d").toLowerCase();
+const IDX=[...A.map(a=>({n:a.n,k:"Hoạt động: "+GROUPS[a.g],r:"/ca-nhan",t:a.n+" "+a.d+" "+GROUPS[a.g]})),...COMBOS.map(c=>({n:c.n,k:"Combo · "+rng(c.p[0],c.p[1]),r:"/tour/"+c.id,t:c.n+" "+c.t+" "+c.hl})),...PLACES.map(p=>({n:p.n,k:"Khám phá Huế",r:"/kham-pha-hue/"+p.s,t:p.n+" "+p.d})),...GUIDES.map(g=>({n:g.title,k:"Cẩm nang du lịch",r:"/cam-nang/"+g.id,t:g.title+" "+g.desc+" "+g.body})),...POLS.map(p=>({n:p.n,k:"Chính sách",r:"/chinh-sach/"+p.s,t:p.n+" "+p.i}))];
+const sd=$("#sd");$("#sb").onclick=()=>{sd.showModal();$("#sq").focus()};$("#sx").onclick=()=>sd.close();
+$("#sq").oninput=()=>{const q=nz($("#sq").value.trim()),o=$("#sr");if(!q){o.innerHTML='<p class="note">Thử: ô ăn quan, thả diều, Đại Nội, làng quê, hoàn tiền.</p>';return}const r=IDX.filter(x=>nz(x.t).includes(q)).slice(0,12);o.innerHTML=r.length?r.map(x=>`<a class="sri" href="#${x.r}">${x.n}<small>${x.k}</small></a>`).join(""):'<p>Không tìm thấy. Thử “làng quê”, “trò chơi” hoặc “Huế”.</p>'};
+$("#sr").onclick=e=>{if(e.target.closest("a"))sd.close()};
+const GAL=[
+ {n:"Làng quê Huế",s:"lam-nong",k:"farm"},
+ {n:"Chợ quê",s:"cho-que",k:"market"},
+ {n:"Trò chơi dân gian",s:"tro-choi-dan-gian",k:"games"},
+ {n:"Diều giấy",s:"tha-dieu",k:"kite"},
+ {n:"Đồ thủ công",s:"thu-cong",k:"craft"},
+ {n:"Bưu thiếp viết tay",s:"buu-thiep-gui-mot-the-he",k:"story"},
+ {n:"Đi thuyền rồng và nghe ca Huế trên sông Hương",s:"thuyen-rong-ca-hue",k:"boat"},
+ {n:"Đại Nội Huế",s:"dai-noi",k:"gate"},
+ {n:"Cầu Ngói Thanh Toàn",s:"cau-ngoi-thanh-toan",k:"ngoi"},
+ {n:"Ẩm thực đặc sản Huế",s:"am-thuc-hue",k:"food"}
+];let gi=0;const lb=$("#lb");
+const galleryImage=(t,i)=>IMG[t.s]?imgMarkup(t.s,t.n):scene(t.k,i);
+$("#gal").innerHTML=GAL.map((t,i)=>`<button type="button" class="gt tilt" data-t="7" data-i="${i}" aria-label="Mở ảnh: ${t.n}">${galleryImage(t,i)}<span>${t.n}</span></button>`).join("");
+function showG(){const t=GAL[gi];$("#lb-i").innerHTML=galleryImage(t,gi);$("#lb-c").textContent=t.n}
+$("#gal").onclick=e=>{const b=e.target.closest(".gt");if(b){gi=+b.dataset.i;showG();lb.showModal()}};
+$("#lb-p").onclick=()=>{gi=(gi+GAL.length-1)%GAL.length;showG()};$("#lb-n").onclick=()=>{gi=(gi+1)%GAL.length;showG()};$("#lb-x").onclick=()=>lb.close();
+lb.addEventListener("keydown",e=>{if(e.key==="ArrowLeft")$("#lb-p").click();if(e.key==="ArrowRight")$("#lb-n").click()});
+let RV=[];$("#rf-c").innerHTML='<option value="">Tất cả combo</option>'+cOpts;$("#r-combo").innerHTML='<option value="">Chưa chọn</option>'+cOpts;
+function renderRv(){const c=$("#rf-c").value,s=+$("#rf-s").value,o=$("#rv-list");o.innerHTML="";if(!RV.length){o.innerHTML='<div class="msg">Chưa có đánh giá được duyệt. Sau khi gửi, đánh giá sẽ được xem xét trước khi hiển thị.</div>';return}
+const l=RV.filter(r=>(!c||r.c===c)&&(!s||r.s===s));if(!l.length){o.innerHTML='<div class="msg">Không có đánh giá khớp bộ lọc.</div>';return}
+l.forEach(r=>{const d=document.createElement("article");d.className="day";const h=document.createElement("h3");h.textContent=r.n+" — "+"★".repeat(r.s)+"☆".repeat(5-r.s);const p=document.createElement("p");p.textContent=r.t;const k=document.createElement("p");k.className="note";k.textContent=((COMBOS.find(x=>x.id===r.c)||{n:"Chạm Mây Travel"}).n);d.append(h,p,k);o.append(d)})}
+async function loadReviews(){const o=$("#rv-list");o.innerHTML='<div class="msg">Đang tải đánh giá...</div>';try{const {data,error}=await supabaseClient.from("tour_reviews").select("id,display_name,combo_id,rating,content,created_at").eq("approved",true).order("created_at",{ascending:false}).limit(100);if(error)throw error;RV=(data||[]).map(r=>({n:r.display_name,c:r.combo_id,s:r.rating,t:r.content}));renderRv()}catch(err){console.error("Review load error:",err);o.innerHTML='<div class="msg">Chưa tải được đánh giá. Kiểm tra bảng tour_reviews và chính sách truy cập trong Supabase.</div>'}}
+$("#rf-c").onchange=$("#rf-s").onchange=renderRv;loadReviews();
+$("#rv-form").onsubmit=async e=>{e.preventDefault();let ok=true;const chk=(er,bad,m)=>{$(er).textContent=bad?m:"";if(bad)ok=false};
+chk("#re-name",$("#r-name").value.trim().length<2,"Hãy nhập tên hiển thị.");chk("#re-star",!$("#r-star").value,"Hãy chọn số sao.");chk("#re-text",$("#r-text").value.trim().length<10,"Nội dung cần ít nhất 10 ký tự.");chk("#re-ok",!$("#r-ok").checked,"Bạn cần đồng ý để gửi.");
+const o=$("#r-out"),btn=e.submitter||$("#rv-form button[type=submit]");if(!ok){o.innerHTML='<div class="msg">Vui lòng sửa các mục báo lỗi.</div>';return}if(!$("#r-combo").value){o.innerHTML='<div class="msg">Hãy chọn tour đã tham gia.</div>';return}
+const old=btn.textContent;btn.disabled=true;btn.textContent="Đang gửi...";
+try{const {error}=await supabaseClient.from("tour_reviews").insert([{display_name:$("#r-name").value.trim(),combo_id:$("#r-combo").value,rating:Number($("#r-star").value),content:$("#r-text").value.trim(),approved:false}]);if(error)throw error;o.innerHTML='<div class="msg"><b>Đã gửi đánh giá.</b><p>Nội dung đang chờ Chạm Mây xem xét trước khi hiển thị công khai.</p></div>';e.target.reset()}
+catch(err){console.error("Review submit error:",err);o.innerHTML='<div class="msg">Chưa gửi được đánh giá. Kiểm tra bảng tour_reviews và chính sách INSERT trong Supabase.</div>'}
+finally{btn.disabled=false;btn.textContent=old}
+};
+
+/* Trang con: địa điểm & chính sách */
+function renderPlace(s){const p=pById[s],i=PLACES.indexOf(p),acts=pAct(p),lo=acts.reduce((t,a)=>t+a.lo,0),hi=acts.reduce((t,a)=>t+a.hi,0),h=acts.reduce((t,a)=>t+a.h,0),cb=pCombos(p),pv=PLACES[(i+PLACES.length-1)%PLACES.length],nx=PLACES[(i+1)%PLACES.length];
+const note=acts.filter(a=>a.f).map(a=>a.f).filter((v,k,r)=>r.indexOf(v)===k)[0];
+$("#place-box").innerHTML=`<nav class="crumb rv" aria-label="Đường dẫn" style="display:block"><a href="#/">Trang chủ</a> / <a href="#/kham-pha-hue">Khám phá Huế</a> / ${p.n}</nav>
+<div class="pimg tilt rv" data-t="3">${pic(p.s,p.k,i)}</div>
+<div class="pd"style="padding:0"><h1 class="rv">${p.n}</h1><p class="rv" style="font-size:1.15rem;color:var(--sub)">${p.d}</p>
+<div class="pbody"><div class="art2 rvg">${p.p.map(t=>`<p>${t}</p>`).join("")}<p style="padding:14px 18px;border-left:4px solid var(--ac);background:var(--card);border-radius:0 8px 8px 0;max-width:66ch"><b>Gợi ý:</b> ${p.tip}</p></div>
+<aside class="aside rv"><h3>Trong hành trình Chạm Mây</h3><dl><dt>Thời lượng dự kiến</dt><dd>Khoảng ${h} giờ</dd><dt>Giá dự kiến</dt><dd>${rng(lo,hi,note)}${lo||hi?"/người":""}</dd><dt>Có trong combo</dt><dd>${cb.length?cb.map(c=>`<a href="#/tour/${c.id}" style="display:block;font-weight:500">${c.n}</a>`).join(""):"Hoạt động tùy chọn"}</dd></dl><div class="btns"><a class="btn" href="#/ca-nhan">Thêm vào lịch trình</a><a class="btn ghost dk" href="#/tour">Xem các combo</a></div></aside></div>
+<div class="pn rv"><a href="#/kham-pha-hue/${pv.s}"><small>Trước</small>${pv.n}</a><a href="#/kham-pha-hue/${nx.s}"><small>Tiếp theo</small>${nx.n}</a></div></div>`}
+function renderPolicy(s){const p=polBy[s];$("#pol-h").textContent=p.n;$("#pol-p").textContent=p.i;
+$("#pol-nav").innerHTML=POLS.map(x=>`<a href="#/chinh-sach/${x.s}"${x.s===s?' aria-current="page"':""}>${x.n}</a>`).join("");
+$("#pol-body").innerHTML=`<div class="msg rv" style="margin-top:0">Nội dung tham khảo cho dự án, cập nhật lần cuối 14/10/2026. Mức phí, thời hạn và điều kiện cụ thể được ghi rõ trong xác nhận đặt tour.</div><div class="rvg">`+p.c.map(c=>`<div><h2>${c[0]}</h2><p>${c[1]}</p></div>`).join("")+`</div><p class="note rv" style="margin-top:30px">Cần hỏi thêm? <a href="#/lien-he">Liên hệ Chạm Mây</a>.</p>`}
+
+/* Hiệu ứng: hiện dần khi cuộn */
+const io="IntersectionObserver" in window?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.1,rootMargin:"0px 0px -6% 0px"}):null;
+function rvScan(view){$$(".rv h2,.rv h1,.rv h3",view).forEach(h=>h.classList.add("reveal-text"));$$(".rvg",view).forEach(g=>[...g.children].forEach((c,i)=>{c.classList.add("rv");c.style.setProperty("--d",(i%6)*.09+"s")}));
+$$(".rv",view).forEach(el=>{el.classList.remove("in");if(io){io.unobserve(el);requestAnimationFrame(()=>io.observe(el))}else el.classList.add("in")})}
+
+/* Hiệu ứng 3D: nghiêng thẻ theo con trỏ */
+(()=>{if(!matchMedia("(hover:hover) and (pointer:fine)").matches||matchMedia("(prefers-reduced-motion:reduce)").matches)return;
+const rs=t=>{t.style.setProperty("--rx","0deg");t.style.setProperty("--ry","0deg");t.classList.remove("hot")};
+document.addEventListener("pointermove",e=>{const t=e.target.closest&&e.target.closest(".tilt");if(!t)return;const r=t.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height,m=+t.dataset.t||8;
+t.style.setProperty("--ry",((x-.5)*m*2).toFixed(2)+"deg");t.style.setProperty("--rx",((.5-y)*m*2).toFixed(2)+"deg");t.style.setProperty("--gx",(x*100)+"%");t.style.setProperty("--gy",(y*100)+"%");t.classList.add("hot")});
+document.addEventListener("pointerout",e=>{const t=e.target.closest&&e.target.closest(".tilt");if(t&&!t.contains(e.relatedTarget))rs(t)})})();
+
+/* Hiệu ứng 3D: hero nhiều lớp theo chuột và cuộn */
+(()=>{const hero=$("#hero"),L=$$("#hero .ly");let mx=0,my=0,sy=0,t=false;if(matchMedia("(prefers-reduced-motion:reduce)").matches)return;
+const ap=()=>{t=false;L.forEach(l=>{const k=+l.dataset.k;l.style.transform=`translate(${(mx*k*.5).toFixed(1)}px,${(my*k*.35+sy*k/500).toFixed(1)}px)${l.dataset.s?` scale(${l.dataset.s})`:""}`})},rq=()=>{if(!t){t=true;requestAnimationFrame(ap)}};
+hero.addEventListener("pointermove",e=>{const r=hero.getBoundingClientRect();mx=(e.clientX-r.left)/r.width-.5;my=(e.clientY-r.top)/r.height-.5;rq()});
+hero.addEventListener("pointerleave",()=>{mx=0;my=0;rq()});
+addEventListener("scroll",()=>{if($('.view[data-v="/"]').classList.contains("on")){sy=Math.min(scrollY,700);rq()}},{passive:true})})();
+
+/* Router */
+const hd=$("#hd"),nav=$("#nav"),bg=$("#burger");
+bg.onclick=()=>{const o=nav.classList.toggle("open");bg.setAttribute("aria-expanded",o)};
+function route(){const raw=location.hash.replace(/^#/,"")||"/",p=raw.split("/").filter(Boolean);let k="/"+(p[0]||""),arg=p[1]||"";
+if(k==="/cam-nang"&&arg){if(GUIDES.some(g=>g.id===arg))k="/guide-detail";else{location.replace("#/cam-nang");return}}
+if(k==="/kham-pha-hue"&&arg){if(pById[arg])k="/place";else{location.replace("#/kham-pha-hue");return}}
+if(k==="/chinh-sach"){if(polBy[arg])k="/policy";else{location.replace("#/");return}}
+if(k==="/tour"&&arg&&!COMBOS.find(c=>c.id===arg))arg="";
+if(!$(`.view[data-v="${k}"]`)){k="/";arg=""}
+const nk=k==="/place"?"/kham-pha-hue":k==="/policy"?"":k==="/guide-detail"?"/cam-nang":k;
+
+if(k==="/guide-detail")renderGuide(arg);if(k==="/place")renderPlace(arg);if(k==="/policy")renderPolicy(arg);if(k==="/tour"){if(arg)cf="",openId=arg,$$("#cf button").forEach(x=>x.setAttribute("aria-pressed",x.dataset.v===""));renderCombos()}if(k==="/ca-nhan"){renderPlan();renderLive()}if(k==="/danh-gia")renderRv();
+const view=$(`.view[data-v="${k}"]`);const bannerMap={"/tour":"./banner-tour-3n2d.jpg","/ca-nhan":"./banner-du-lich-ca-nhan.jpg","/ve-cham-may":"./banner-ve-cham-may.jpg","/kham-pha-hue":"./banner-kham-pha-hue.jpg","/cam-nang":"./banner-kham-pha-hue.jpg"};const ph=view.querySelector(".pagehead");if(ph&&bannerMap[k])ph.style.setProperty("--page-banner",`url("${bannerMap[k]}")`);$$(".view").forEach(v=>v.classList.toggle("on",v===view));
+$$("#hd a[data-r]").forEach(a=>{if(a.dataset.r===nk)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+nav.classList.remove("open");bg.setAttribute("aria-expanded","false");window.scrollTo({top:0,behavior:"instant"});hd.classList.toggle("solid",k!=="/"||scrollY>20);
+document.title=(k==="/"?"":k==="/place"?pById[arg].n+" — ":k==="/policy"?polBy[arg].n+" — ":$(".pagehead h1",view).textContent+" — ")+"Chạm Mây Travel";
+rvScan(view);
+if(k==="/tour"&&arg)setTimeout(()=>{const e=$("#cb-"+arg);if(e)e.scrollIntoView({behavior:"smooth",block:"start"})},350)}
+addEventListener("hashchange",route);
+addEventListener("scroll",()=>hd.classList.toggle("solid",($(".view.on")||{dataset:{}}).dataset.v!=="/"||scrollY>20),{passive:true});
+
+/* ===== Logo thương hiệu: tìm file, gắn vào header/footer và góc ảnh ===== */
+(()=>{const root=document.documentElement;
+const setLogo=src=>{root.style.setProperty("--logo-url",'url("'+src.replace(/"/g,"%22")+'")');$$(".brand-logo").forEach(i=>{i.src=src});root.classList.add("has-logo");try{sessionStorage.setItem("cm_logo",src)}catch(e){}};
+const cand=[];if(LOGO_SRC)cand.push(LOGO_SRC);else{try{const c=sessionStorage.getItem("cm_logo");if(c)cand.push(c)}catch(e){}
+["logo-tron","logo-tròn","logo tròn","logo"].forEach(n=>["png","jpg","jpeg","webp"].forEach(x=>cand.push("./"+encodeURIComponent(n)+"."+x)));cand.push("./logo-tron.svg","./logo.svg")}
+(function next(i){if(i>=cand.length)return;const im=new Image();im.onload=()=>setLogo(cand[i]);im.onerror=()=>next(i+1);im.src=cand[i]})(0);
+/* Logo ở góc các ảnh trong web (banner, thẻ combo, thẻ địa điểm, ảnh trang chi tiết) */
+const WM=".hero,.pagehead,.cm .im,.pc .im,.cmedia,.pimg";let q=0;
+const apply=()=>{$$(WM).forEach(el=>{if(el.querySelector(":scope>.wm-logo"))return;if(!el.matches(".hero,.pagehead")&&!el.querySelector("img"))return;const s=document.createElement("span");s.className="wm-logo";s.setAttribute("aria-hidden","true");el.appendChild(s)})};
+new MutationObserver(()=>{if(!q){q=1;requestAnimationFrame(()=>{q=0;apply()})}}).observe($("#main"),{childList:true,subtree:true});apply()})();
+
+/* ===== Tin tức: danh sách bài viết ngoài ===== */
+(()=>{const box=$("#news-list");if(!box)return;
+NEWS.forEach(n=>{if(!/^https:\/\//.test(n.url))return;const a=document.createElement("a"),t=document.createElement("span"),h=document.createElement("h3"),p=document.createElement("p"),s=document.createElement("span"),v=document.createElement("span");
+a.className="ncard";a.href=n.url;a.target="_blank";a.rel="noopener noreferrer";t.className="nt";t.textContent=n.tag;h.textContent=n.title;p.textContent=n.desc;s.className="ns";s.textContent="Đọc trên "+n.src;v.className="vh";v.textContent=" (mở trong tab mới)";s.append(v);a.append(t,h,p,s);box.append(a)})})();
+
+/* ===== Thời tiết Huế hôm nay (Open-Meteo, dữ liệu thật lấy khi mở trang) ===== */
+(()=>{const body=$("#wx-body");if(!body)return;
+const el=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e};
+const ICON={sun:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="24" cy="24" r="8"/><path d="M24 5v6M24 37v6M5 24h6M37 24h6M10.6 10.6l4.2 4.2M33.2 33.2l4.2 4.2M37.4 10.6l-4.2 4.2M14.8 33.2l-4.2 4.2"/></svg>',
+cloud:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 35a8 8 0 0 1-1-15.9A10 10 0 0 1 32 16a8.5 8.5 0 0 1 2 19z"/></svg>',
+rain:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 30a8 8 0 0 1-1-15.9A10 10 0 0 1 32 11a8.5 8.5 0 0 1 2 19z"/><path d="M16 37l-2 5M25 37l-2 5M34 37l-2 5"/></svg>',
+storm:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 30a8 8 0 0 1-1-15.9A10 10 0 0 1 32 11a8.5 8.5 0 0 1 2 19z"/><path d="M25 31l-5 8h6l-3 7"/></svg>',
+fog:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M8 18h32M12 26h28M8 34h32"/></svg>'};
+/* Mã thời tiết WMO -> mô tả tiếng Việt + biểu tượng */
+const wmo=c=>c===0?["Trời quang","sun"]:c===1?["Ít mây","sun"]:c===2?["Có mây rải rác","cloud"]:c===3?["Nhiều mây","cloud"]:(c===45||c===48)?["Sương mù","fog"]:(c>=51&&c<=57)?["Mưa phùn","rain"]:(c>=61&&c<=65)?[c===61?"Mưa nhỏ":c===63?"Mưa vừa":"Mưa to","rain"]:(c===66||c===67)?["Mưa lạnh","rain"]:(c>=80&&c<=82)?[c===80?"Mưa rào nhẹ":c===81?"Mưa rào":"Mưa rào to","rain"]:(c>=95)?["Dông","storm"]:["Thời tiết thay đổi","cloud"];
+const WD=["Chủ nhật","Thứ hai","Thứ ba","Thứ tư","Thứ năm","Thứ sáu","Thứ bảy"];
+const dm=iso=>{const [y,m,d]=iso.slice(0,10).split("-").map(Number);return{d:new Date(y,m-1,d),m,dd:d}};
+const fail=()=>{body.replaceChildren();const p=el("p","note","Chưa tải được dữ liệu thời tiết lúc này. Bạn có thể xem gợi ý thời điểm đi Huế theo mùa ở bài viết bên cạnh.");body.append(p)};
+async function load(){const url="https://api.open-meteo.com/v1/forecast?latitude=16.4637&longitude=107.5909&current=temperature_2m,apparent_temperature,relative_humidity_2m,precipitation,weather_code,wind_speed_10m&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=Asia%2FBangkok&forecast_days=3";
+try{const ctl=new AbortController(),to=setTimeout(()=>ctl.abort(),9000);const r=await fetch(url,{signal:ctl.signal});clearTimeout(to);if(!r.ok)throw new Error("http");const d=await r.json();
+const c=d.current,dl=d.daily;if(!c||!dl||!dl.time||typeof c.temperature_2m!=="number")throw new Error("data");
+const [lab,ic]=wmo(c.weather_code),t0=dm(c.time);$("#wx-date").textContent=WD[t0.d.getDay()]+", "+t0.dd+"/"+t0.m;
+const now=el("div","wx-now"),icn=el("span","wx-ic");icn.innerHTML=ICON[ic];const tw=el("div");tw.append(el("div","wx-t",Math.round(c.temperature_2m)+"°C"),el("div","wx-c",lab));now.append(icn,tw);
+const st=el("dl","wx-stats");[["Cảm giác như",Math.round(c.apparent_temperature)+"°C"],["Độ ẩm",Math.round(c.relative_humidity_2m)+"%"],["Gió",Math.round(c.wind_speed_10m)+" km/h"],["Khả năng mưa hôm nay",(dl.precipitation_probability_max[0]??0)+"%"]].forEach(([k,v])=>{const row=el("div");row.append(el("dt","",k),el("dd","",v));st.append(row)});
+const days=el("div","wx-days");dl.time.forEach((t,i)=>{const x=dm(t),cell=el("div","wx-day");cell.append(el("b","",i===0?"Hôm nay":WD[x.d.getDay()]),el("span","",wmo(dl.weather_code[i])[0]),el("span","",Math.round(dl.temperature_2m_min[i])+"–"+Math.round(dl.temperature_2m_max[i])+"°C"),el("span","","Mưa "+(dl.precipitation_probability_max[i]??0)+"%"));days.append(cell)});
+body.replaceChildren(now,st,days);
+const rainy=(dl.precipitation_probability_max[0]||0)>=60||c.precipitation>0;
+if(rainy)body.append(el("p","wx-tip","Hôm nay có khả năng mưa, bạn nên mang theo áo mưa mỏng và giày dễ khô."));
+if(t0.m===10||t0.m===11)body.append(el("p","wx-tip","Theo bài viết của vietnamtourism.com, tháng 10 và 11 thường mưa nhiều và có nguy cơ ngập lụt ở Huế. Hãy theo dõi dự báo chính thức trước chuyến đi."))
+}catch(e){fail()}}
+load()})();
+route();
+</script>
+</body>
+</html>
