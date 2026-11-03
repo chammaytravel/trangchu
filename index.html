@@ -204,6 +204,17 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--ac);box-
 .hv-card .hv-by{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;font-size:14px;color:var(--sub)}
 .hv-card .hv-by b{color:var(--tx)}
 
+/* Trang câu chuyện khách hàng */
+.hv-more-wrap{margin-top:18px}.hv-more{display:inline-flex;gap:10px;align-items:center;color:var(--ac2);font-weight:600;text-decoration:none;border-bottom:1px solid var(--ac2);padding:5px 0}.hv-more span{transition:transform .25s}.hv-more:hover span{transform:translateX(5px)}
+.story-page-intro{text-align:center;margin:0 auto 34px;max-width:720px}.story-page-intro p{margin:0 auto}
+.hv-all-list{display:grid;gap:28px}.hv-story{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:clamp(18px,3vw,30px);box-shadow:var(--sh)}
+.hv-story-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;flex-wrap:wrap;margin-bottom:14px}.hv-story-head h3{margin:0 0 5px}.hv-story-stars{color:var(--ac);letter-spacing:2px;font-size:1.15rem}.hv-story-text{white-space:pre-wrap;overflow-wrap:anywhere;max-width:none;margin:8px 0 18px}
+.hv-story-meta{display:flex;gap:8px 14px;flex-wrap:wrap;color:var(--sub);font-size:14px}
+.hv-story-media{display:flex;flex-wrap:nowrap;gap:10px;margin-top:14px;overflow-x:auto;padding:2px 2px 10px;scroll-snap-type:x proximity}.hv-story-link{flex:0 0 clamp(95px,12vw,145px);scroll-snap-align:start}.hv-story-link{display:block;text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:transform .3s,box-shadow .3s}.hv-story-link:hover{transform:translateY(-3px);box-shadow:var(--sh)}
+.hv-story-link .hv-story-img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--sky)}.hv-story-link .hv-story-label{display:block;padding:10px 12px;font-size:14px;font-weight:600;color:var(--tx)}.hv-story-link .hv-story-label small{display:block;color:var(--sub);font-weight:400}
+.story-back{text-align:center;margin-top:34px}
+@media(max-width:560px){.hv-story-media{gap:8px}.hv-story-link{flex-basis:105px}.hv-story{padding:16px}.hv-story-link .hv-story-label{font-size:12px;padding:7px}}
+
 /* Chi tiết địa điểm / chính sách */
 .pd{padding:clamp(110px,13vw,140px) 0 clamp(50px,7vw,80px)}
 .crumb{font-size:14px;color:var(--sub);margin-bottom:18px}.crumb a{text-decoration:none;border-bottom:1px solid var(--line)}.crumb a:hover{color:var(--ac)}
@@ -543,7 +554,7 @@ header.solid .logo .brand-logo{width:40px;height:40px;box-shadow:0 0 0 1.5px var
 <section id="cau-chuyen" style="background:var(--card)"><div class="wrap">
 <div class="shead rv"><h2>Câu chuyện khách hàng</h2><p>Những chia sẻ thật từ khách đã đi cùng Chạm Mây. Bạn đã đi cùng chúng mình? Hãy kể lại chuyến đi của bạn.</p></div>
 <div class="hv-grid">
-<div class="rv"><div id="hv-sum"></div><div id="hv-list" class="hv-list" aria-live="polite"></div></div>
+<div class="rv"><div id="hv-sum"></div><div id="hv-list" class="hv-list" aria-live="polite"></div><div class="hv-more-wrap"><a class="hv-more" href="#/cau-chuyen-khach-hang">Xem thêm câu chuyện <span aria-hidden="true">→</span></a></div></div>
 <form id="hv-form" class="hv-form rv" novalidate>
 <h3>Chia sẻ chuyến đi của bạn</h3>
 <label class="f">Bạn đã đi combo nào?<select id="hv-combo"></select><span class="err" id="hve-combo"></span></label>
@@ -565,6 +576,12 @@ header.solid .logo .brand-logo{width:40px;height:40px;box-shadow:0 0 0 1.5px var
 <p style="margin-inline:auto">Chọn một lịch trình có sẵn, hoặc tự viết lại hành trình theo cách của bạn.</p>
 <div class="btns" style="justify-content:center"><a class="btn" style="background:var(--on);color:var(--tx);border-color:var(--on)" href="#/tour">Chọn tour có sẵn</a><a class="btn ghost" href="#/ca-nhan">Tự thiết kế hành trình</a></div></div></div></section>
 
+</div>
+
+<!-- TẤT CẢ CÂU CHUYỆN KHÁCH HÀNG -->
+<div class="view" data-v="/cau-chuyen-khach-hang">
+ <div class="pagehead"><div class="wrap"><p class="note" style="color:var(--on)"><a href="#/" style="text-decoration:none">Trang chủ</a> / Câu chuyện khách hàng</p><h1>Câu chuyện khách hàng</h1><p>Những chia sẻ từ khách đã trải nghiệm các hành trình cùng Chạm Mây. Mỗi câu chuyện được kết nối với combo và những hoạt động trong chuyến đi.</p></div></div>
+ <section><div class="wrap"><div class="story-page-intro"><h2 class="hue">Những ký ức được kể lại</h2><p class="note">Chọn hình ảnh combo hoặc hoạt động để xem thông tin chi tiết.</p></div><div id="hv-all-list" class="hv-all-list" aria-live="polite"><div class="msg">Đang tải câu chuyện khách hàng...</div></div><div class="story-back"><a class="btn ghost dk" href="#/">← Trở về trang chủ</a></div></div></section>
 </div>
 
 <!-- TOUR -->
@@ -621,13 +638,6 @@ header.solid .logo .brand-logo{width:40px;height:40px;box-shadow:0 0 0 1.5px var
 <!-- TRANG CHÍNH SÁCH -->
 <div class="view" data-v="/policy"><div class="pagehead"><div class="wrap"><h1 id="pol-h"></h1><p id="pol-p"></p></div></div><section><div class="wrap pol"><nav id="pol-nav" aria-label="Các chính sách"></nav><div id="pol-body"></div></div></section></div>
 
-<!-- ĐÁNH GIÁ -->
-<div class="view" data-v="/danh-gia">
-<div class="pagehead"><div class="wrap"><h1>Đánh giá từ khách đi cùng Chạm Mây</h1><p>Chỉ hiển thị đánh giá thật khi hệ thống có dữ liệu.</p></div></div>
-<section><div class="wrap two" style="align-items:start"><div><div class="row"><label class="f">Combo<select id="rf-c"></select></label><label class="f">Số sao<select id="rf-s"><option value="0">Tất cả</option><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></label></div><div id="rv-list"></div></div>
-<form id="rv-form" novalidate><h2>Viết đánh giá</h2><label class="f">Tên hiển thị<input type="text" id="r-name"><span class="err" id="re-name"></span></label><label class="f">Tour đã tham gia<select id="r-combo"></select></label><label class="f">Số sao<select id="r-star"><option value="">Chọn</option><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select><span class="err" id="re-star"></span></label><label class="f">Nội dung<textarea id="r-text" rows="5"></textarea><span class="err" id="re-text"></span></label><label class="opt"><input type="checkbox" id="r-ok">Mình đồng ý để Chạm Mây xem xét và hiển thị nội dung này.</label><span class="err" id="re-ok"></span><button class="btn" type="submit">Gửi đánh giá</button><div id="r-out" role="status"></div></form></div></section>
-<section><div class="wrap"><div id="cm-general"></div></div></section></div>
-
 <!-- LIÊN HỆ -->
 <div class="view" data-v="/lien-he">
 <div class="pagehead"><div class="wrap"><h1>Gửi Chạm Mây đôi lời</h1><p>Chúng mình sẽ tư vấn hành trình phù hợp với bạn.</p></div></div>
@@ -647,7 +657,7 @@ header.solid .logo .brand-logo{width:40px;height:40px;box-shadow:0 0 0 1.5px var
 
 <footer><div class="wrap"><div class="cols">
 <div class="footer-brand"><img class="brand-logo footer-logo" width="76" height="76" alt="Logo Chạm Mây Travel" loading="lazy" decoding="async"><h3>CHẠM MÂY TRAVEL</h3><p>Chạm vào miền ký ức, tìm về những điều nguyên bản.</p><h3>Liên hệ</h3><ul class="footer-contact"><li><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&query=79+Duong+Ho+Tung+Mau+Tu+Liem+Ha+Noi" target="_blank" rel="noopener noreferrer">79 Đ. Hồ Tùng Mậu, Từ Liêm, Hà Nội</a></li><li><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg><a href="mailto:chammaytravel@gmail.com">chammaytravel@gmail.com</a></li><li><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h3l2 5-2 1.5a15 15 0 0 0 4.5 4.5L16 12l5 2v3c0 1.1-.9 2-2 2C10 19 5 14 5 5c0-1.1.9-2 2-2Z"/></svg><a href="tel:0967760589">0967 760 589</a></li></ul><h3 class="soc-h">Mạng xã hội</h3><div id="f-social" class="soc-list"></div></div>
-<div><h3>Khám phá</h3><ul><li><a href="#/">Trang chủ</a></li><li><a href="#/ca-nhan">Du lịch cá nhân</a></li><li><a href="#/ve-cham-may">Về Chạm Mây</a></li><li><a href="#/kham-pha-hue">Khám phá Huế</a></li><li><a href="#/cam-nang">Cẩm nang du lịch</a></li><li><a href="#/danh-gia">Đánh giá</a></li><li><a href="#/lien-he">Liên hệ</a></li></ul></div>
+<div><h3>Khám phá</h3><ul><li><a href="#/">Trang chủ</a></li><li><a href="#/ca-nhan">Du lịch cá nhân</a></li><li><a href="#/ve-cham-may">Về Chạm Mây</a></li><li><a href="#/kham-pha-hue">Khám phá Huế</a></li><li><a href="#/cam-nang">Cẩm nang du lịch</a></li><li><a href="#/lien-he">Liên hệ</a></li></ul></div>
 <div><h3>Chính sách</h3><ul id="f-pol"></ul></div>
 <div><h3>Nhận tin</h3><form id="news"><label class="f" style="color:var(--on)">Email<input type="email" id="n-mail" style="background:var(--bg)"></label><button class="btn" style="margin-top:8px" type="submit">Đăng ký</button><div id="n-out" role="status" style="margin-top:8px;font-size:14px"></div></form></div>
 </div><div class="fb"><p>© <span id="yr"></span> CHẠM MÂY TRAVEL. All rights reserved.</p></div><p class="fb-note">ĐỀ TÀI PHỤC VỤ CHO HỌC PHẦN MARKETING SỐ CỦA SINH VIÊN, KHÔNG CÓ XUNG ĐỘT VỀ NỘI DUNG CŨNG NHƯ TRANH CHẤP VỚI CÁC THƯƠNG HIỆU, MỤC TIÊU PHI LỢI NHUẬN.</p></div></footer>
@@ -1155,20 +1165,21 @@ function showG(){const t=GAL[gi];$("#lb-i").innerHTML=galleryImage(t,gi);$("#lb-
 $("#gal").onclick=e=>{const b=e.target.closest(".gt");if(b){gi=+b.dataset.i;showG();lb.showModal()}};
 $("#lb-p").onclick=()=>{gi=(gi+GAL.length-1)%GAL.length;showG()};$("#lb-n").onclick=()=>{gi=(gi+1)%GAL.length;showG()};$("#lb-x").onclick=()=>lb.close();
 lb.addEventListener("keydown",e=>{if(e.key==="ArrowLeft")$("#lb-p").click();if(e.key==="ArrowRight")$("#lb-n").click()});
-let RV=[];$("#rf-c").innerHTML='<option value="">Tất cả combo</option>'+cOpts;$("#r-combo").innerHTML='<option value="">Chưa chọn</option>'+cOpts;
-function renderRv(){const c=$("#rf-c").value,s=+$("#rf-s").value,o=$("#rv-list");o.innerHTML="";if(!RV.length){o.innerHTML='<div class="msg">Chưa có đánh giá được duyệt. Sau khi gửi, đánh giá sẽ được xem xét trước khi hiển thị.</div>';return}
-const l=RV.filter(r=>(!c||r.c===c)&&(!s||r.s===s));if(!l.length){o.innerHTML='<div class="msg">Không có đánh giá khớp bộ lọc.</div>';return}
-l.forEach(r=>{const d=document.createElement("article");d.className="day";const h=document.createElement("h3");h.textContent=r.n+" — "+"★".repeat(r.s)+"☆".repeat(5-r.s);const p=document.createElement("p");p.textContent=r.t;const k=document.createElement("p");k.className="note";k.textContent=((COMBOS.find(x=>x.id===r.c)||{n:"Chạm Mây Travel"}).n);d.append(h,p,k);o.append(d)})}
-async function loadReviews(){const o=$("#rv-list");o.innerHTML='<div class="msg">Đang tải đánh giá...</div>';try{const {data,error}=await supabaseClient.from("tour_reviews").select("id,display_name,combo_id,rating,content,created_at").eq("approved",true).order("created_at",{ascending:false}).limit(100);if(error)throw error;RV=(data||[]).map(r=>({n:r.display_name,c:r.combo_id,s:r.rating,t:r.content,d:r.created_at}));renderRv();if(typeof renderHv==="function")renderHv()}catch(err){console.error("Review load error:",err);o.innerHTML='<div class="msg">Chưa tải được đánh giá. Kiểm tra bảng tour_reviews và chính sách truy cập trong Supabase.</div>'}}
-$("#rf-c").onchange=$("#rf-s").onchange=renderRv;loadReviews();
-$("#rv-form").onsubmit=async e=>{e.preventDefault();let ok=true;const chk=(er,bad,m)=>{$(er).textContent=bad?m:"";if(bad)ok=false};
-chk("#re-name",$("#r-name").value.trim().length<2,"Hãy nhập tên hiển thị.");chk("#re-star",!$("#r-star").value,"Hãy chọn số sao.");chk("#re-text",$("#r-text").value.trim().length<10,"Nội dung cần ít nhất 10 ký tự.");chk("#re-ok",!$("#r-ok").checked,"Bạn cần đồng ý để gửi.");
-const o=$("#r-out"),btn=e.submitter||$("#rv-form button[type=submit]");if(!ok){o.innerHTML='<div class="msg">Vui lòng sửa các mục báo lỗi.</div>';return}if(!$("#r-combo").value){o.innerHTML='<div class="msg">Hãy chọn tour đã tham gia.</div>';return}
-const old=btn.textContent;btn.disabled=true;btn.textContent="Đang gửi...";
-try{const {error}=await supabaseClient.from("tour_reviews").insert([{display_name:$("#r-name").value.trim(),combo_id:$("#r-combo").value,rating:Number($("#r-star").value),content:$("#r-text").value.trim(),approved:false}]);if(error)throw error;o.innerHTML='<div class="msg"><b>Đã gửi đánh giá.</b><p>Nội dung đang chờ Chạm Mây xem xét trước khi hiển thị công khai.</p></div>';e.target.reset()}
-catch(err){console.error("Review submit error:",err);o.innerHTML='<div class="msg">Chưa gửi được đánh giá. Kiểm tra bảng tour_reviews và chính sách INSERT trong Supabase.</div>'}
-finally{btn.disabled=false;btn.textContent=old}
-};
+let RV=[];
+async function loadReviews(){
+ const homeList=$("#hv-list"),allList=$("#hv-all-list");
+ if(homeList)homeList.innerHTML='<div class="msg">Đang tải câu chuyện khách hàng...</div>';
+ if(allList)allList.innerHTML='<div class="msg">Đang tải câu chuyện khách hàng...</div>';
+ try{
+  const {data,error}=await supabaseClient.from("tour_reviews").select("id,display_name,combo_id,rating,content,created_at").eq("approved",true).order("created_at",{ascending:false}).limit(500);
+  if(error)throw error;
+  RV=(data||[]).map(r=>({id:r.id,n:r.display_name,c:r.combo_id,s:Number(r.rating),t:r.content,d:r.created_at}));
+  renderHv();renderHvAll();
+ }catch(err){console.error("Review load error:",err);
+  const msg='<div class="msg">Chưa tải được câu chuyện khách hàng. Vui lòng kiểm tra kết nối và chính sách SELECT trong Supabase.</div>';
+  if(homeList)homeList.innerHTML=msg;if(allList)allList.innerHTML=msg;
+ }
+}
 
 /* ===== Câu chuyện khách hàng: hiển thị đánh giá + gửi đánh giá trực tiếp (bảng tour_reviews) ===== */
 function hvStars(n){return "★".repeat(n)+"☆".repeat(5-n)}
@@ -1176,10 +1187,25 @@ function renderHv(){const sum=$("#hv-sum"),list=$("#hv-list");if(!sum||!list)ret
 if(!RV.length){const m=document.createElement("div");m.className="msg";m.textContent="Chưa có đánh giá thật. Đánh giá của khách sẽ hiển thị ở đây sau khi được Chạm Mây xem xét. Chúng mình không đăng đánh giá mẫu.";list.append(m);return}
 const avg=RV.reduce((t,r)=>t+r.s,0)/RV.length,a=document.createElement("p"),b=document.createElement("b"),st=document.createElement("span");a.className="hv-avg";b.textContent=avg.toFixed(1).replace(".",",")+" / 5";st.className="hv-st";st.textContent=hvStars(Math.round(avg));st.setAttribute("aria-hidden","true");a.append(b," ",st," · "+RV.length+" đánh giá");sum.append(a);
 RV.slice(0,6).forEach(r=>{const c=document.createElement("article"),s=document.createElement("div"),p=document.createElement("p"),by=document.createElement("div"),n=document.createElement("b"),cb=document.createElement("span");
-c.className="hv-card";s.className="hv-st";s.setAttribute("role","img");s.setAttribute("aria-label",r.s+" trên 5 sao");s.textContent=hvStars(r.s);p.textContent=r.t;by.className="hv-by";n.textContent=r.n;
+c.className="hv-card";s.className="hv-st";s.setAttribute("role","img");s.setAttribute("aria-label",r.s+" trên 5 sao");s.textContent=hvStars(r.s);const preview=r.t.trim();p.textContent=preview.length>150?preview.slice(0,150).trimEnd()+"…":preview;by.className="hv-by";n.textContent=r.n;
 const combo=COMBOS.find(x=>x.id===r.c);cb.textContent=combo?"Combo: "+combo.n:"Chạm Mây Travel";by.append(n,cb);
 if(r.d){const dt=new Date(r.d);if(!isNaN(dt)){const t=document.createElement("time");t.dateTime=dt.toISOString();t.textContent=dt.toLocaleDateString("vi-VN");by.append(t)}}
 c.append(s,p,by);list.append(c)})}
+const activityDest={dainoi:"dai-noi",dongba:"cho-dong-ba",huong:"truong-tien-song-huong",ngoi:"cau-ngoi-thanh-toan",chole:"cho-que",nong:"lam-nong",cabat:"bat-ca",comque:"com-que",tra:"ke-chuyen-tuoi-tho",oan:"tro-choi-dan-gian",day:"tro-choi-dan-gian",keo:"tro-choi-dan-gian",de:"tro-choi-dan-gian",bao:"tro-choi-dan-gian",dieu:"tha-dieu",tc:"thu-cong",tranh:"thu-cong",banh:"am-thuc-hue",thuyen:"thuyen-rong-ca-hue",gl:"ke-chuyen-tuoi-tho",bt:"buu-thiep-gui-mot-the-he",amthuc:"am-thuc-hue"};
+const comboImageSlug={"lang-que":"lam-nong","ve-tuoi-tho":"tro-choi-dan-gian","ky-uc":"thu-cong","huong-vi":"com-que","ket-noi":"ke-chuyen-tuoi-tho"};
+function renderHvAll(){const box=$("#hv-all-list");if(!box)return;box.replaceChildren();
+ if(!RV.length){const m=document.createElement("div");m.className="msg";m.textContent="Chưa có câu chuyện được duyệt để hiển thị.";box.append(m);return}
+ RV.forEach((r,index)=>{const combo=COMBOS.find(c=>c.id===r.c);const article=document.createElement("article");article.className="hv-story";
+ const head=document.createElement("div");head.className="hv-story-head";const title=document.createElement("div");const h=document.createElement("h3");h.textContent=r.n;const meta=document.createElement("div");meta.className="hv-story-meta";const stars=document.createElement("span");stars.className="hv-story-stars";stars.textContent=hvStars(r.s);stars.setAttribute("aria-label",r.s+" trên 5 sao");const comboName=document.createElement("span");comboName.textContent=combo?"Combo: "+combo.n:"Chạm Mây Travel";meta.append(stars,comboName);if(r.d){const dt=new Date(r.d);if(!isNaN(dt)){const time=document.createElement("time");time.dateTime=dt.toISOString();time.textContent=dt.toLocaleDateString("vi-VN");meta.append(time)}}title.append(h,meta);head.append(title);article.append(head);
+ const body=document.createElement("p");body.className="hv-story-text";body.textContent=r.t;article.append(body);
+ if(combo){const media=document.createElement("div");media.className="hv-story-media";
+ const comboA=document.createElement("a");comboA.className="hv-story-link";comboA.href="#/tour/"+combo.id;const comboImg=document.createElement("img");comboImg.className="hv-story-img";comboImg.src=IMG[comboImageSlug[combo.id]]||IMG[combo.sc]||IMG.tour;comboImg.alt="Hình ảnh combo "+combo.n;comboImg.loading="lazy";const comboLabel=document.createElement("span");comboLabel.className="hv-story-label";comboLabel.textContent=combo.n;const comboSmall=document.createElement("small");comboSmall.textContent="Xem chi tiết combo ↗";comboLabel.append(comboSmall);comboA.append(comboImg,comboLabel);media.append(comboA);
+ const ids=[...new Set(combo.days.flatMap(d=>d.ids).map(id=>activityDest[id]).filter(Boolean))].slice(0,6);
+ ids.forEach(slug=>{const place=pById[slug];if(!place)return;const a=document.createElement("a");a.className="hv-story-link";a.href="#/kham-pha-hue/"+slug;const img=document.createElement("img");img.className="hv-story-img";img.src=IMG[slug]||IMG.explore;img.alt=place.n;img.loading="lazy";const label=document.createElement("span");label.className="hv-story-label";label.textContent=place.n;const small=document.createElement("small");small.textContent="Xem hoạt động ↗";label.append(small);a.append(img,label);media.append(a)});
+ article.append(media)}box.append(article);
+ });
+}
+
 (()=>{const f=$("#hv-form");if(!f)return;const sel=$("#hv-combo"),out=$("#hv-out");sel.innerHTML='<option value="">Chọn combo bạn đã đi</option>'+COMBOS.map(c=>`<option value="${c.id}">${c.n}</option>`).join("");
 const say=(t,bold)=>{out.replaceChildren();if(!t)return;const d=document.createElement("div");d.className="msg";if(bold){const b=document.createElement("b");b.textContent=bold;d.append(b," ")}d.append(t);out.append(d)};
 f.onsubmit=async e=>{e.preventDefault();if($("#hv-hp").value)return;let ok=true;const chk=(k,bad,m)=>{$("#hve-"+k).textContent=bad?m:"";if(bad)ok=false};
@@ -1194,6 +1220,7 @@ say("Nội dung đang chờ Chạm Mây xem xét trước khi hiển thị công
 catch(err){console.error("Home review submit error:",err);say("Hãy thử lại sau. Nếu lỗi tiếp tục, cần kiểm tra bảng tour_reviews và chính sách INSERT trong Supabase.","Chưa gửi được đánh giá.")}
 finally{btn.disabled=false;btn.textContent=old}}})();
 renderHv();
+loadReviews();
 
 /* Trang con: địa điểm & chính sách */
 function renderPlace(s){const p=pById[s],i=PLACES.indexOf(p),acts=pAct(p),lo=acts.reduce((t,a)=>t+a.lo,0),hi=acts.reduce((t,a)=>t+a.hi,0),h=acts.reduce((t,a)=>t+a.h,0),cb=pCombos(p),pv=PLACES[(i+PLACES.length-1)%PLACES.length],nx=PLACES[(i+1)%PLACES.length];
@@ -1257,8 +1284,8 @@ if(k==="/tour"&&arg&&!COMBOS.find(c=>c.id===arg))arg="";
 if(!$(`.view[data-v="${k}"]`)){k="/";arg=""}
 const nk=k==="/place"?"/kham-pha-hue":k==="/policy"?"":k==="/guide-detail"?"/cam-nang":k;
 
-if(k==="/guide-detail")renderGuide(arg);if(k==="/place")renderPlace(arg);if(k==="/policy")renderPolicy(arg);if(k==="/tour"){if(arg)cf="",openId=arg,$$("#cf button").forEach(x=>x.setAttribute("aria-pressed",x.dataset.v===""));renderCombos()}if(k==="/ca-nhan"){renderPlan();renderLive()}if(k==="/danh-gia")renderRv();
-const view=$(`.view[data-v="${k}"]`);const bannerMap={"/tour":"./banner-tour-3n2d.jpg","/ca-nhan":"./banner-du-lich-ca-nhan.jpg","/ve-cham-may":"./banner-ve-cham-may.jpg","/kham-pha-hue":"./banner-kham-pha-hue.jpg","/cam-nang":"./banner-kham-pha-hue.jpg"};const ph=view.querySelector(".pagehead");if(ph&&bannerMap[k])ph.style.setProperty("--page-banner",`url("${bannerMap[k]}")`);$$(".view").forEach(v=>v.classList.toggle("on",v===view));
+if(k==="/guide-detail")renderGuide(arg);if(k==="/place")renderPlace(arg);if(k==="/policy")renderPolicy(arg);if(k==="/tour"){if(arg)cf="",openId=arg,$$("#cf button").forEach(x=>x.setAttribute("aria-pressed",x.dataset.v===""));renderCombos()}if(k==="/ca-nhan"){renderPlan();renderLive()}if(k==="/cau-chuyen-khach-hang")renderHvAll();
+const view=$(`.view[data-v="${k}"]`);const bannerMap={"/tour":"./banner-tour-3n2d.jpg","/ca-nhan":"./banner-du-lich-ca-nhan.jpg","/ve-cham-may":"./banner-ve-cham-may.jpg","/kham-pha-hue":"./banner-kham-pha-hue.jpg","/cam-nang":"./banner-kham-pha-hue.jpg","/cau-chuyen-khach-hang":"./banner-ve-cham-may.jpg"};const ph=view.querySelector(".pagehead");if(ph&&bannerMap[k])ph.style.setProperty("--page-banner",`url("${bannerMap[k]}")`);$$(".view").forEach(v=>v.classList.toggle("on",v===view));
 $$("#hd a[data-r]").forEach(a=>{if(a.dataset.r===nk)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
 nav.classList.remove("open");bg.setAttribute("aria-expanded","false");window.scrollTo({top:0,behavior:"instant"});hd.classList.toggle("solid",k!=="/"||scrollY>20);
 document.title=(k==="/"?"":k==="/place"?pById[arg].n+" — ":k==="/policy"?polBy[arg].n+" — ":$(".pagehead h1",view).textContent+" — ")+"Chạm Mây Travel";
