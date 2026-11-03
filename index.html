@@ -532,6 +532,7 @@ header.solid .logo .brand-logo{width:40px;height:40px;box-shadow:0 0 0 1.5px var
 <section class="dark"><div class="wrap" style="text-align:center"><div class="rv"><h2 style="max-width:20ch;margin-inline:auto">Một phiên bản tuổi thơ đang chờ bạn trở lại.</h2>
 <p style="margin-inline:auto">Chọn một lịch trình có sẵn, hoặc tự viết lại hành trình theo cách của bạn.</p>
 <div class="btns" style="justify-content:center"><a class="btn" style="background:var(--on);color:var(--tx);border-color:var(--on)" href="#/tour">Chọn tour có sẵn</a><a class="btn ghost" href="#/ca-nhan">Tự thiết kế hành trình</a></div></div></div></section>
+<section id="binh-luan"><div class="wrap"><div id="cm-home"></div></div></section>
 </div>
 
 <!-- TOUR -->
@@ -1212,6 +1213,7 @@ try{localStorage.setItem("cm_cmt_last",String(Date.now()))}catch(x){}
 const em=list.querySelector("[data-empty]");if(em)em.remove();list.prepend(item({display_name:n,content:t,created_at:new Date().toISOString()}));f.reset();cnt.textContent="0/600";msg("Đã đăng bình luận của bạn. Cảm ơn bạn!")}
 catch(err){console.error("Comment submit error:",err);msg("Chưa gửi được bình luận lúc này. Bạn vui lòng thử lại sau.")}
 finally{btn.disabled=false;btn.textContent=old}}}
+mountComments($("#cm-home"),"home","Bình luận về Chạm Mây");
 mountComments($("#cm-general"),"general","Bình luận của bạn");
 
 /* Router */
